@@ -1,13 +1,10 @@
 package utils
 
-/*
-func PrepareResponse(sucess bool, message string, result string) map[string]interface{} {
-	var result make(map[string]interface{}, 3)
-	{
-		"sucess": sucess,
-		"message": message,
-		"result": result,
+func PrepareResponse(sucess bool, message string, result interface{}) map[string]interface{} {
+	output := map[string]interface{}{
+		"1 : sucess":  sucess,
+		"2 : message": message,
+		"3 : result":  result,
 	}
-
-	return result
-}*/
+	return output
+}

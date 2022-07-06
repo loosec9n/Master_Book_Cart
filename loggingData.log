@@ -50,3 +50,79 @@
 2022/07/05 13:30:08 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
 2022/07/05 13:30:42 Product added.
 2022/07/05 13:32:43 Length of Token not equal to
+2022/07/06 11:20:54 First log
+2022/07/06 11:20:54 Database connection was succesful
+2022/07/06 11:20:54 API is listening in the port:  8080
+2022/07/06 11:21:16 Checking whether Admin exists.
+2022/07/06 11:21:16 Please enter correct admin details
+2022/07/06 11:21:49 Checking whether Admin exists.
+2022/07/06 11:21:49 Please enter correct admin details
+2022/07/06 11:25:03 First log
+2022/07/06 11:25:03 Database connection was succesful
+2022/07/06 11:25:03 API is listening in the port:  8080
+2022/07/06 11:25:22 Checking whether Admin exists.
+2022/07/06 11:25:22 Please enter correct admin details
+2022/07/06 11:32:40 First log
+2022/07/06 11:32:40 Database connection was succesful
+2022/07/06 11:32:40 API is listening in the port:  8080
+2022/07/06 11:32:51 Checking whether Admin exists.
+2022/07/06 11:34:37 Checking whether user exists.
+2022/07/06 11:34:37 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/06 11:34:37 Signed Up Successfully
+2022/07/06 11:41:20 First log
+2022/07/06 11:41:20 Database connection was succesful
+2022/07/06 11:41:20 API is listening in the port:  8080
+2022/07/06 11:46:56 First log
+2022/07/06 11:46:56 Database connection was succesful
+2022/07/06 11:46:56 API is listening in the port:  8080
+2022/07/06 11:47:19 Updated the User Active Status
+2022/07/06 11:48:58 First log
+2022/07/06 11:48:58 Database connection was succesful
+2022/07/06 11:48:58 API is listening in the port:  8080
+2022/07/06 11:49:12 Checking whether user exists.
+2022/07/06 11:49:12 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/06 11:49:12 Signed Up Successfully
+2022/07/06 13:28:30 First log
+2022/07/06 13:28:30 Database connection was succesful
+2022/07/06 13:28:30 API is listening in the port:  8080
+2022/07/06 13:33:25 First log
+2022/07/06 13:33:25 Database connection was succesful
+2022/07/06 13:33:25 API is listening in the port:  8080
+2022/07/06 14:51:44 First log
+2022/07/06 14:51:45 Database connection was succesful
+2022/07/06 14:51:45 API is listening in the port:  8080
+2022/07/06 14:52:04 Checking whether Admin exists.
+2022/07/06 14:52:04 Invalid Password.
+2022/07/06 14:53:09 First log
+2022/07/06 14:53:09 Database connection was succesful
+2022/07/06 14:53:09 API is listening in the port:  8080
+2022/07/06 14:53:15 Checking whether Admin exists.
+2022/07/06 14:53:15 Invalid Password.
+2022/07/06 14:57:12 First log
+2022/07/06 14:57:12 Database connection was succesful
+2022/07/06 14:57:12 API is listening in the port:  8080
+2022/07/06 14:57:19 Checking whether Admin exists.
+2022/07/06 14:57:19 Invalid Password.
+2022/07/06 14:57:19 <nil>
+2022/07/06 15:09:48 First log
+2022/07/06 15:09:48 Database connection was succesful
+2022/07/06 15:09:48 API is listening in the port:  8080
+2022/07/06 15:09:56 Checking whether Admin exists.
+2022/07/06 15:21:20 First log
+2022/07/06 15:21:20 Database connection was succesful
+2022/07/06 15:21:20 API is listening in the port:  8080
+2022/07/06 15:21:29 Checking whether Admin exists.
+2022/07/06 15:21:29 Successfull Admin Login
+2022/07/06 15:23:03 First log
+2022/07/06 15:23:03 Database connection was succesful
+2022/07/06 15:23:03 API is listening in the port:  8080
+2022/07/06 15:23:08 Checking whether Admin exists.
+2022/07/06 15:23:08 Successfull Admin Login
+2022/07/06 15:24:13 First log
+2022/07/06 15:24:13 Database connection was succesful
+2022/07/06 15:24:13 API is listening in the port:  8080
+2022/07/06 15:24:19 Checking whether Admin exists.
+2022/07/06 15:24:19 Successfull Admin Login
+2022/07/06 15:25:29 Products are visible to the admin
+2022/07/06 15:25:58 Product added.
+2022/07/06 15:26:07 Products are visible to the admin

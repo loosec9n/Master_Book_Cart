@@ -28,8 +28,8 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 		if err {
 			log.Println("User Already Exists.")
 			w.WriteHeader(http.StatusBadRequest)
-			//json.NewEncoder(w).Encode("User already exists.")
-			utils.ResponseJSON(w, "User already exists.")
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "User already exists", err))
+			//utils.ResponseJSON(w, "User already exists.")
 			return
 		}
 
@@ -49,7 +49,8 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 
 		//writing userdata to the response
 		log.Println("Signed Up Successfully")
-		utils.ResponseJSON(w, &user)
+		//utils.ResponseJSON(w, &user)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "new user created", &user))
 	}
 }
 
@@ -69,14 +70,24 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		requestPassword := founduser.Password
 
 		log.Println("Checking whether User exists.")
-
 		founduser, err := c.UserRepo.UserLogin(founduser)
 
+		//checking the user is active or not
+		if !founduser.Is_Active {
+			log.Println("User has been deactivated by Admin")
+			w.WriteHeader(http.StatusUnauthorized)
+			//utils.ResponseJSON(w, "This user is inactive, please contact the admin")
+			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "This user is inactive, please contact the admin", founduser))
+			return
+		}
+
+		//checking the error in the sql query
 		if err != nil {
 			if err == sql.ErrNoRows {
 				log.Println("The user does not exists.")
 				w.WriteHeader(http.StatusBadGateway)
-				utils.ResponseJSON(w, "Please Check the Username")
+				//utils.ResponseJSON(w, "Please Check the Username")
+				json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User does not exists", err))
 			} else {
 				log.Fatal(err)
 			}
@@ -91,9 +102,10 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		passwordMatch := utils.VerifyPassword(requestPassword, dbPassword)
 
 		if !passwordMatch {
-			log.Println("Invalid Password.")
-			utils.ResponseJSON(w, "Inavlid Password")
+			log.Println("Invalid user password.")
+			//utils.ResponseJSON(w, "Inavlid Password")
 			w.WriteHeader(http.StatusBadGateway)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Invalid user password", founduser))
 			return
 		}
 
@@ -104,7 +116,9 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		jwt.Refresh_Token = refresh_token
 
 		w.WriteHeader(http.StatusOK)
-		utils.ResponseJSON(w, jwt)
+		//	utils.ResponseJSON(w, jwt)
+		log.Println("User login sucessful")
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User login sucessful", jwt))
 
 	}
 }
@@ -112,8 +126,9 @@ func (c Controller) UserLogin() http.HandlerFunc {
 func (c Controller) UserHomePage() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		log.Println("Logged in Successfully")
-		// json.NewEncoder(w).Encode("Successfully logged in")
-		utils.ResponseJSON(w, "Succesfully logged in")
+		//utils.ResponseJSON(w, "Succesfully logged in")
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User Home page", "Sucessful login"))
+
 	}
 }
 
