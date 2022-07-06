@@ -1,0 +1,52 @@
+2022/07/04 12:03:34 First log
+2022/07/04 12:03:34 API is listening in the port:  8080
+2022/07/04 12:04:14 Checking whether User exists.
+2022/07/04 12:04:14 User exists.
+2022/07/04 12:04:14 requested password password1
+2022/07/04 12:04:14 dbPassword 7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/04 12:04:14 Requested Password 7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/04 12:04:14 DB Password 7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/04 12:04:41 Checking whether Admin exists.
+2022/07/04 12:04:41 Please enter correct admin details
+2022/07/04 12:05:17 Checking whether Admin exists.
+2022/07/04 12:05:17 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/04 12:05:17 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/04 12:05:48 token contains an invalid number of segments
+2022/07/04 12:15:02 First log
+2022/07/04 12:15:02 API is listening in the port:  8080
+2022/07/04 12:15:31 Checking whether User exists.
+2022/07/04 12:15:31 User exists.
+2022/07/04 12:15:31 requested password password
+2022/07/04 12:15:31 dbPassword 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/04 12:15:31 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/04 12:15:31 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/04 12:15:52 Logged in Successfully
+2022/07/05 10:00:33 First log
+2022/07/05 10:00:34 Database connection was succesful
+2022/07/05 10:00:34 API is listening in the port:  8080
+2022/07/05 10:01:14 Checking whether user exists.
+2022/07/05 10:01:15 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/05 10:01:15 Signed Up Successfully
+2022/07/05 10:07:38 Checking whether user exists.
+2022/07/05 10:07:38 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/05 10:07:38 Signed Up Successfully
+2022/07/05 12:32:39 First log
+2022/07/05 12:32:39 Database connection was succesful
+2022/07/05 12:32:39 API is listening in the port:  8080
+2022/07/05 12:34:14 First log
+2022/07/05 12:34:14 Database connection was succesful
+2022/07/05 12:34:14 API is listening in the port:  8080
+2022/07/05 12:34:21 Length of Token not equal to
+2022/07/05 12:34:39 Checking whether Admin exists.
+2022/07/05 12:34:39 Please enter correct admin details
+2022/07/05 13:29:24 First log
+2022/07/05 13:29:24 Error pinging Database
+2022/07/05 13:29:24 pq: database "book_cart" does not exist
+2022/07/05 13:29:51 First log
+2022/07/05 13:29:51 Database connection was succesful
+2022/07/05 13:29:51 API is listening in the port:  8080
+2022/07/05 13:30:08 Checking whether Admin exists.
+2022/07/05 13:30:08 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/05 13:30:08 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
+2022/07/05 13:30:42 Product added.
+2022/07/05 13:32:43 Length of Token not equal to
