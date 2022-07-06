@@ -3,6 +3,7 @@
 
 CREATE TABLE IF NOT EXISTS users (
       user_id BIGSERIAL PRIMARY KEY,
+      is_active BOOLEAN DEFAULT TRUE,
       first_name VARCHAR(200) NOT NULL,
       last_name VARCHAR(200) NOT NULL,
       password VARCHAR(200) NOT NULL,
@@ -16,5 +17,5 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE  IF EXISTS users;
+DROP TABLE  IF EXISTS users CASCADE;
 -- +goose StatementEnd
