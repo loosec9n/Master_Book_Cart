@@ -2,6 +2,7 @@ package middleware
 
 import (
 	"Book_Cart_Project/token"
+	"Book_Cart_Project/utils"
 	"encoding/json"
 	"log"
 	"net/http"
@@ -28,9 +29,9 @@ func TokenVerifyMiddleware(next http.Handler) http.Handler {
 			}
 
 		} else {
-			log.Println("Length of Token not equal to")
+			log.Println("Invalid Token")
 			w.WriteHeader(http.StatusUnauthorized)
-			json.NewEncoder(w).Encode("Invalid Token")
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Inavalid Token", nil))
 		}
 	})
 }

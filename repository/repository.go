@@ -16,6 +16,8 @@ type UserRepository interface {
 	DoesUserExists(models.User) bool
 	UserLogin(models.User) (models.User, error)
 	AdminLogin(models.User) (models.User, error)
+	BlockUser(models.User) (models.User, error)
+	ViewUser() ([]models.User, error)
 }
 
 type ProductRepository interface {

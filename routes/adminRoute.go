@@ -17,5 +17,7 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 		r.Use(middleware.TokenVerifyMiddleware)
 		r.Post("/admin/addproduct", Controller.AdminProductAdd())
 		r.Get("/admin/viewproduct", Controller.AdminProductView())
+		r.Post("/admin/blockuser", Controller.AdminBlockUser())
+		r.Get("/admin/viewuser", Controller.AdminViewUser())
 	})
 }
