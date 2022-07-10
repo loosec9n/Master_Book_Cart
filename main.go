@@ -64,5 +64,6 @@ func main() {
 	log.Println("API is listening in the port: ", port)
 
 	http.ListenAndServe(":"+port, router)
+	fmt.Print("i'm here")
 
 }

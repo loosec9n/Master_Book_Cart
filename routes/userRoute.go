@@ -12,12 +12,14 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Post("/user/signup", Controller.UserSignUp())
 	routes.Get("/user/login", Controller.UserLoginIndex)
 	routes.Post("/user/login", Controller.UserLogin())
-	routes.Get("/user/logout", Controller.UserLogout)
 	routes.Get("/", Controller.HomePage)
 
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.TokenVerifyMiddleware)
+		//r.Get("/user/logout", Controller.UserLogout)
 		r.Get("/homepage", Controller.UserHomePage())
+		r.Post("/user/add/cart", Controller.AddToCart())
+		r.Post("/user/view/cart", Controller.ViewCart())
 	})
 
 }

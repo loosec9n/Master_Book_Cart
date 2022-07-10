@@ -40,3 +40,16 @@ func (r Repository) ViewProduct() ([]models.Product, error) {
 	return products, nil
 
 }
+
+// func (r Repository) Category(category models.ProductCategory) (models.ProductCategory, error) {
+
+// 	//Query for category
+// 	query := `SELECT category_id FROM product_category
+// 				WHERE category_id = $1`
+// 	err := r.DB.QueryRow(query, category.Category_ID).Scan(&category.Category_ID)
+
+// 	if err != nil {
+// 		logFatal(err)
+// 	}
+// 	return category, err
+// }
