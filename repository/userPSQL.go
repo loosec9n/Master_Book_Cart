@@ -44,11 +44,18 @@ func (r Repository) DoesUserExists(user models.User) bool {
 
 func (r Repository) UserLogin(user models.User) (models.User, error) {
 
-	query := `SELECT * FROM users 
+	query := `SELECT 
+				is_active, 
+				first_name,
+				last_name,
+				password,
+				email,
+				phone_number,
+				created_at
+				FROM users 
 				WHERE email = $1`
 
 	err := r.DB.QueryRow(query, user.Email).Scan(
-		&user.User_ID,
 		&user.Is_Active,
 		&user.First_Name,
 		&user.Last_Name,
@@ -57,6 +64,7 @@ func (r Repository) UserLogin(user models.User) (models.User, error) {
 		&user.Phone_Number,
 		&user.CreatedAt)
 
+	log.Println(user)
 	return user, err
 }
 

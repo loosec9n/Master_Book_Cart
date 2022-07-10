@@ -72,15 +72,6 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		log.Println("Checking whether User exists.")
 		founduser, err := c.UserRepo.UserLogin(founduser)
 
-		//checking the user is active or not
-		if !founduser.Is_Active {
-			log.Println("User has been deactivated by Admin")
-			w.WriteHeader(http.StatusUnauthorized)
-			//utils.ResponseJSON(w, "This user is inactive, please contact the admin")
-			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "This user is inactive, please contact the admin", founduser))
-			return
-		}
-
 		//checking the error in the sql query
 		if err != nil {
 			if err == sql.ErrNoRows {
@@ -91,6 +82,15 @@ func (c Controller) UserLogin() http.HandlerFunc {
 			} else {
 				log.Fatal(err)
 			}
+		}
+
+		//checking the user is active or not
+		if !founduser.Is_Active {
+			log.Println("User has been deactivated by Admin")
+			w.WriteHeader(http.StatusUnauthorized)
+			//utils.ResponseJSON(w, "This user is inactive, please contact the admin")
+			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "This user is inactive, please contact the admin", nil))
+			return
 		}
 
 		log.Println("User exists.")
