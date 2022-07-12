@@ -48,7 +48,7 @@ func GenerateToken(first_name string, last_name string, email string, phone_numb
 }
 
 //to verify token
-func ValidateToken(signedtoken string) bool {
+func ValidateToken(signedtoken string) (bool, error) {
 	//validating token
 	token, err := jwt.ParseWithClaims(
 		signedtoken,
@@ -59,19 +59,20 @@ func ValidateToken(signedtoken string) bool {
 	)
 
 	if err != nil {
-		log.Fatalln(err)
+		log.Println("error parsing jwt: ", err)
+		return false, err
 	}
 
 	claims, ok := token.Claims.(*SignedDetails)
 
 	if !ok {
 		log.Println("The Token is Invalid")
-		return false
+		return false, err
 	}
 
 	if claims.ExpiresAt < time.Now().Local().Unix() {
 		log.Println("Token Expired.")
-		return false
+		return false, err
 	}
-	return true
+	return true, nil
 }
