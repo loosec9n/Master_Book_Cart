@@ -18,20 +18,27 @@ func TokenVerifyMiddleware(next http.Handler) http.Handler {
 		if len(bearerToken) == 2 {
 			authToken := bearerToken[1]
 
-			err := token.ValidateToken(authToken)
+			ok, err := token.ValidateToken(authToken)
 
-			if !err {
+			if err != nil {
 				log.Println("Token Invalid.")
 				w.WriteHeader(http.StatusUnauthorized)
+				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Token", err))
+			}
 
-			} else if err {
+			if !ok {
+				log.Println("Invalid Token")
+				w.WriteHeader(http.StatusUnauthorized)
+				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Token", nil))
+			} else if ok {
 				next.ServeHTTP(w, r)
 			}
 
 		} else {
-			log.Println("Invalid Token")
-			w.WriteHeader(http.StatusUnauthorized)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Inavalid Token", nil))
+			log.Println("no token")
+			w.WriteHeader(http.StatusBadRequest)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "no token", nil))
 		}
+
 	})
 }
