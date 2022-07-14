@@ -7,10 +7,12 @@ CREATE TABLE IF NOT EXISTS product(
     product_description VARCHAR(500),
     product_category_id BIGINT REFERENCES product_category(category_id),
     product_author_id BIGINT REFERENCES product_author(author_id),
+    product_inventory_id BIGINT REFERENCES inventory(inventory_id),
     product_price NUMERIC,
+    product_rating NUMERIC,
     product_created_at TIMESTAMP DEFAULT NOW(),
-    product_updated_at TIMESTAMP,
-    product_deleted_at TIMESTAMP
+    product_updated_at TIMESTAMP DEFAULT NOW(),
+    product_deleted_at TIMESTAMP DEFAULT NOW()
 )
 
 -- +goose StatementEnd
