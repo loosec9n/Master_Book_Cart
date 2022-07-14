@@ -9,7 +9,7 @@ import (
 
 func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 
-	routes.Get("/admin/login", Controller.AdminLoginIndex)
+	//routes.Get("/admin/login", Controller.AdminLoginIndex)
 	routes.Post("/admin/login", Controller.AdminLogin())
 
 	routes.Group(func(r chi.Router) {

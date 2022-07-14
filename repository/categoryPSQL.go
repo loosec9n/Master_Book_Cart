@@ -8,9 +8,10 @@ import (
 func (r Repository) AddCategory(category models.ProductCategory) (models.ProductCategory, error) {
 
 	query := `INSERT INTO product_category(
+		category_id,
 		category_name,
 		category_description)
-		VALUES($1,$2)
+		VALUES($1,$2,$3)
 		RETURNING
 		category_id,
 		category_name,
@@ -18,6 +19,7 @@ func (r Repository) AddCategory(category models.ProductCategory) (models.Product
 		category_created_at;`
 
 	err := r.DB.QueryRow(query,
+		category.Category_ID,
 		category.Category_Name,
 		category.Category_Description).Scan(
 		&category.Category_ID,
@@ -32,11 +34,14 @@ func (r Repository) ViewCategory() ([]models.ProductCategory, error) {
 	var categories []models.ProductCategory
 
 	//Query for selecting the categories
-	query := `SELECT category_id, 
+	query := `SELECT 
+		category_id, 
 		category_name,
 		category_description,
 		category_created_at
-		FROM product_category;`
+		FROM 
+		product_category;`
+
 	rows, err := r.DB.Query(query)
 
 	if err != nil {
@@ -67,13 +72,16 @@ func (r Repository) ViewCategory() ([]models.ProductCategory, error) {
 func (r Repository) AddAuthor(author models.ProductAuthor) (models.ProductAuthor, error) {
 
 	//query for inserting the author into the author table
-	query := `INSERT INTO product_author(author_name)
-			VALUES($1)
+	query := `INSERT INTO product_author(
+		author_id,	
+		author_name)
+			VALUES($1,$2)
 			RETURNING
 			author_id,
 			author_name,
 			author_created_at;`
 	err := r.DB.QueryRow(query,
+		author.Author_ID,
 		author.Author_Name).Scan(
 		&author.Author_ID,
 		&author.Author_Name,
@@ -86,10 +94,10 @@ func (r Repository) ViewAuthor() ([]models.ProductAuthor, error) {
 
 	//Query to select the authors form author table
 	query := `SELECT 
-	author_id,
-	author_name,
-	author_created_at
-	FROM product_author;`
+		author_id,
+		author_name,
+		author_created_at
+		FROM product_author;`
 
 	rows, err := r.DB.Query(query)
 	if err != nil {

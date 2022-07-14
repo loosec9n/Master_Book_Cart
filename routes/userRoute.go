@@ -8,9 +8,9 @@ import (
 )
 
 func UserRoute(routes chi.Router, Controller controllers.Controller) {
-	routes.Get("/user/signup", Controller.UserSignUpIndex)
+	//routes.Get("/user/signup", Controller.UserSignUpIndex)
 	routes.Post("/user/signup", Controller.UserSignUp())
-	routes.Get("/user/login", Controller.UserLoginIndex)
+	//routes.Get("/user/login", Controller.UserLoginIndex)
 	routes.Post("/user/login", Controller.UserLogin())
 	routes.Get("/", Controller.HomePage)
 

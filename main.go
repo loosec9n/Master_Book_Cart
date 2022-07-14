@@ -29,7 +29,7 @@ func main() {
 		log.Fatal(err)
 	}
 	log.SetOutput(file)
-	log.Println("First log")
+	log.Println("New Run!")
 
 	//checking if env is avaialble if not using the default value
 	port := os.Getenv("PORT")
@@ -64,6 +64,5 @@ func main() {
 	log.Println("API is listening in the port: ", port)
 
 	http.ListenAndServe(":"+port, router)
-	fmt.Print("i'm here")
 
 }

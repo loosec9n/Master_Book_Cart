@@ -126,7 +126,9 @@ func (c Controller) UserLogin() http.HandlerFunc {
 func (c Controller) UserHomePage() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		products, err := c.ProductRepo.ViewProduct()
+		f := models.Filter{}
+		//searchParam := chi.URLParam(r, "search")
+		products, _, err := c.ProductRepo.ViewProduct(f)
 
 		if err != nil {
 			log.Println("Error - no query execution - Product View", err)
@@ -136,6 +138,7 @@ func (c Controller) UserHomePage() http.HandlerFunc {
 
 		log.Println("Sucess in Viewing Products")
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "home page view products sucess", &products))
+
 		// log.Println("Logged in Successfully")
 		// //utils.ResponseJSON(w, "Succesfully logged in")
 		// json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User Home page", "Sucessful login"))

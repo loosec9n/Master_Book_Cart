@@ -4,19 +4,19 @@ import "time"
 
 //Product -> product table schema
 type Product struct {
-	Product_ID           uint            `json:"productId"`
-	Product_Name         string          `json:"productName"`
-	Product_Description  string          `json:"produtDescription"`
-	Product_Category_ID  ProductCategory `json:"categoryID"`
-	Product_Author_ID    ProductAuthor   `json:"productAuthor"`
-	Product_Price        float64         `json:"productPrice"`
-	Product_Rating       float32         `json:"productRating"`
-	Product_Discount_ID  Discount        `json:"discountID"`
-	Product_Inventory_ID Inventory       `json:"inventoryID"`
-	Product_Image        string          `json:"productImage"`
-	Product_Created_At   time.Time       `json:"productCreatedAt"`
-	Product_Updated_At   time.Time       `json:"productUpdatedAt"`
-	Product_Deleted_At   time.Time       `json:"productDeletedAt"`
+	Product_ID          uint            `json:"productId"`
+	Product_Name        string          `json:"productName"`
+	Product_Description string          `json:"produtDescription"`
+	Product_Author      ProductAuthor   `json:"productAuthor"`
+	Product_Category    ProductCategory `json:"productCategory"`
+	Product_Price       float64         `json:"productPrice"`
+	Product_Rating      float32         `json:"productRating"`
+	Product_Discount_ID Discount        `json:"discountID"`
+	Product_Inventory   Inventory       `json:"inventoryID"`
+	Product_Image       string          `json:"productImage"`
+	Product_Created_At  time.Time       `json:"productCreatedAt"`
+	Product_Updated_At  time.Time       `json:"productUpdatedAt"`
+	Product_Deleted_At  time.Time       `json:"productDeletedAt"`
 }
 type ProductUser struct {
 	ProductUser_ID          uint          `json:"productId"`
@@ -33,7 +33,7 @@ type ProductUser struct {
 }
 
 type ProductCategory struct {
-	Category_ID          uint      `json:"categoryId"`
+	Category_ID          uint      `json:"categoryID"`
 	Category_Name        string    `json:"categoryName"`
 	Category_Description string    `json:"categoryDescription"`
 	Category_Created_At  time.Time `json:"categoryCreatedAt"`

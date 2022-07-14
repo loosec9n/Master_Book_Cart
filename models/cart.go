@@ -10,7 +10,7 @@ type Session_Cart struct {
 }
 
 type Cart struct {
-	Cart_ID uint `json:"cart_id"`
+	Cart_ID uint `json:"cartId"`
 	// Session_ID      Session_Cart `json:"session_cart"`
 	User_ID         int       `json:"cartUserId"`
 	Product_ID      Product   `json:"productId"`

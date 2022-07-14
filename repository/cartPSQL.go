@@ -35,14 +35,35 @@ func (r Repository) AddToCart(cart models.Cart) (models.Cart, error) {
 func (r Repository) ViewCart(cart models.Cart) ([]models.Cart, error) {
 
 	query := `SELECT 
-		cart.cart_id, 
-		cart.user_id, 
-		product.product_id,
-		product.product_name,
-		cart.product_count
-		FROM product
-		INNER JOIN cart ON product.product_id=  cart.product_id
-		WHERE user_id = $1;`
+	cart.cart_id, 
+	cart.user_id, 
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product.product_price,
+	product_category.category_id,
+	product_category.category_name,
+	product_category.category_description,
+	product_category.category_created_at,
+	product_author.author_id,
+	product_author.author_name,
+	product_author.author_created_at,
+	cart.product_count
+	FROM product
+	INNER JOIN 
+	cart 
+	ON 
+	product.product_id = cart.product_id
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id
+	WHERE 
+	user_id = $1;`
 
 	rows, err := r.DB.Query(query,
 		cart.User_ID)
@@ -60,6 +81,15 @@ func (r Repository) ViewCart(cart models.Cart) ([]models.Cart, error) {
 			&cart.User_ID,
 			&cart.Product_ID.Product_ID,
 			&cart.Product_ID.Product_Name,
+			&cart.Product_ID.Product_Description,
+			&cart.Product_ID.Product_Price,
+			&cart.Product_ID.Product_Category.Category_ID,
+			&cart.Product_ID.Product_Category.Category_Name,
+			&cart.Product_ID.Product_Category.Category_Description,
+			&cart.Product_ID.Product_Category.Category_Created_At,
+			&cart.Product_ID.Product_Author.Author_ID,
+			&cart.Product_ID.Product_Author.Author_Name,
+			&cart.Product_ID.Product_Author.Author_Created_At,
 			&cart.Product_Count,
 		)
 		if err != nil {
