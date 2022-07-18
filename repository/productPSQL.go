@@ -2,15 +2,18 @@ package repository
 
 import (
 	"Book_Cart_Project/models"
+	"time"
 )
 
 type Prod struct {
-	Id          int     `json:"productId"`
-	Name        string  `json:"productName"`
-	Description string  `json:"productDescription"`
-	Author      string  `json:"productAuthor"`
-	Category    string  `josn:"productCategory"`
-	Price       float64 `json:"productPrice"`
+	Id          int       `json:"productId"`
+	Is_Active   bool      `json:"isActive"`
+	Name        string    `json:"productName"`
+	Description string    `json:"productDescription"`
+	Author      string    `json:"productAuthor"`
+	Category    string    `josn:"productCategory"`
+	Price       float64   `json:"productPrice"`
+	Created_At  time.Time `json:"created_at"`
 }
 
 func (r Repository) Addproduct(product models.Product) (models.Product, error) {
@@ -131,4 +134,56 @@ func (r Repository) BlockProduct(product models.Product) (models.Product, error)
 	)
 	return product, err
 
+}
+
+func (r Repository) UserSearchProduct(product_id int) (Prod, error) {
+	var usp Prod
+
+	query := `SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price,
+	product.product_created_at
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id
+	WHERE 
+	product_id = $1;`
+
+	err := r.DB.QueryRow(query,
+		product_id).Scan(
+		&usp.Is_Active,
+		&usp.Id,
+		&usp.Name,
+		&usp.Description,
+		&usp.Category,
+		&usp.Author,
+		&usp.Price,
+		&usp.Created_At,
+	)
+
+	return usp, err
+}
+
+func (r Repository) CheckActiveProd(product_id int) (bool, error) {
+
+	var activeProduct Prod
+
+	query := `SELECT is_active
+		FROM product
+		WHERE product_id = $1;`
+
+	err := r.DB.QueryRow(query, product_id).Scan(&activeProduct.Is_Active)
+
+	return activeProduct.Is_Active, err
 }

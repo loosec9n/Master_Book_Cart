@@ -164,6 +164,42 @@ func (c Controller) UserHomePage() http.HandlerFunc {
 	}
 }
 
+func (c Controller) SearchProduct() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		param, err := strconv.Atoi(r.URL.Query().Get("search"))
+		if err != nil || param < 1 {
+			log.Println("Error converting string to int", err)
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting string to int", err))
+			return
+		}
+
+		//checking wheather product is active or not
+		activeProd, err := c.UserRepo.CheckActiveProd(param)
+
+		if !activeProd {
+			log.Println("Product is not active")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "product is not active", err))
+			return
+		}
+
+		product, err := c.UserRepo.UserSearchProduct(param)
+
+		if err != nil {
+			log.Println("error executing query for the user products search")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error exectuing query for the user products search", err))
+			return
+		}
+
+		log.Println("search product is visible")
+		w.WriteHeader(http.StatusFound)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "search product is visible", &product))
+
+	}
+}
+
 func (c Controller) UserLogout(w http.ResponseWriter, r *http.Request) {
 	//user logout function goes here ..
 }

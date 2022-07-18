@@ -20,6 +20,8 @@ type UserRepository interface {
 	ViewUser() ([]models.User, error)
 	AddToCart(models.Cart) (models.Cart, error)
 	ViewCart(models.Cart) ([]models.Cart, error)
+	CheckActiveProd(int) (bool, error)
+	UserSearchProduct(int) (Prod, error)
 }
 
 type ProductRepository interface {

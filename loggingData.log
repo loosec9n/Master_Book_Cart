@@ -1,0 +1,61 @@
+2022/07/18 12:26:24 New Run!
+2022/07/18 12:26:24 Database connection was succesful
+2022/07/18 12:26:24 API is listening in the port:  8080
+2022/07/18 12:26:44 Checking whether User exists.
+2022/07/18 12:26:46 User exists.
+2022/07/18 12:26:46 User login sucessful
+2022/07/18 12:27:23 Sucess in Viewing Products
+2022/07/18 12:27:47 no token
+2022/07/18 12:28:07 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/07/18 17:30:22 New Run!
+2022/07/18 17:30:23 Database connection was succesful
+2022/07/18 17:30:23 API is listening in the port:  8080
+2022/07/18 17:30:52 New Run!
+2022/07/18 17:30:52 Database connection was succesful
+2022/07/18 17:30:52 API is listening in the port:  8080
+2022/07/18 17:35:50 New Run!
+2022/07/18 17:35:51 Database connection was succesful
+2022/07/18 17:35:51 API is listening in the port:  8080
+2022/07/18 17:38:15 New Run!
+2022/07/18 17:38:15 Database connection was succesful
+2022/07/18 17:38:15 API is listening in the port:  8080
+2022/07/18 17:38:31 error executing query for the user products search
+2022/07/18 20:04:10 New Run!
+2022/07/18 20:04:10 Database connection was succesful
+2022/07/18 20:04:10 API is listening in the port:  8080
+2022/07/18 20:04:23 error executing query for the user products search
+2022/07/18 20:04:50 New Run!
+2022/07/18 20:04:50 Database connection was succesful
+2022/07/18 20:04:50 API is listening in the port:  8080
+2022/07/18 20:04:56 search product is visible
+2022/07/18 20:06:50 New Run!
+2022/07/18 20:06:50 Database connection was succesful
+2022/07/18 20:06:50 API is listening in the port:  8080
+2022/07/18 20:06:56 error executing query for the user products search
+2022/07/18 20:09:01 New Run!
+2022/07/18 20:09:01 Database connection was succesful
+2022/07/18 20:09:01 API is listening in the port:  8080
+2022/07/18 20:09:16 error executing query for the user products search
+2022/07/18 20:13:21 New Run!
+2022/07/18 20:13:21 Database connection was succesful
+2022/07/18 20:13:21 API is listening in the port:  8080
+2022/07/18 20:13:31 error executing query for the user products search
+2022/07/18 20:14:32 New Run!
+2022/07/18 20:14:32 Database connection was succesful
+2022/07/18 20:14:32 API is listening in the port:  8080
+2022/07/18 20:14:38 error executing query for the user products search
+2022/07/18 20:25:02 New Run!
+2022/07/18 20:25:02 Database connection was succesful
+2022/07/18 20:25:02 API is listening in the port:  8080
+2022/07/18 20:25:08 search product is visible
+2022/07/18 20:26:03 Sucess in Viewing Products
+2022/07/18 20:34:38 New Run!
+2022/07/18 20:34:38 Database connection was succesful
+2022/07/18 20:34:38 API is listening in the port:  8080
+2022/07/18 20:34:44 Sucess in Viewing Products
+2022/07/18 20:35:10 search product is visible
+2022/07/18 20:35:57 New Run!
+2022/07/18 20:35:57 Database connection was succesful
+2022/07/18 20:35:57 API is listening in the port:  8080
+2022/07/18 20:36:02 search product is visible
+2022/07/18 20:36:18 search product is visible
