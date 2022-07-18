@@ -7,7 +7,6 @@ import (
 	"Book_Cart_Project/utils"
 	"database/sql"
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -25,7 +24,6 @@ func (c Controller) AdminLoginIndex(w http.ResponseWriter, r *http.Request) {
 func (c Controller) AdminLogin() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		fmt.Println("I'm here")
 		var admin models.User
 		var jwt models.JWT
 
@@ -34,11 +32,9 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 		// checking whether the Login Credentials is of admin
 
 		requestPassword := admin.Password
-		fmt.Println("Password from postman", requestPassword)
 
 		log.Println("Checking whether Admin exists.")
 		admin, err := c.UserRepo.AdminLogin(admin)
-		fmt.Println("admin details", admin.Phone_Number, admin.Email, admin.Password, admin.IsAdmin)
 
 		if err != nil {
 			if err == sql.ErrNoRows {
@@ -64,7 +60,7 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 
 		//getting hashed password from database
 		dbPassword := admin.Password
-		fmt.Println("DB password", dbPassword)
+		//fmt.Println("DB password", dbPassword)
 		//verifying password
 		passwordMatch := utils.VerifyPassword(requestPassword, dbPassword)
 
@@ -180,6 +176,28 @@ func (c Controller) AdminViewUser() http.HandlerFunc {
 
 		//utils.ResponseJSON(w, &viewUser)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User found", &viewUser))
+	}
+}
+
+func (c Controller) AdminBlockProduct() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		var blockProduct models.Product
+
+		json.NewDecoder(r.Body).Decode(&blockProduct)
+
+		blockProduct, err := c.ProductRepo.BlockProduct(blockProduct)
+
+		if err != nil {
+			log.Println("unable to update product")
+			w.WriteHeader(http.StatusNotModified)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "unable to update product", err))
+			return
+		}
+
+		log.Println("updated the product active status")
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "updated the product status by admin", &blockProduct))
+
 	}
 }
 

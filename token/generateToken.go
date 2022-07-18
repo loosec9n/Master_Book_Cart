@@ -8,8 +8,6 @@ import (
 	"github.com/golang-jwt/jwt"
 )
 
-var SECRET_KEY = os.Getenv("SECRET")
-
 type SignedDetails struct {
 	User_ID      int
 	First_Name   string
@@ -21,6 +19,10 @@ type SignedDetails struct {
 
 // to generate token
 func GenerateToken(first_name string, last_name string, email string, phone_number int, user_id int) (signedtoken string, signedrefreshtoken string) {
+
+	var secret_key = os.Getenv("SECRET")
+
+	//log.Println("jwt Secret key: ", secret_key)
 
 	claims := &SignedDetails{
 		User_ID:      user_id,
@@ -35,14 +37,14 @@ func GenerateToken(first_name string, last_name string, email string, phone_numb
 
 	refreshclaims := &SignedDetails{
 		StandardClaims: jwt.StandardClaims{
-			ExpiresAt: time.Now().Local().Add(time.Hour * time.Duration(168)).Unix(),
+			ExpiresAt: time.Now().Local().Add(time.Hour * time.Duration(24)).Unix(),
 		},
 	}
 
 	//Generating token
-	token, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, claims).SignedString([]byte(SECRET_KEY))
+	token, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, claims).SignedString([]byte(secret_key))
 
-	refreshtoken, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, refreshclaims).SignedString([]byte(SECRET_KEY))
+	refreshtoken, _ := jwt.NewWithClaims(jwt.SigningMethodHS256, refreshclaims).SignedString([]byte(secret_key))
 
 	return token, refreshtoken
 }
@@ -50,11 +52,13 @@ func GenerateToken(first_name string, last_name string, email string, phone_numb
 //to verify token
 func ValidateToken(signedtoken string) (bool, error) {
 	//validating token
+	var secret_key = os.Getenv("SECRET")
+
 	token, err := jwt.ParseWithClaims(
 		signedtoken,
 		&SignedDetails{},
 		func(token *jwt.Token) (interface{}, error) {
-			return []byte(SECRET_KEY), nil
+			return []byte(secret_key), nil
 		},
 	)
 

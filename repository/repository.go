@@ -25,6 +25,7 @@ type UserRepository interface {
 type ProductRepository interface {
 	Addproduct(models.Product) (models.Product, error)
 	ViewProduct(models.Filter) ([]Prod, models.Metadata, error)
+	BlockProduct(models.Product) (models.Product, error)
 	AddCategory(models.ProductCategory) (models.ProductCategory, error)
 	ViewCategory() ([]models.ProductCategory, error)
 	AddAuthor(models.ProductAuthor) (models.ProductAuthor, error)

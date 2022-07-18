@@ -527,3 +527,237 @@
 2022/07/14 15:34:21 Products are visible to the admin
 2022/07/14 15:34:33 Products are visible to the admin
 2022/07/14 15:34:44 Products are visible to the admin
+2022/07/15 10:17:07 New Run!
+2022/07/15 10:17:07 Database connection was succesful
+2022/07/15 10:17:07 API is listening in the port:  8080
+2022/07/15 10:19:20 New Run!
+2022/07/15 10:19:20 Database connection was succesful
+2022/07/15 10:19:20 API is listening in the port:  8080
+2022/07/15 10:21:11 New Run!
+2022/07/15 10:21:11 Database connection was succesful
+2022/07/15 10:21:11 API is listening in the port:  8080
+2022/07/15 10:21:21 Checking whether Admin exists.
+2022/07/15 10:21:21 Successfull Admin Login
+2022/07/15 10:23:23 Updated the Product Active Status
+2022/07/15 10:25:59 New Run!
+2022/07/15 10:25:59 Database connection was succesful
+2022/07/15 10:25:59 API is listening in the port:  8080
+2022/07/15 10:26:10 Updated the Product Active Status
+2022/07/15 10:31:13 New Run!
+2022/07/15 10:31:13 Database connection was succesful
+2022/07/15 10:31:13 API is listening in the port:  8080
+2022/07/15 10:31:22 Updated the Product Active Status
+2022/07/15 10:32:56 New Run!
+2022/07/15 10:32:56 Database connection was succesful
+2022/07/15 10:32:56 API is listening in the port:  8080
+2022/07/15 10:33:06 Updated the Product Active Status
+2022/07/15 10:35:45 Updated the Product Active Status
+2022/07/15 10:47:23 New Run!
+2022/07/15 10:47:23 Database connection was succesful
+2022/07/15 10:47:23 API is listening in the port:  8080
+2022/07/15 10:47:30 updated the product active status
+2022/07/15 10:51:53 New Run!
+2022/07/15 10:51:53 Database connection was succesful
+2022/07/15 10:51:53 API is listening in the port:  8080
+2022/07/15 10:52:03 Checking whether user exists.
+2022/07/15 10:52:03 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/15 10:52:03 Signed Up Successfully
+2022/07/15 10:52:36 Checking whether User exists.
+2022/07/15 10:52:36 User exists.
+2022/07/15 10:52:36 User login sucessful
+2022/07/15 10:52:58 Sucess in Viewing Products
+2022/07/15 11:00:42 New Run!
+2022/07/15 11:00:42 Database connection was succesful
+2022/07/15 11:00:42 API is listening in the port:  8080
+2022/07/15 11:00:55 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/07/15 11:01:17 Sucess in Viewing Products
+2022/07/15 11:02:40 error parsing jwt:  token is expired by 52m43s
+2022/07/15 11:02:40 Token Invalid.
+2022/07/15 11:02:40 Invalid Token
+2022/07/15 11:03:02 Product added to cart
+2022/07/15 11:03:19 Success viewing cart
+2022/07/15 11:29:32 New Run!
+2022/07/15 11:29:32 Database connection was succesful
+2022/07/15 11:29:32 API is listening in the port:  8080
+2022/07/15 11:29:41 Checking whether User exists.
+2022/07/15 11:29:41 User exists.
+2022/07/15 11:29:41 User login sucessful
+2022/07/15 11:31:52 New Run!
+2022/07/15 11:31:52 Database connection was succesful
+2022/07/15 11:31:52 API is listening in the port:  8080
+2022/07/15 11:31:58 Checking whether User exists.
+2022/07/15 11:31:58 user details 3
+2022/07/15 11:31:58 User exists.
+2022/07/15 11:31:58 User login sucessful
+2022/07/15 11:33:01 New Run!
+2022/07/15 11:33:01 Database connection was succesful
+2022/07/15 11:33:01 API is listening in the port:  8080
+2022/07/15 11:33:06 Checking whether User exists.
+2022/07/15 11:33:06 user details 0
+2022/07/15 11:33:06 User exists.
+2022/07/15 11:33:06 User login sucessful
+2022/07/15 11:35:23 New Run!
+2022/07/15 11:35:23 Database connection was succesful
+2022/07/15 11:35:23 API is listening in the port:  8080
+2022/07/15 11:35:31 Checking whether User exists.
+2022/07/15 11:35:31 User exists.
+2022/07/15 11:35:31 User login sucessful
+2022/07/15 11:56:00 New Run!
+2022/07/15 11:56:00 Database connection was succesful
+2022/07/15 11:56:00 API is listening in the port:  8080
+2022/07/15 11:56:06 Checking whether User exists.
+2022/07/15 11:56:06 User exists.
+2022/07/15 11:56:06 jwt Secret key:  
+2022/07/15 11:56:06 User login sucessful
+2022/07/15 12:01:12 New Run!
+2022/07/15 12:01:12 Database connection was succesful
+2022/07/15 12:01:12 API is listening in the port:  8080
+2022/07/15 12:01:18 Checking whether User exists.
+2022/07/15 12:01:18 User exists.
+2022/07/15 12:01:18 jwt Secret key:  []
+2022/07/15 12:01:18 User login sucessful
+2022/07/15 12:07:01 New Run!
+2022/07/15 12:07:01 Database connection was succesful
+2022/07/15 12:07:01 API is listening in the port:  8080
+2022/07/15 12:07:07 Checking whether User exists.
+2022/07/15 12:07:07 User exists.
+2022/07/15 12:07:07 jwt Secret key:  [116 42 105 115 47 84 56 104 101 47 115 101 99 42 42 116 75 101 38]
+2022/07/15 12:07:07 User login sucessful
+2022/07/15 12:13:03 New Run!
+2022/07/15 12:13:03 Database connection was succesful
+2022/07/15 12:13:03 API is listening in the port:  8080
+2022/07/15 12:13:09 Checking whether User exists.
+2022/07/15 12:13:09 User exists.
+2022/07/15 12:13:09 jwt Secret key:  t*is/T8he/sec**tKe&
+2022/07/15 12:13:09 User login sucessful
+2022/07/15 12:18:30 New Run!
+2022/07/15 12:18:30 Database connection was succesful
+2022/07/15 12:18:30 API is listening in the port:  8080
+2022/07/15 12:18:36 Checking whether User exists.
+2022/07/15 12:18:36 User exists.
+2022/07/15 12:18:36 jwt Secret key:  t*is/T8he/sec**tKe&
+2022/07/15 12:18:36 User login sucessful
+2022/07/15 12:18:59 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjowLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NDg5NTZ9.jisWwOPINV7R6maIjHlEMwYYhu8LjcK4R-esApgqF6M [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjowLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NDg5NTZ9.jisWwOPINV7R6maIjHlEMwYYhu8LjcK4R-esApgqF6M]
+2022/07/15 12:18:59 error parsing jwt:  signature is invalid
+2022/07/15 12:18:59 Token Invalid.
+2022/07/15 12:18:59 Invalid Token
+2022/07/15 12:22:17 New Run!
+2022/07/15 12:22:17 Database connection was succesful
+2022/07/15 12:22:17 API is listening in the port:  8080
+2022/07/15 12:22:29 Checking whether User exists.
+2022/07/15 12:22:29 User exists.
+2022/07/15 12:22:29 User login sucessful
+2022/07/15 12:23:14 New Run!
+2022/07/15 12:23:14 Database connection was succesful
+2022/07/15 12:23:14 API is listening in the port:  8080
+2022/07/15 12:23:25 Checking whether User exists.
+2022/07/15 12:23:25 User exists.
+2022/07/15 12:23:25 User login sucessful
+2022/07/15 12:23:44 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjowLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NDg5NTZ9.jisWwOPINV7R6maIjHlEMwYYhu8LjcK4R-esApgqF6M [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjowLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NDg5NTZ9.jisWwOPINV7R6maIjHlEMwYYhu8LjcK4R-esApgqF6M]
+2022/07/15 12:23:44 error parsing jwt:  signature is invalid
+2022/07/15 12:23:44 Token Invalid.
+2022/07/15 12:23:44 Invalid Token
+2022/07/15 12:24:00 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4 [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4]
+2022/07/15 12:24:00 Sucess in Viewing Products
+2022/07/15 12:34:17 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4 [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4]
+2022/07/15 12:34:17 Sucess in Viewing Products
+2022/07/15 12:34:58 New Run!
+2022/07/15 12:34:59 Database connection was succesful
+2022/07/15 12:34:59 API is listening in the port:  8080
+2022/07/15 12:35:05 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4 [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4]
+2022/07/15 12:35:05 Payload 0xc000042210
+2022/07/15 12:35:05 Sucess in Viewing Products
+2022/07/15 13:07:25 New Run!
+2022/07/15 13:07:25 Database connection was succesful
+2022/07/15 13:07:25 API is listening in the port:  8080
+2022/07/15 13:07:37 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4 [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4]
+2022/07/15 13:07:37 Payload 
+2022/07/15 13:07:37 Sucess in Viewing Products
+2022/07/15 13:41:03 New Run!
+2022/07/15 13:41:03 Database connection was succesful
+2022/07/15 13:41:03 API is listening in the port:  8080
+2022/07/15 13:41:17 auth : bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4 [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4]
+2022/07/15 13:41:17 Sucess in Viewing Products
+2022/07/15 13:42:07 New Run!
+2022/07/15 13:42:07 Database connection was succesful
+2022/07/15 13:42:07 API is listening in the port:  8080
+2022/07/15 13:42:13 Sucess in Viewing Products
+2022/07/15 13:42:32 Sucess in Viewing Products
+2022/07/15 13:43:37 New Run!
+2022/07/15 13:43:37 Database connection was succesful
+2022/07/15 13:43:37 API is listening in the port:  8080
+2022/07/15 13:43:45 Sucess in Viewing Products
+2022/07/15 13:45:26 New Run!
+2022/07/15 13:45:26 Database connection was succesful
+2022/07/15 13:45:26 API is listening in the port:  8080
+2022/07/15 13:45:31 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjozLCJGaXJzdF9OYW1lIjoiSnVzdGluMiIsIkxhc3RfTmFtZSI6IkpvaG4yIiwiRW1haWwiOiJqdXN0aW4yQHRlc3QuY29tIiwiUGhvbmVfTnVtYmVyIjoxMjM0NTY3ODkwLCJleHAiOjE2NTc5NTQ0MDV9.FKmpQ-5i8zh3Y6L6-Jo3cD-uOGxbY7F65XqLTE4jnc4
+2022/07/15 13:45:31 Sucess in Viewing Products
+2022/07/15 13:45:57 New Run!
+2022/07/15 13:45:57 Database connection was succesful
+2022/07/15 13:45:57 API is listening in the port:  8080
+2022/07/15 13:46:03 Sucess in Viewing Products
+2022/07/15 13:47:18 New Run!
+2022/07/15 13:47:18 Database connection was succesful
+2022/07/15 13:47:18 API is listening in the port:  8080
+2022/07/15 13:47:24 Sucess in Viewing Products
+2022/07/15 13:52:37 New Run!
+2022/07/15 13:52:37 Database connection was succesful
+2022/07/15 13:52:37 API is listening in the port:  8080
+2022/07/15 13:52:54 error parsing jwt:  signature is invalid
+2022/07/15 13:52:54 Token Invalid.
+2022/07/15 13:52:54 Invalid Token
+2022/07/15 13:53:15 error parsing jwt:  signature is invalid
+2022/07/15 13:53:15 Token Invalid.
+2022/07/15 13:53:15 Invalid Token
+2022/07/15 13:59:28 Checking whether Admin exists.
+2022/07/15 13:59:28 Successfull Admin Login
+2022/07/15 14:01:29 error parsing jwt:  signature is invalid
+2022/07/15 14:01:29 Token Invalid.
+2022/07/15 14:01:29 Invalid Token
+2022/07/15 14:07:51 Found Category
+2022/07/15 14:08:11 Sucessfully found author
+2022/07/15 14:08:27 Products are visible to the admin
+2022/07/15 14:08:40 Products are visible to the admin
+2022/07/15 14:08:52 updated the product active status
+2022/07/15 14:09:30 New Run!
+2022/07/15 14:09:30 Database connection was succesful
+2022/07/15 14:09:30 API is listening in the port:  8080
+2022/07/15 14:09:38 Products are visible to the admin
+2022/07/15 14:14:09 updated the product active status
+2022/07/15 14:15:40 New Run!
+2022/07/15 14:15:40 Database connection was succesful
+2022/07/15 14:15:40 API is listening in the port:  8080
+2022/07/15 14:17:20 New Run!
+2022/07/15 14:17:20 Database connection was succesful
+2022/07/15 14:17:20 API is listening in the port:  8080
+2022/07/15 14:17:27 unable to update product
+2022/07/15 14:18:21 New Run!
+2022/07/15 14:18:21 Database connection was succesful
+2022/07/15 14:18:21 API is listening in the port:  8080
+2022/07/15 14:18:28 Error blockUser sql: Scan error on column index 4, name "product_price": destination not a pointer
+2022/07/15 14:18:28 unable to update product
+2022/07/15 14:20:43 New Run!
+2022/07/15 14:20:43 Database connection was succesful
+2022/07/15 14:20:43 API is listening in the port:  8080
+2022/07/15 14:20:51 Error blockUser <nil>
+2022/07/15 14:20:51 updated the product active status
+2022/07/15 14:43:44 New Run!
+2022/07/15 14:43:44 Database connection was succesful
+2022/07/15 14:43:44 API is listening in the port:  8080
+2022/07/15 14:43:55 Parse Token &{eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g 0xc00009a138 map[alg:HS256 typ:JWT] 0xc0001532c0 pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g true}
+2022/07/15 14:43:55 generated token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g
+2022/07/15 14:43:55 Products are visible to the admin
+2022/07/15 14:50:09 New Run!
+2022/07/15 14:50:09 Database connection was succesful
+2022/07/15 14:50:09 API is listening in the port:  8080
+2022/07/15 14:50:26 Parse Token &{eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g 0xc000004150 map[alg:HS256 typ:JWT] 0xc0002ac000 pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g true}
+2022/07/15 14:50:26 generated token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g
+2022/07/15 14:50:26 User ID 
+2022/07/15 14:50:26 Products are visible to the admin
+2022/07/15 14:51:09 New Run!
+2022/07/15 14:51:09 Database connection was succesful
+2022/07/15 14:51:09 API is listening in the port:  8080
+2022/07/15 14:51:22 Parse Token &{eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g 0xc000096138 map[alg:HS256 typ:JWT] 0xc000153360 pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g true}
+2022/07/15 14:51:22 generated token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyX0lEIjoxLCJGaXJzdF9OYW1lIjoiSnVzdGluIiwiTGFzdF9OYW1lIjoiSm9obiIsIkVtYWlsIjoianVzdGluQGFkbWluLmNvbSIsIlBob25lX051bWJlciI6OTUzOTU5ODg1NSwiZXhwIjoxNjU3OTYwMTY4fQ.pwLboNqCGfr-SgoAUg20_XXsGP6vTQAliUmGrgeYH4g
+2022/07/15 14:51:22 User ID 1
+2022/07/15 14:51:22 Products are visible to the admin

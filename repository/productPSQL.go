@@ -106,3 +106,29 @@ func (r Repository) ViewProduct(filter models.Filter) ([]Prod, models.Metadata, 
 	return products, models.ComputeMetadata(toatalRecords, filter.Page, filter.PageSize), nil
 
 }
+
+func (r Repository) BlockProduct(product models.Product) (models.Product, error) {
+	query := `UPDATE product
+		SET is_active = $1
+		WHERE product_id = $2
+		RETURNING
+		product_id,
+		is_active,
+		product_name,
+		product_description,
+		product_price,
+		product_updated_at;`
+	err := r.DB.QueryRow(query,
+		product.Is_Active,
+		product.Product_ID,
+	).Scan(
+		&product.Product_ID,
+		&product.Is_Active,
+		&product.Product_Name,
+		&product.Product_Description,
+		&product.Product_Price,
+		&product.Product_Updated_At,
+	)
+	return product, err
+
+}

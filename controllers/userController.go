@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -110,13 +111,12 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		}
 
 		//generationg jwt token
-		token, refresh_token := token.GenerateToken(founduser.First_Name, founduser.Last_Name, founduser.Email, founduser.Phone_Number, founduser.UserID)
+		token, refresh_token := token.GenerateToken(founduser.First_Name, founduser.Last_Name, founduser.Email, founduser.Phone_Number, founduser.User_ID)
 
 		jwt.Token = token
 		jwt.Refresh_Token = refresh_token
 
 		w.WriteHeader(http.StatusOK)
-		//	utils.ResponseJSON(w, jwt)
 		log.Println("User login sucessful")
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User login sucessful", jwt))
 
@@ -126,18 +126,36 @@ func (c Controller) UserLogin() http.HandlerFunc {
 func (c Controller) UserHomePage() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		f := models.Filter{}
+		//getting UserId form thr JWT payload
+
+		params, err := strconv.Atoi(r.URL.Query().Get("page"))
+
+		if err != nil || params < 1 {
+			log.Println("Error converting string to int", err)
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting page to params for page number", err))
+			return
+		}
+		f := models.Filter{
+			PageSize: 5,
+			Page:     params,
+		}
 		//searchParam := chi.URLParam(r, "search")
-		products, _, err := c.ProductRepo.ViewProduct(f)
+		products, result, err := c.ProductRepo.ViewProduct(f)
 
 		if err != nil {
 			log.Println("Error - no query execution - Product View", err)
 			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error - no query execution - Product View", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error - no query execution - Product View", err))
 		}
 
 		log.Println("Sucess in Viewing Products")
-		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "home page view products sucess", &products))
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "home page view products success", map[string]interface{}{
+			"total products": result.TotalRecords,
+			"current page":   result.CurrentPage,
+			"total pages":    result.LastPage,
+			"data":           &products,
+		}))
 
 		// log.Println("Logged in Successfully")
 		// //utils.ResponseJSON(w, "Succesfully logged in")

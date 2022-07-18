@@ -24,12 +24,14 @@ func TokenVerifyMiddleware(next http.Handler) http.Handler {
 				log.Println("Token Invalid.")
 				w.WriteHeader(http.StatusUnauthorized)
 				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Token", err))
+				return
 			}
 
 			if !ok {
 				log.Println("Invalid Token")
 				w.WriteHeader(http.StatusUnauthorized)
 				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Token", nil))
+				return
 			} else if ok {
 				next.ServeHTTP(w, r)
 			}

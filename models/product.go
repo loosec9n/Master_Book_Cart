@@ -5,6 +5,7 @@ import "time"
 //Product -> product table schema
 type Product struct {
 	Product_ID          uint            `json:"productId"`
+	Is_Active           bool            `json:"isActive"`
 	Product_Name        string          `json:"productName"`
 	Product_Description string          `json:"produtDescription"`
 	Product_Author      ProductAuthor   `json:"productAuthor"`

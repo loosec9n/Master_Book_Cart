@@ -15,8 +15,9 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.TokenVerifyMiddleware)
 		//r.Get("/admin/logout", Controller.AdminLogout)
-		r.Post("/admin/addproduct", Controller.AdminProductAdd())
-		r.Get("/admin/viewproduct", Controller.AdminProductView())
+		r.Post("/admin/add/product", Controller.AdminProductAdd())
+		r.Get("/admin/view/product", Controller.AdminProductView())
+		r.Post("/admin/block/product", Controller.AdminBlockProduct())
 		r.Post("/admin/blockuser", Controller.AdminBlockUser())
 		r.Get("/admin/viewuser", Controller.AdminViewUser())
 		r.Post("/admin/add/category", Controller.AddCategory())
