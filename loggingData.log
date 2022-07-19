@@ -59,3 +59,131 @@
 2022/07/18 20:35:57 API is listening in the port:  8080
 2022/07/18 20:36:02 search product is visible
 2022/07/18 20:36:18 search product is visible
+2022/07/18 20:48:37 New Run!
+2022/07/18 20:48:37 Database connection was succesful
+2022/07/18 20:48:37 API is listening in the port:  8080
+2022/07/18 20:49:08 Product is not active
+2022/07/18 20:53:50 search product is visible
+2022/07/18 20:57:48 New Run!
+2022/07/18 20:57:48 Database connection was succesful
+2022/07/18 20:57:48 API is listening in the port:  8080
+2022/07/18 20:57:59 
+2022/07/18 20:57:59 Sucess in Viewing Products
+2022/07/18 20:59:15 New Run!
+2022/07/18 20:59:15 Database connection was succesful
+2022/07/18 20:59:15 API is listening in the port:  8080
+2022/07/18 20:59:22 0 strconv.Atoi: parsing "": invalid syntax
+2022/07/18 20:59:22 Sucess in Viewing Products
+2022/07/18 21:00:43 New Run!
+2022/07/18 21:00:44 Database connection was succesful
+2022/07/18 21:00:44 API is listening in the port:  8080
+2022/07/18 21:00:52 0 strconv.Atoi: parsing "": invalid syntax
+2022/07/18 21:00:52 Sucess in Viewing Products
+2022/07/18 22:17:19 New Run!
+2022/07/18 22:17:20 Database connection was succesful
+2022/07/18 22:17:20 API is listening in the port:  8080
+2022/07/18 22:17:31 search product is visible
+2022/07/19 09:49:33 error parsing jwt:  signature is invalid
+2022/07/19 09:49:33 Token Invalid.
+2022/07/19 10:12:10 search product is visible
+2022/07/19 10:21:29 New Run!
+2022/07/19 10:21:29 Database connection was succesful
+2022/07/19 10:21:29 API is listening in the port:  8080
+2022/07/19 10:21:45 
+2022/07/19 10:21:45 Sucess in Viewing Products
+2022/07/19 10:22:24 New Run!
+2022/07/19 10:22:24 Database connection was succesful
+2022/07/19 10:22:24 API is listening in the port:  8080
+2022/07/19 10:22:31 justin2@test.com
+2022/07/19 10:22:31 Sucess in Viewing Products
+2022/07/19 10:26:27 New Run!
+2022/07/19 10:26:27 Database connection was succesful
+2022/07/19 10:26:27 API is listening in the port:  8080
+2022/07/19 10:26:34 false
+2022/07/19 10:26:34 Sucess in Viewing Products
+2022/07/19 11:19:14 Checking whether User exists.
+2022/07/19 11:19:14 User exists.
+2022/07/19 11:19:14 User login sucessful
+2022/07/19 11:27:47 New Run!
+2022/07/19 11:27:47 Database connection was succesful
+2022/07/19 11:27:47 API is listening in the port:  8080
+2022/07/19 11:28:00 Checking whether User exists.
+2022/07/19 11:28:00 User exists.
+2022/07/19 11:28:00 User login sucessful
+2022/07/19 11:28:20 false
+2022/07/19 11:28:41 false
+2022/07/19 11:28:41 Products are visible to the admin
+2022/07/19 11:29:51 New Run!
+2022/07/19 11:29:51 Database connection was succesful
+2022/07/19 11:29:51 API is listening in the port:  8080
+2022/07/19 11:29:59 Checking whether User exists.
+2022/07/19 11:29:59 User exists.
+2022/07/19 11:29:59 User login sucessful
+2022/07/19 11:30:12 error parsing jwt:  signature is invalid
+2022/07/19 11:30:12 Token Invalid.
+2022/07/19 11:30:20 Checking whether Admin exists.
+2022/07/19 11:30:20 Successfull Admin Login
+2022/07/19 11:30:37 error parsing jwt:  signature is invalid
+2022/07/19 11:30:37 Token Invalid.
+2022/07/19 11:43:56 false
+2022/07/19 11:43:56 Success viewing cart
+2022/07/19 12:06:09 New Run!
+2022/07/19 12:06:09 Database connection was succesful
+2022/07/19 12:06:09 API is listening in the port:  8080
+2022/07/19 12:06:17 false
+2022/07/19 12:06:17 Success viewing cart
+2022/07/19 12:08:45 New Run!
+2022/07/19 12:08:45 Database connection was succesful
+2022/07/19 12:08:45 API is listening in the port:  8080
+2022/07/19 12:08:55 false
+2022/07/19 12:08:55 Success viewing cart
+2022/07/19 12:22:16 New Run!
+2022/07/19 12:22:16 Database connection was succesful
+2022/07/19 12:22:16 API is listening in the port:  8080
+2022/07/19 12:22:22 false
+2022/07/19 12:22:22 Success viewing cart
+2022/07/19 12:35:45 New Run!
+2022/07/19 12:35:46 Database connection was succesful
+2022/07/19 12:35:46 API is listening in the port:  8080
+2022/07/19 12:35:58 false
+2022/07/19 12:35:58 Success viewing cart
+2022/07/19 12:36:42 error parsing jwt:  signature is invalid
+2022/07/19 12:36:42 Token Invalid.
+2022/07/19 12:36:56 false
+2022/07/19 12:36:56 Product added to cart
+2022/07/19 12:37:01 false
+2022/07/19 12:37:01 Success viewing cart
+2022/07/19 12:38:48 New Run!
+2022/07/19 12:38:48 Database connection was succesful
+2022/07/19 12:38:48 API is listening in the port:  8080
+2022/07/19 12:38:59 false
+2022/07/19 12:38:59 Success viewing cart
+2022/07/19 15:35:39 New Run!
+2022/07/19 15:35:39 Database connection was succesful
+2022/07/19 15:35:39 API is listening in the port:  8080
+2022/07/19 15:36:23 error parsing jwt:  signature is invalid
+2022/07/19 15:36:23 Token Invalid.
+2022/07/19 15:36:46 error parsing jwt:  signature is invalid
+2022/07/19 15:36:46 Token Invalid.
+2022/07/19 15:37:01 false
+2022/07/19 15:37:01 Sucess in Viewing Products
+2022/07/19 15:37:15 error parsing jwt:  signature is invalid
+2022/07/19 15:37:15 Token Invalid.
+2022/07/19 15:37:22 false
+2022/07/19 15:37:22 search product is visible
+2022/07/19 15:37:53 false
+2022/07/19 15:37:53 Error adding to cart
+2022/07/19 15:38:40 Checking whether user exists.
+2022/07/19 15:38:40 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/19 15:38:40 Signed Up Successfully
+2022/07/19 15:38:50 Checking whether User exists.
+2022/07/19 15:38:50 User exists.
+2022/07/19 15:38:50 User login sucessful
+2022/07/19 15:39:06 false
+2022/07/19 15:39:06 Sucess in Viewing Products
+2022/07/19 15:39:43 false
+2022/07/19 15:39:43 search product is visible
+2022/07/19 15:40:17 false
+2022/07/19 15:40:17 Product added to cart
+2022/07/19 15:41:26 false
+2022/07/19 15:41:26 Success viewing cart

@@ -3,6 +3,7 @@
 
 CREATE TABLE IF NOT EXISTS product(
     product_id BIGSERIAL PRIMARY KEY,
+    is_active BOOLEAN DEFAULT TRUE,
     product_name VARCHAR(400) NOT NULL,
     product_description VARCHAR(500),
     product_category_id BIGINT REFERENCES product_category(category_id),

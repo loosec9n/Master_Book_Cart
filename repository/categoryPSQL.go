@@ -15,8 +15,7 @@ func (r Repository) AddCategory(category models.ProductCategory) (models.Product
 		RETURNING
 		category_id,
 		category_name,
-		category_description,
-		category_created_at;`
+		category_description;`
 
 	err := r.DB.QueryRow(query,
 		category.Category_ID,
@@ -25,7 +24,7 @@ func (r Repository) AddCategory(category models.ProductCategory) (models.Product
 		&category.Category_ID,
 		&category.Category_Name,
 		&category.Category_Description,
-		&category.Category_Created_At)
+	)
 
 	return category, err
 }
@@ -37,8 +36,7 @@ func (r Repository) ViewCategory() ([]models.ProductCategory, error) {
 	query := `SELECT 
 		category_id, 
 		category_name,
-		category_description,
-		category_created_at
+		category_description
 		FROM 
 		product_category;`
 
@@ -57,7 +55,7 @@ func (r Repository) ViewCategory() ([]models.ProductCategory, error) {
 			&category.Category_ID,
 			&category.Category_Name,
 			&category.Category_Description,
-			&category.Category_Created_At); err != nil {
+		); err != nil {
 			return categories, err
 		}
 		categories = append(categories, category)
@@ -78,14 +76,13 @@ func (r Repository) AddAuthor(author models.ProductAuthor) (models.ProductAuthor
 			VALUES($1,$2)
 			RETURNING
 			author_id,
-			author_name,
-			author_created_at;`
+			author_name;`
 	err := r.DB.QueryRow(query,
 		author.Author_ID,
 		author.Author_Name).Scan(
 		&author.Author_ID,
 		&author.Author_Name,
-		&author.Author_Created_At)
+	)
 
 	return author, err
 }
@@ -114,7 +111,7 @@ func (r Repository) ViewAuthor() ([]models.ProductAuthor, error) {
 		err := rows.Scan(
 			&author.Author_ID,
 			&author.Author_Name,
-			&author.Author_Created_At)
+		)
 		if err != nil {
 			log.Println("Was not able to Scan in Author table")
 			return nil, err

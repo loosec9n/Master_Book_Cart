@@ -62,8 +62,7 @@ func (r Repository) UserLogin(user models.User) (models.User, error) {
 		password,
 		email,
 		phone_number,
-		is_active, 
-		created_at
+		is_active 
 		FROM 
 		users 
 		WHERE email = $1`
@@ -76,7 +75,7 @@ func (r Repository) UserLogin(user models.User) (models.User, error) {
 		&user.Email,
 		&user.Phone_Number,
 		&user.Is_Active,
-		&user.CreatedAt)
+	)
 
 	return user, err
 }
@@ -90,8 +89,7 @@ func (r Repository) AdminLogin(admin models.User) (models.User, error) {
 	password,
 	email,
 	phone_number,
-	is_active, 
-	created_at
+	is_active
 	FROM 
 	users 
 	WHERE email = $1`
@@ -107,7 +105,7 @@ func (r Repository) AdminLogin(admin models.User) (models.User, error) {
 		&admin.Email,
 		&admin.Phone_Number,
 		&admin.IsAdmin,
-		&admin.CreatedAt)
+	)
 
 	return admin, err
 }
@@ -122,8 +120,7 @@ func (r Repository) BlockUser(user models.User) (models.User, error) {
 				last_name, 
 				email,
 				phone_number,
-				is_active, 
-				created_at;`
+				is_active;`
 
 	err := r.DB.QueryRow(query,
 		user.Is_Active,
@@ -134,7 +131,7 @@ func (r Repository) BlockUser(user models.User) (models.User, error) {
 		&user.Email,
 		&user.Phone_Number,
 		&user.Is_Active,
-		&user.CreatedAt)
+	)
 	return user, err
 }
 
@@ -150,8 +147,7 @@ func (r Repository) ViewUser() ([]models.User, error) {
 		email, 
 		phone_number, 
 		is_active, 
-		is_admin,	
-		created_at		
+		is_admin		
 		FROM 
 		users;`
 	row, err := r.DB.Query(query)

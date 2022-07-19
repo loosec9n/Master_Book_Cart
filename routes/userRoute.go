@@ -15,9 +15,9 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Get("/", Controller.HomePage)
 
 	routes.Group(func(r chi.Router) {
-		r.Use(middleware.TokenVerifyMiddleware)
+		r.Use(middleware.UserVerifyMiddleware)
 		//r.Get("/user/logout", Controller.UserLogout)
-		r.Post("/homepage/product", Controller.SearchProduct())
+		r.Get("/homepage/product", Controller.SearchProduct())
 		r.Get("/homepage", Controller.UserHomePage())
 		r.Post("/user/add/cart", Controller.AddToCart())
 		r.Post("/user/view/cart", Controller.ViewCart())

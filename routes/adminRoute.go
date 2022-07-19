@@ -13,7 +13,7 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Post("/admin/login", Controller.AdminLogin())
 
 	routes.Group(func(r chi.Router) {
-		r.Use(middleware.TokenVerifyMiddleware)
+		r.Use(middleware.AdminVerifyMiddleware)
 		//r.Get("/admin/logout", Controller.AdminLogout)
 		r.Post("/admin/add/product", Controller.AdminProductAdd())
 		r.Get("/admin/view/product", Controller.AdminProductView())

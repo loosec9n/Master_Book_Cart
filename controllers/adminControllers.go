@@ -71,7 +71,7 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 			return
 		}
 
-		token, refresh_token := token.GenerateToken(admin.First_Name, admin.Last_Name, admin.Email, admin.Phone_Number, admin.User_ID)
+		token, refresh_token := token.GenerateTokenAdmin(admin.First_Name, admin.Last_Name, admin.Email, admin.Phone_Number, admin.User_ID, admin.IsAdmin)
 
 		jwt.Token = token
 		jwt.Refresh_Token = refresh_token

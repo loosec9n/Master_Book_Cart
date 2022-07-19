@@ -9,7 +9,6 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"time"
 )
 
 func (c Controller) UserSignUpIndex(w http.ResponseWriter, r *http.Request) {
@@ -43,7 +42,7 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 		log.Println("Hashed Password: ", user.Password)
 
 		//creating update time
-		user.CreatedAt, _ = time.Parse(time.RFC3339, time.Now().Format(time.RFC3339))
+		// user.CreatedAt, _ = time.Parse(time.RFC3339, time.Now().Format(time.RFC3339))
 
 		//Registering user to the database
 		user = c.UserRepo.UserSignup(user)
@@ -111,7 +110,7 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		}
 
 		//generationg jwt token
-		token, refresh_token := token.GenerateToken(founduser.First_Name, founduser.Last_Name, founduser.Email, founduser.Phone_Number, founduser.User_ID)
+		token, refresh_token := token.GenerateTokenUser(founduser.First_Name, founduser.Last_Name, founduser.Email, founduser.Phone_Number, founduser.User_ID, founduser.IsAdmin)
 
 		jwt.Token = token
 		jwt.Refresh_Token = refresh_token

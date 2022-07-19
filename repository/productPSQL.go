@@ -23,7 +23,8 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 		product_description, 
 		product_price,
 		product_category_id,
-		product_author_id)
+		product_author_id,
+		prduct_inentory_id)
 		VALUES($1, $2, $3, $4, $5) 
 		RETURNING 
 		product_id, 
@@ -39,6 +40,7 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 		product.Product_Price,
 		product.Product_Category.Category_ID,
 		product.Product_Author.Author_ID,
+		product.Product_Inventory.Inventory_ID,
 	).Scan(
 		&product.Product_ID,
 		&product.Product_Name,
@@ -119,8 +121,7 @@ func (r Repository) BlockProduct(product models.Product) (models.Product, error)
 		is_active,
 		product_name,
 		product_description,
-		product_price,
-		product_updated_at;`
+		product_price;`
 	err := r.DB.QueryRow(query,
 		product.Is_Active,
 		product.Product_ID,
@@ -130,7 +131,6 @@ func (r Repository) BlockProduct(product models.Product) (models.Product, error)
 		&product.Product_Name,
 		&product.Product_Description,
 		&product.Product_Price,
-		&product.Product_Updated_At,
 	)
 	return product, err
 
@@ -146,8 +146,7 @@ func (r Repository) UserSearchProduct(product_id int) (Prod, error) {
 	product.product_description,
 	product_category.category_name,
 	product_author.author_name,
-	product.product_price,
-	product.product_created_at
+	product.product_price
 	FROM product
 	INNER JOIN 
 	product_category 
@@ -169,7 +168,6 @@ func (r Repository) UserSearchProduct(product_id int) (Prod, error) {
 		&usp.Category,
 		&usp.Author,
 		&usp.Price,
-		&usp.Created_At,
 	)
 
 	return usp, err
