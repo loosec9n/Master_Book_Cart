@@ -181,3 +181,46 @@ func (r Repository) ViewUser() ([]models.User, error) {
 	}
 	return users, nil
 }
+
+func (r Repository) FindUserByEmail(user models.User) (models.User, error) {
+
+	//var user models.User
+
+	query := `SELECT 
+		user_id,
+		first_name,
+		last_name,
+		password,
+		email,
+		is_active 
+		FROM 
+		users 
+		WHERE email = $1`
+
+	err := r.DB.QueryRow(query, user.Email).Scan(
+		&user.User_ID,
+		&user.First_Name,
+		&user.Last_Name,
+		&user.Password,
+		&user.Email,
+		&user.Is_Active,
+	)
+
+	return user, err
+}
+
+func (r Repository) ForgetPasswordUpdate(user models.User, pass string) (models.ForgotPasswordInput, error) {
+
+	var usr models.ForgotPasswordInput
+
+	query := `UPDATE
+				users
+				SET password = $1
+				WHERE email = $2
+				RETURNING
+				email;`
+	err := r.DB.QueryRow(query, pass, user.Email).Scan(
+		&usr.Email,
+	)
+	return usr, err
+}

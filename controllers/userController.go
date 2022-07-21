@@ -9,6 +9,8 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+
+	"github.com/thanhpk/randstr"
 )
 
 func (c Controller) UserSignUpIndex(w http.ResponseWriter, r *http.Request) {
@@ -39,7 +41,7 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 		// assigning hashed password to usermodels
 		user.Password = hashedPassword
 
-		log.Println("Hashed Password: ", user.Password)
+		//log.Println("Hashed Password: ", user.Password)
 
 		//creating update time
 		// user.CreatedAt, _ = time.Parse(time.RFC3339, time.Now().Format(time.RFC3339))
@@ -99,9 +101,9 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		dbPassword := founduser.Password
 
 		//verifying password
-		passwordMatch := utils.VerifyPassword(requestPassword, dbPassword)
+		ok := utils.VerifyPassword(requestPassword, dbPassword)
 
-		if !passwordMatch {
+		if !ok {
 			log.Println("Invalid user password.")
 			//utils.ResponseJSON(w, "Inavlid Password")
 			w.WriteHeader(http.StatusBadGateway)
@@ -195,6 +197,135 @@ func (c Controller) SearchProduct() http.HandlerFunc {
 		log.Println("search product is visible")
 		w.WriteHeader(http.StatusFound)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "search product is visible", &product))
+
+	}
+}
+
+func (c Controller) ForgetPassword() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var userCred models.User
+
+		json.NewDecoder(r.Body).Decode(&userCred)
+
+		//finding the user by email
+		user, err := c.UserRepo.FindUserByEmail(userCred)
+
+		//checking is user sigedup or not
+		if err != nil {
+			log.Println("user is not present in the database")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "user is not present in the database", err))
+			return
+		}
+
+		//checking the user is active in database or not
+		if !user.Is_Active {
+			log.Println("not an active user")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "not an active user", nil))
+			return
+		}
+
+		//generating random code for resetting password
+		resetToken := randstr.String(20)
+
+		//encoding the random string
+		//passwordResetToken := utils.Encode(resetToken)\
+		passwordResetToken := utils.HashPassword(resetToken)
+
+		//update the hashed password into the database
+		modUser, err := c.UserRepo.ForgetPasswordUpdate(user, passwordResetToken)
+
+		if err != nil {
+			log.Println("not able to update the dummy password", err)
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "not able to update the password in the user table", &modUser))
+			return
+		}
+
+		log.Println("password hashed and updated in user - forget password ")
+		w.WriteHeader(http.StatusAccepted)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "password hashed and updated in user - sending the email", map[string]interface{}{
+			"user":  &modUser,
+			"token": resetToken,
+		}))
+
+		//send the email for resetting the password
+		sendEmailData := utils.EmailData{
+			URL:       "localhost:8080/user/forget/password/" + resetToken,
+			FirstName: user.First_Name,
+			Subject:   "Your password reset link",
+		}
+
+		err = utils.SendEmail(user, &sendEmailData)
+		if err != nil {
+			log.Println("error sending the email", err)
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error sending the email", err))
+			return
+		}
+
+		log.Println("email send for reseting the data")
+		w.WriteHeader(http.StatusAccepted)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "email send for reseting the data", map[string]interface{}{
+			"user":  &modUser,
+			"token": resetToken,
+		}))
+	}
+}
+
+func (c Controller) ResetPassword() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		//get resetToken from params
+		var resetToken models.ResetPasswordInput
+		var userCred models.User
+
+		json.NewDecoder(r.Body).Decode(&resetToken)
+
+		userCred.Email = resetToken.Email
+
+		//checking the password match
+		hashedResetPassword := resetToken.PasswordConfirm
+
+		//verify the token with users in db
+		user, err := c.UserRepo.FindUserByEmail(userCred)
+
+		//checking the user is active in database or not
+		if err != nil {
+			log.Println("user is not present in the database")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "user is not present in the database", err))
+			return
+		}
+		if !user.Is_Active {
+			log.Println("not an active user")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "not an active user", nil))
+			return
+		}
+
+		ok := utils.VerifyPassword(resetToken.TokenPassword, user.Password)
+
+		if !ok {
+			log.Println("Invalid user password.")
+			w.WriteHeader(http.StatusBadGateway)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Invalid user password", &user.First_Name))
+			return
+		}
+
+		log.Println("Token and password match : updating the new password")
+		updateUser, err := c.UserRepo.ForgetPasswordUpdate(user, hashedResetPassword)
+		if err != nil {
+			log.Println("not able to update the password in the user table")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "ot able to update the password in the user table", &updateUser))
+			return
+		}
+
+		log.Println("new password updated")
+		w.WriteHeader(http.StatusAccepted)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "new password updated", &updateUser))
 
 	}
 }

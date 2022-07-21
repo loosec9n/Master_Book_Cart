@@ -62,9 +62,9 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 		dbPassword := admin.Password
 		//fmt.Println("DB password", dbPassword)
 		//verifying password
-		passwordMatch := utils.VerifyPassword(requestPassword, dbPassword)
+		ok := utils.VerifyPassword(requestPassword, dbPassword)
 
-		if !passwordMatch {
+		if !ok {
 			log.Println("Invalid Admin Password.")
 			w.WriteHeader(http.StatusUnauthorized)
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Admin Password", nil))

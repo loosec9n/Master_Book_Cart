@@ -187,3 +187,138 @@
 2022/07/19 15:40:17 Product added to cart
 2022/07/19 15:41:26 false
 2022/07/19 15:41:26 Success viewing cart
+2022/07/21 11:58:48 New Run!
+2022/07/21 11:58:48 Database connection was succesful
+2022/07/21 11:58:48 API is listening in the port:  8080
+2022/07/21 11:59:12 Checking whether user exists.
+2022/07/21 11:59:12 Signed Up Successfully
+2022/07/21 11:59:23 Checking whether User exists.
+2022/07/21 11:59:23 User exists.
+2022/07/21 11:59:23 User login sucessful
+2022/07/21 12:02:13 Send the password reset email
+2022/07/21 12:02:13 user is not present in the database
+2022/07/21 12:02:13 not an active user
+2022/07/21 12:02:13 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:02:13 password hashed and updated in user - forget password 
+2022/07/21 12:02:59 Send the password reset email
+2022/07/21 12:02:59 user is not present in the database
+2022/07/21 12:02:59 not an active user
+2022/07/21 12:02:59 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:02:59 password hashed and updated in user - forget password 
+2022/07/21 12:13:36 New Run!
+2022/07/21 12:13:36 Database connection was succesful
+2022/07/21 12:13:36 API is listening in the port:  8080
+2022/07/21 12:13:55 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:13:55 password hashed and updated in user - forget password 
+2022/07/21 12:15:28 New Run!
+2022/07/21 12:15:28 Database connection was succesful
+2022/07/21 12:15:28 API is listening in the port:  8080
+2022/07/21 12:16:16 New Run!
+2022/07/21 12:16:16 Database connection was succesful
+2022/07/21 12:16:16 API is listening in the port:  8080
+2022/07/21 12:16:24 forgotten password 5f9b588001906ad41b8ec893f6ec7145
+2022/07/21 12:16:24 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:16:24 password hashed and updated in user - forget password 
+2022/07/21 12:17:42 New Run!
+2022/07/21 12:17:42 Database connection was succesful
+2022/07/21 12:17:42 API is listening in the port:  8080
+2022/07/21 12:17:53 forgotten password 715fb0270e02b1e8d24e6fdd5edc700f
+2022/07/21 12:17:53 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:17:53 password hashed and updated in user - forget password 
+2022/07/21 12:39:19 New Run!
+2022/07/21 12:39:19 Database connection was succesful
+2022/07/21 12:39:19 API is listening in the port:  8080
+2022/07/21 12:39:27 forgotten password de715a19875719901bce86c09f4349bf
+2022/07/21 12:39:27 users are: {0 false     0 false 0 [] []}
+2022/07/21 12:39:27 not able to update the dummy password pq: got 1 parameters but the statement requires 2
+2022/07/21 12:39:27 password hashed and updated in user - forget password 
+2022/07/21 13:13:42 New Run!
+2022/07/21 13:13:42 Database connection was succesful
+2022/07/21 13:13:42 API is listening in the port:  8080
+2022/07/21 13:13:52 forgotten password 9660e893d3ad00569eb9341572df1ccc
+2022/07/21 13:13:52 not able to update the dummy password pq: column "users" of relation "users" does not exist
+2022/07/21 13:13:52 password hashed and updated in user - forget password 
+2022/07/21 13:23:04 New Run!
+2022/07/21 13:23:04 Database connection was succesful
+2022/07/21 13:23:04 API is listening in the port:  8080
+2022/07/21 13:23:11 forgotten password cfd11afc0e409138f2de150805a0fe5b
+2022/07/21 13:23:11 password hashed and updated in user - forget password 
+2022/07/21 14:10:29 New Run!
+2022/07/21 14:10:29 Database connection was succesful
+2022/07/21 14:10:29 API is listening in the port:  8080
+2022/07/21 14:11:20 Checking whether user exists.
+2022/07/21 14:11:20 Signed Up Successfully
+2022/07/21 14:11:46 Checking whether User exists.
+2022/07/21 14:11:46 User exists.
+2022/07/21 14:11:46 User login sucessful
+2022/07/21 14:12:18 forgotten password 8368c4676582da8ff52e87067171ebed
+2022/07/21 14:12:19 password hashed and updated in user - forget password 
+2022/07/21 14:12:20 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials o6-20020a170902d4c600b0016c1b178628sm1071781plg.269 - gsmtp
+2022/07/21 14:12:20 email send for reseting the data
+2022/07/21 14:16:22 forgotten password 4d9abf1a18ed4cc6e29097a06ae08084
+2022/07/21 14:16:22 password hashed and updated in user - forget password 
+2022/07/21 14:16:24 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials f4-20020a170902ce8400b0016a1e2c2efcsm1050023plg.223 - gsmtp
+2022/07/21 14:16:24 email send for reseting the data
+2022/07/21 14:18:59 New Run!
+2022/07/21 14:18:59 Database connection was succesful
+2022/07/21 14:18:59 API is listening in the port:  8080
+2022/07/21 14:19:06 forgotten password 66d703b1c7fdf72ed933a4e807df2fa2
+2022/07/21 14:19:06 password hashed and updated in user - forget password 
+2022/07/21 14:19:08 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials 64-20020a630643000000b00419ffb6445dsm952221pgg.9 - gsmtp
+2022/07/21 14:32:51 New Run!
+2022/07/21 14:32:51 Database connection was succesful
+2022/07/21 14:32:51 API is listening in the port:  8080
+2022/07/21 14:32:57 non hashed token : LCP6ORk1FEMoimZBqhju
+2022/07/21 14:32:57 forgotten password 27cda7da77a9c14ee62b845c75008aa9
+2022/07/21 14:32:58 password hashed and updated in user - forget password 
+2022/07/21 14:32:59 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials o9-20020a17090a420900b001f209699d89sm912889pjg.18 - gsmtp
+2022/07/21 15:47:28 New Run!
+2022/07/21 15:47:28 Database connection was succesful
+2022/07/21 15:47:28 API is listening in the port:  8080
+2022/07/21 15:49:20 New Run!
+2022/07/21 15:49:20 Database connection was succesful
+2022/07/21 15:49:20 API is listening in the port:  8080
+2022/07/21 15:49:27 password hashed and updated in user - forget password 
+2022/07/21 15:49:29 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials i16-20020a63cd10000000b0041992864d69sm1097403pgg.77 - gsmtp
+2022/07/21 15:50:51 New Run!
+2022/07/21 15:50:51 Database connection was succesful
+2022/07/21 15:50:51 API is listening in the port:  8080
+2022/07/21 15:50:58 password hashed and updated in user - forget password 
+2022/07/21 15:51:00 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials 203-20020a6219d4000000b0052bbdffee7dsm5987pfz.113 - gsmtp
+2022/07/21 15:51:45 Invalid user password.
+2022/07/21 15:53:10 New Run!
+2022/07/21 15:53:10 Database connection was succesful
+2022/07/21 15:53:10 API is listening in the port:  8080
+2022/07/21 15:53:19 user email to chek in query activejobckr@gmail.com
+2022/07/21 15:53:19 Invalid user password.
+2022/07/21 15:55:24 New Run!
+2022/07/21 15:55:24 Database connection was succesful
+2022/07/21 15:55:24 API is listening in the port:  8080
+2022/07/21 15:55:32 Invalid user password.
+2022/07/21 15:56:12 New Run!
+2022/07/21 15:56:12 Database connection was succesful
+2022/07/21 15:56:12 API is listening in the port:  8080
+2022/07/21 15:56:18 Invalid user password.
+2022/07/21 15:56:52 New Run!
+2022/07/21 15:56:53 Database connection was succesful
+2022/07/21 15:56:53 API is listening in the port:  8080
+2022/07/21 15:56:58 Invalid user password.
+2022/07/21 15:59:08 New Run!
+2022/07/21 15:59:08 Database connection was succesful
+2022/07/21 15:59:08 API is listening in the port:  8080
+2022/07/21 15:59:17 Invalid user password.
+2022/07/21 16:03:14 New Run!
+2022/07/21 16:03:14 Database connection was succesful
+2022/07/21 16:03:14 API is listening in the port:  8080
+2022/07/21 16:03:21 Invalid user password.
+2022/07/21 16:08:37 New Run!
+2022/07/21 16:08:38 Database connection was succesful
+2022/07/21 16:08:38 API is listening in the port:  8080
+2022/07/21 16:08:45 Token and password match : updating the new password
+2022/07/21 16:08:45 new password updated

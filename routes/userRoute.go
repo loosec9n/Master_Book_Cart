@@ -13,6 +13,8 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	//routes.Get("/user/login", Controller.UserLoginIndex)
 	routes.Post("/user/login", Controller.UserLogin())
 	routes.Get("/", Controller.HomePage)
+	routes.Post("/user/forget/password", Controller.ForgetPassword())
+	routes.Patch("/user/forget/password/reset", Controller.ResetPassword())
 
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.UserVerifyMiddleware)
