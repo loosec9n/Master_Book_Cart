@@ -21,13 +21,13 @@ func (c Controller) AddToCart() http.HandlerFunc {
 		if err != nil {
 			log.Println("Error adding to cart")
 			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error adding to cart", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error adding to cart", err))
 			return
 		}
 
 		log.Println("Product added to cart")
 		w.WriteHeader(http.StatusAccepted)
-		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucessfully added to cart", nil))
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucessfully added to cart", &cart))
 	}
 }
 
@@ -42,7 +42,7 @@ func (c Controller) ViewCart() http.HandlerFunc {
 		if err != nil {
 			log.Println("Error viewing cart")
 			w.WriteHeader(http.StatusNotFound)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "errro viewing cart", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "errro viewing cart", err))
 			return
 		}
 

@@ -1,216 +1,324 @@
-2022/07/04 12:03:34 First log
-2022/07/04 12:03:34 API is listening in the port:  8080
-2022/07/04 12:04:14 Checking whether User exists.
-2022/07/04 12:04:14 User exists.
-2022/07/04 12:04:14 requested password password1
-2022/07/04 12:04:14 dbPassword 7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/04 12:04:14 Requested Password 7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/04 12:04:14 DB Password 7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/04 12:04:41 Checking whether Admin exists.
-2022/07/04 12:04:41 Please enter correct admin details
-2022/07/04 12:05:17 Checking whether Admin exists.
-2022/07/04 12:05:17 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/04 12:05:17 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/04 12:05:48 token contains an invalid number of segments
-2022/07/04 12:15:02 First log
-2022/07/04 12:15:02 API is listening in the port:  8080
-2022/07/04 12:15:31 Checking whether User exists.
-2022/07/04 12:15:31 User exists.
-2022/07/04 12:15:31 requested password password
-2022/07/04 12:15:31 dbPassword 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/04 12:15:31 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/04 12:15:31 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/04 12:15:52 Logged in Successfully
-2022/07/05 10:00:33 First log
-2022/07/05 10:00:34 Database connection was succesful
-2022/07/05 10:00:34 API is listening in the port:  8080
-2022/07/05 10:01:14 Checking whether user exists.
-2022/07/05 10:01:15 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/05 10:01:15 Signed Up Successfully
-2022/07/05 10:07:38 Checking whether user exists.
-2022/07/05 10:07:38 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/05 10:07:38 Signed Up Successfully
-2022/07/05 12:32:39 First log
-2022/07/05 12:32:39 Database connection was succesful
-2022/07/05 12:32:39 API is listening in the port:  8080
-2022/07/05 12:34:14 First log
-2022/07/05 12:34:14 Database connection was succesful
-2022/07/05 12:34:14 API is listening in the port:  8080
-2022/07/05 12:34:21 Length of Token not equal to
-2022/07/05 12:34:39 Checking whether Admin exists.
-2022/07/05 12:34:39 Please enter correct admin details
-2022/07/05 13:29:24 First log
-2022/07/05 13:29:24 Error pinging Database
-2022/07/05 13:29:24 pq: database "book_cart" does not exist
-2022/07/05 13:29:51 First log
-2022/07/05 13:29:51 Database connection was succesful
-2022/07/05 13:29:51 API is listening in the port:  8080
-2022/07/05 13:30:08 Checking whether Admin exists.
-2022/07/05 13:30:08 Requested Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/05 13:30:08 DB Password 5f4dcc3b5aa765d61d8327deb882cf99
-2022/07/05 13:30:42 Product added.
-2022/07/05 13:32:43 Length of Token not equal to
-2022/07/06 11:20:54 First log
-2022/07/06 11:20:54 Database connection was succesful
-2022/07/06 11:20:54 API is listening in the port:  8080
-2022/07/06 11:21:16 Checking whether Admin exists.
-2022/07/06 11:21:16 Please enter correct admin details
-2022/07/06 11:21:49 Checking whether Admin exists.
-2022/07/06 11:21:49 Please enter correct admin details
-2022/07/06 11:25:03 First log
-2022/07/06 11:25:03 Database connection was succesful
-2022/07/06 11:25:03 API is listening in the port:  8080
-2022/07/06 11:25:22 Checking whether Admin exists.
-2022/07/06 11:25:22 Please enter correct admin details
-2022/07/06 11:32:40 First log
-2022/07/06 11:32:40 Database connection was succesful
-2022/07/06 11:32:40 API is listening in the port:  8080
-2022/07/06 11:32:51 Checking whether Admin exists.
-2022/07/06 11:34:37 Checking whether user exists.
-2022/07/06 11:34:37 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/06 11:34:37 Signed Up Successfully
-2022/07/06 11:41:20 First log
-2022/07/06 11:41:20 Database connection was succesful
-2022/07/06 11:41:20 API is listening in the port:  8080
-2022/07/06 11:46:56 First log
-2022/07/06 11:46:56 Database connection was succesful
-2022/07/06 11:46:56 API is listening in the port:  8080
-2022/07/06 11:47:19 Updated the User Active Status
-2022/07/06 11:48:58 First log
-2022/07/06 11:48:58 Database connection was succesful
-2022/07/06 11:48:58 API is listening in the port:  8080
-2022/07/06 11:49:12 Checking whether user exists.
-2022/07/06 11:49:12 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/06 11:49:12 Signed Up Successfully
-2022/07/06 13:28:30 First log
-2022/07/06 13:28:30 Database connection was succesful
-2022/07/06 13:28:30 API is listening in the port:  8080
-2022/07/06 13:33:25 First log
-2022/07/06 13:33:25 Database connection was succesful
-2022/07/06 13:33:25 API is listening in the port:  8080
-2022/07/06 14:51:44 First log
-2022/07/06 14:51:45 Database connection was succesful
-2022/07/06 14:51:45 API is listening in the port:  8080
-2022/07/06 14:52:04 Checking whether Admin exists.
-2022/07/06 14:52:04 Invalid Password.
-2022/07/06 14:53:09 First log
-2022/07/06 14:53:09 Database connection was succesful
-2022/07/06 14:53:09 API is listening in the port:  8080
-2022/07/06 14:53:15 Checking whether Admin exists.
-2022/07/06 14:53:15 Invalid Password.
-2022/07/06 14:57:12 First log
-2022/07/06 14:57:12 Database connection was succesful
-2022/07/06 14:57:12 API is listening in the port:  8080
-2022/07/06 14:57:19 Checking whether Admin exists.
-2022/07/06 14:57:19 Invalid Password.
-2022/07/06 14:57:19 <nil>
-2022/07/06 15:09:48 First log
-2022/07/06 15:09:48 Database connection was succesful
-2022/07/06 15:09:48 API is listening in the port:  8080
-2022/07/06 15:09:56 Checking whether Admin exists.
-2022/07/06 15:21:20 First log
-2022/07/06 15:21:20 Database connection was succesful
-2022/07/06 15:21:20 API is listening in the port:  8080
-2022/07/06 15:21:29 Checking whether Admin exists.
-2022/07/06 15:21:29 Successfull Admin Login
-2022/07/06 15:23:03 First log
-2022/07/06 15:23:03 Database connection was succesful
-2022/07/06 15:23:03 API is listening in the port:  8080
-2022/07/06 15:23:08 Checking whether Admin exists.
-2022/07/06 15:23:08 Successfull Admin Login
-2022/07/06 15:24:13 First log
-2022/07/06 15:24:13 Database connection was succesful
-2022/07/06 15:24:13 API is listening in the port:  8080
-2022/07/06 15:24:19 Checking whether Admin exists.
-2022/07/06 15:24:19 Successfull Admin Login
-2022/07/06 15:25:29 Products are visible to the admin
-2022/07/06 15:25:58 Product added.
-2022/07/06 15:26:07 Products are visible to the admin
-2022/07/08 12:41:08 First log
-2022/07/08 12:41:08 Database connection was succesful
-2022/07/08 12:41:49 First log
-2022/07/08 12:41:49 Database connection was succesful
-2022/07/08 12:41:49 API is listening in the port:  8080
-2022/07/08 12:42:14 Checking whether user exists.
-2022/07/08 12:42:14 User Already Exists.
-2022/07/08 12:42:31 Checking whether User exists.
-2022/07/08 12:42:31 User has been deactivated by Admin
-2022/07/08 12:43:12 Checking whether User exists.
-2022/07/08 12:43:12 User has been deactivated by Admin
-2022/07/08 12:43:36 Checking whether user exists.
-2022/07/08 12:43:36 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
-2022/07/08 12:43:36 Signed Up Successfully
-2022/07/08 12:43:59 Checking whether User exists.
-2022/07/08 12:43:59 User has been deactivated by Admin
-2022/07/08 13:18:49 Checking whether User exists.
-2022/07/08 13:18:49 User has been deactivated by Admin
-2022/07/08 13:21:57 First log
-2022/07/08 13:21:58 Database connection was succesful
-2022/07/08 13:21:58 API is listening in the port:  8080
-2022/07/08 13:22:06 Checking whether User exists.
-2022/07/08 13:22:06 {0 false   password1 justin@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:22:06 User has been deactivated by Admin
-2022/07/08 13:23:11 Checking whether Admin exists.
-2022/07/08 13:23:11 Successfull Admin Login
-2022/07/08 13:31:54 First log
-2022/07/08 13:31:55 Database connection was succesful
-2022/07/08 13:31:55 API is listening in the port:  8080
-2022/07/08 13:32:16 Checking whether User exists.
-2022/07/08 13:32:16 {0 false   password1 justin@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:32:16 User has been deactivated by Admin
-2022/07/08 13:32:22 Checking whether User exists.
-2022/07/08 13:32:22 {0 false   password2 justin@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:32:22 User has been deactivated by Admin
-2022/07/08 13:32:34 Checking whether User exists.
-2022/07/08 13:32:34 {0 false   password2 kk@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:32:34 User has been deactivated by Admin
-2022/07/08 13:39:39 First log
-2022/07/08 13:39:39 Database connection was succesful
-2022/07/08 13:39:39 API is listening in the port:  8080
-2022/07/08 13:39:46 Checking whether User exists.
-2022/07/08 13:39:46 {0 false   password2 kk@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:39:46 User has been deactivated by Admin
-2022/07/08 13:40:23 Checking whether User exists.
-2022/07/08 13:40:23 {0 false   password2 kk@test.com 0 false 0 [] [] [] 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}
-2022/07/08 13:40:23 User has been deactivated by Admin
-2022/07/08 13:42:06 Failed to add category
-2022/07/08 13:44:18 Failed to add category
-2022/07/08 13:44:36 Failed to add category
-2022/07/08 13:46:48 Found Category
-2022/07/08 13:52:39 First log
-2022/07/08 13:52:39 Database connection was succesful
-2022/07/08 13:52:39 API is listening in the port:  8080
-2022/07/08 13:52:45 Failed to add category
-2022/07/08 13:53:38 First log
-2022/07/08 13:53:38 Database connection was succesful
-2022/07/08 13:53:38 API is listening in the port:  8080
-2022/07/08 13:55:18 First log
-2022/07/08 13:55:19 Database connection was succesful
-2022/07/08 13:55:19 API is listening in the port:  8080
-2022/07/08 13:55:23 First log
-2022/07/08 13:55:23 Database connection was succesful
-2022/07/08 13:55:23 API is listening in the port:  8080
-2022/07/08 13:56:10 First log
-2022/07/08 13:56:10 Database connection was succesful
-2022/07/08 13:56:10 API is listening in the port:  8080
-2022/07/08 13:56:48 First log
-2022/07/08 13:56:48 Database connection was succesful
-2022/07/08 13:56:48 API is listening in the port:  8080
-2022/07/08 13:59:07 First log
-2022/07/08 13:59:07 Database connection was succesful
-2022/07/08 13:59:07 API is listening in the port:  8080
-2022/07/08 14:00:09 First log
-2022/07/08 14:00:09 Database connection was succesful
-2022/07/08 14:00:09 API is listening in the port:  8080
-2022/07/08 14:01:23 First log
-2022/07/08 14:01:23 Database connection was succesful
-2022/07/08 14:01:23 API is listening in the port:  8080
-2022/07/08 14:02:11 First log
-2022/07/08 14:02:11 Database connection was succesful
-2022/07/08 14:02:11 API is listening in the port:  8181
-2022/07/08 14:02:24 Failed to add category
-2022/07/08 14:27:24 First log
-2022/07/08 14:27:24 Database connection was succesful
-2022/07/08 14:27:24 API is listening in the port:  8080
-2022/07/08 14:27:31 Successfuly added author
-2022/07/08 14:30:01 category added by admin
+2022/07/18 12:26:24 New Run!
+2022/07/18 12:26:24 Database connection was succesful
+2022/07/18 12:26:24 API is listening in the port:  8080
+2022/07/18 12:26:44 Checking whether User exists.
+2022/07/18 12:26:46 User exists.
+2022/07/18 12:26:46 User login sucessful
+2022/07/18 12:27:23 Sucess in Viewing Products
+2022/07/18 12:27:47 no token
+2022/07/18 12:28:07 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/07/18 17:30:22 New Run!
+2022/07/18 17:30:23 Database connection was succesful
+2022/07/18 17:30:23 API is listening in the port:  8080
+2022/07/18 17:30:52 New Run!
+2022/07/18 17:30:52 Database connection was succesful
+2022/07/18 17:30:52 API is listening in the port:  8080
+2022/07/18 17:35:50 New Run!
+2022/07/18 17:35:51 Database connection was succesful
+2022/07/18 17:35:51 API is listening in the port:  8080
+2022/07/18 17:38:15 New Run!
+2022/07/18 17:38:15 Database connection was succesful
+2022/07/18 17:38:15 API is listening in the port:  8080
+2022/07/18 17:38:31 error executing query for the user products search
+2022/07/18 20:04:10 New Run!
+2022/07/18 20:04:10 Database connection was succesful
+2022/07/18 20:04:10 API is listening in the port:  8080
+2022/07/18 20:04:23 error executing query for the user products search
+2022/07/18 20:04:50 New Run!
+2022/07/18 20:04:50 Database connection was succesful
+2022/07/18 20:04:50 API is listening in the port:  8080
+2022/07/18 20:04:56 search product is visible
+2022/07/18 20:06:50 New Run!
+2022/07/18 20:06:50 Database connection was succesful
+2022/07/18 20:06:50 API is listening in the port:  8080
+2022/07/18 20:06:56 error executing query for the user products search
+2022/07/18 20:09:01 New Run!
+2022/07/18 20:09:01 Database connection was succesful
+2022/07/18 20:09:01 API is listening in the port:  8080
+2022/07/18 20:09:16 error executing query for the user products search
+2022/07/18 20:13:21 New Run!
+2022/07/18 20:13:21 Database connection was succesful
+2022/07/18 20:13:21 API is listening in the port:  8080
+2022/07/18 20:13:31 error executing query for the user products search
+2022/07/18 20:14:32 New Run!
+2022/07/18 20:14:32 Database connection was succesful
+2022/07/18 20:14:32 API is listening in the port:  8080
+2022/07/18 20:14:38 error executing query for the user products search
+2022/07/18 20:25:02 New Run!
+2022/07/18 20:25:02 Database connection was succesful
+2022/07/18 20:25:02 API is listening in the port:  8080
+2022/07/18 20:25:08 search product is visible
+2022/07/18 20:26:03 Sucess in Viewing Products
+2022/07/18 20:34:38 New Run!
+2022/07/18 20:34:38 Database connection was succesful
+2022/07/18 20:34:38 API is listening in the port:  8080
+2022/07/18 20:34:44 Sucess in Viewing Products
+2022/07/18 20:35:10 search product is visible
+2022/07/18 20:35:57 New Run!
+2022/07/18 20:35:57 Database connection was succesful
+2022/07/18 20:35:57 API is listening in the port:  8080
+2022/07/18 20:36:02 search product is visible
+2022/07/18 20:36:18 search product is visible
+2022/07/18 20:48:37 New Run!
+2022/07/18 20:48:37 Database connection was succesful
+2022/07/18 20:48:37 API is listening in the port:  8080
+2022/07/18 20:49:08 Product is not active
+2022/07/18 20:53:50 search product is visible
+2022/07/18 20:57:48 New Run!
+2022/07/18 20:57:48 Database connection was succesful
+2022/07/18 20:57:48 API is listening in the port:  8080
+2022/07/18 20:57:59 
+2022/07/18 20:57:59 Sucess in Viewing Products
+2022/07/18 20:59:15 New Run!
+2022/07/18 20:59:15 Database connection was succesful
+2022/07/18 20:59:15 API is listening in the port:  8080
+2022/07/18 20:59:22 0 strconv.Atoi: parsing "": invalid syntax
+2022/07/18 20:59:22 Sucess in Viewing Products
+2022/07/18 21:00:43 New Run!
+2022/07/18 21:00:44 Database connection was succesful
+2022/07/18 21:00:44 API is listening in the port:  8080
+2022/07/18 21:00:52 0 strconv.Atoi: parsing "": invalid syntax
+2022/07/18 21:00:52 Sucess in Viewing Products
+2022/07/18 22:17:19 New Run!
+2022/07/18 22:17:20 Database connection was succesful
+2022/07/18 22:17:20 API is listening in the port:  8080
+2022/07/18 22:17:31 search product is visible
+2022/07/19 09:49:33 error parsing jwt:  signature is invalid
+2022/07/19 09:49:33 Token Invalid.
+2022/07/19 10:12:10 search product is visible
+2022/07/19 10:21:29 New Run!
+2022/07/19 10:21:29 Database connection was succesful
+2022/07/19 10:21:29 API is listening in the port:  8080
+2022/07/19 10:21:45 
+2022/07/19 10:21:45 Sucess in Viewing Products
+2022/07/19 10:22:24 New Run!
+2022/07/19 10:22:24 Database connection was succesful
+2022/07/19 10:22:24 API is listening in the port:  8080
+2022/07/19 10:22:31 justin2@test.com
+2022/07/19 10:22:31 Sucess in Viewing Products
+2022/07/19 10:26:27 New Run!
+2022/07/19 10:26:27 Database connection was succesful
+2022/07/19 10:26:27 API is listening in the port:  8080
+2022/07/19 10:26:34 false
+2022/07/19 10:26:34 Sucess in Viewing Products
+2022/07/19 11:19:14 Checking whether User exists.
+2022/07/19 11:19:14 User exists.
+2022/07/19 11:19:14 User login sucessful
+2022/07/19 11:27:47 New Run!
+2022/07/19 11:27:47 Database connection was succesful
+2022/07/19 11:27:47 API is listening in the port:  8080
+2022/07/19 11:28:00 Checking whether User exists.
+2022/07/19 11:28:00 User exists.
+2022/07/19 11:28:00 User login sucessful
+2022/07/19 11:28:20 false
+2022/07/19 11:28:41 false
+2022/07/19 11:28:41 Products are visible to the admin
+2022/07/19 11:29:51 New Run!
+2022/07/19 11:29:51 Database connection was succesful
+2022/07/19 11:29:51 API is listening in the port:  8080
+2022/07/19 11:29:59 Checking whether User exists.
+2022/07/19 11:29:59 User exists.
+2022/07/19 11:29:59 User login sucessful
+2022/07/19 11:30:12 error parsing jwt:  signature is invalid
+2022/07/19 11:30:12 Token Invalid.
+2022/07/19 11:30:20 Checking whether Admin exists.
+2022/07/19 11:30:20 Successfull Admin Login
+2022/07/19 11:30:37 error parsing jwt:  signature is invalid
+2022/07/19 11:30:37 Token Invalid.
+2022/07/19 11:43:56 false
+2022/07/19 11:43:56 Success viewing cart
+2022/07/19 12:06:09 New Run!
+2022/07/19 12:06:09 Database connection was succesful
+2022/07/19 12:06:09 API is listening in the port:  8080
+2022/07/19 12:06:17 false
+2022/07/19 12:06:17 Success viewing cart
+2022/07/19 12:08:45 New Run!
+2022/07/19 12:08:45 Database connection was succesful
+2022/07/19 12:08:45 API is listening in the port:  8080
+2022/07/19 12:08:55 false
+2022/07/19 12:08:55 Success viewing cart
+2022/07/19 12:22:16 New Run!
+2022/07/19 12:22:16 Database connection was succesful
+2022/07/19 12:22:16 API is listening in the port:  8080
+2022/07/19 12:22:22 false
+2022/07/19 12:22:22 Success viewing cart
+2022/07/19 12:35:45 New Run!
+2022/07/19 12:35:46 Database connection was succesful
+2022/07/19 12:35:46 API is listening in the port:  8080
+2022/07/19 12:35:58 false
+2022/07/19 12:35:58 Success viewing cart
+2022/07/19 12:36:42 error parsing jwt:  signature is invalid
+2022/07/19 12:36:42 Token Invalid.
+2022/07/19 12:36:56 false
+2022/07/19 12:36:56 Product added to cart
+2022/07/19 12:37:01 false
+2022/07/19 12:37:01 Success viewing cart
+2022/07/19 12:38:48 New Run!
+2022/07/19 12:38:48 Database connection was succesful
+2022/07/19 12:38:48 API is listening in the port:  8080
+2022/07/19 12:38:59 false
+2022/07/19 12:38:59 Success viewing cart
+2022/07/19 15:35:39 New Run!
+2022/07/19 15:35:39 Database connection was succesful
+2022/07/19 15:35:39 API is listening in the port:  8080
+2022/07/19 15:36:23 error parsing jwt:  signature is invalid
+2022/07/19 15:36:23 Token Invalid.
+2022/07/19 15:36:46 error parsing jwt:  signature is invalid
+2022/07/19 15:36:46 Token Invalid.
+2022/07/19 15:37:01 false
+2022/07/19 15:37:01 Sucess in Viewing Products
+2022/07/19 15:37:15 error parsing jwt:  signature is invalid
+2022/07/19 15:37:15 Token Invalid.
+2022/07/19 15:37:22 false
+2022/07/19 15:37:22 search product is visible
+2022/07/19 15:37:53 false
+2022/07/19 15:37:53 Error adding to cart
+2022/07/19 15:38:40 Checking whether user exists.
+2022/07/19 15:38:40 Hashed Password:  7c6a180b36896a0a8c02787eeafb0e4c
+2022/07/19 15:38:40 Signed Up Successfully
+2022/07/19 15:38:50 Checking whether User exists.
+2022/07/19 15:38:50 User exists.
+2022/07/19 15:38:50 User login sucessful
+2022/07/19 15:39:06 false
+2022/07/19 15:39:06 Sucess in Viewing Products
+2022/07/19 15:39:43 false
+2022/07/19 15:39:43 search product is visible
+2022/07/19 15:40:17 false
+2022/07/19 15:40:17 Product added to cart
+2022/07/19 15:41:26 false
+2022/07/19 15:41:26 Success viewing cart
+2022/07/21 11:58:48 New Run!
+2022/07/21 11:58:48 Database connection was succesful
+2022/07/21 11:58:48 API is listening in the port:  8080
+2022/07/21 11:59:12 Checking whether user exists.
+2022/07/21 11:59:12 Signed Up Successfully
+2022/07/21 11:59:23 Checking whether User exists.
+2022/07/21 11:59:23 User exists.
+2022/07/21 11:59:23 User login sucessful
+2022/07/21 12:02:13 Send the password reset email
+2022/07/21 12:02:13 user is not present in the database
+2022/07/21 12:02:13 not an active user
+2022/07/21 12:02:13 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:02:13 password hashed and updated in user - forget password 
+2022/07/21 12:02:59 Send the password reset email
+2022/07/21 12:02:59 user is not present in the database
+2022/07/21 12:02:59 not an active user
+2022/07/21 12:02:59 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:02:59 password hashed and updated in user - forget password 
+2022/07/21 12:13:36 New Run!
+2022/07/21 12:13:36 Database connection was succesful
+2022/07/21 12:13:36 API is listening in the port:  8080
+2022/07/21 12:13:55 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:13:55 password hashed and updated in user - forget password 
+2022/07/21 12:15:28 New Run!
+2022/07/21 12:15:28 Database connection was succesful
+2022/07/21 12:15:28 API is listening in the port:  8080
+2022/07/21 12:16:16 New Run!
+2022/07/21 12:16:16 Database connection was succesful
+2022/07/21 12:16:16 API is listening in the port:  8080
+2022/07/21 12:16:24 forgotten password 5f9b588001906ad41b8ec893f6ec7145
+2022/07/21 12:16:24 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:16:24 password hashed and updated in user - forget password 
+2022/07/21 12:17:42 New Run!
+2022/07/21 12:17:42 Database connection was succesful
+2022/07/21 12:17:42 API is listening in the port:  8080
+2022/07/21 12:17:53 forgotten password 715fb0270e02b1e8d24e6fdd5edc700f
+2022/07/21 12:17:53 not able to update the dummy password sql: no rows in result set
+2022/07/21 12:17:53 password hashed and updated in user - forget password 
+2022/07/21 12:39:19 New Run!
+2022/07/21 12:39:19 Database connection was succesful
+2022/07/21 12:39:19 API is listening in the port:  8080
+2022/07/21 12:39:27 forgotten password de715a19875719901bce86c09f4349bf
+2022/07/21 12:39:27 users are: {0 false     0 false 0 [] []}
+2022/07/21 12:39:27 not able to update the dummy password pq: got 1 parameters but the statement requires 2
+2022/07/21 12:39:27 password hashed and updated in user - forget password 
+2022/07/21 13:13:42 New Run!
+2022/07/21 13:13:42 Database connection was succesful
+2022/07/21 13:13:42 API is listening in the port:  8080
+2022/07/21 13:13:52 forgotten password 9660e893d3ad00569eb9341572df1ccc
+2022/07/21 13:13:52 not able to update the dummy password pq: column "users" of relation "users" does not exist
+2022/07/21 13:13:52 password hashed and updated in user - forget password 
+2022/07/21 13:23:04 New Run!
+2022/07/21 13:23:04 Database connection was succesful
+2022/07/21 13:23:04 API is listening in the port:  8080
+2022/07/21 13:23:11 forgotten password cfd11afc0e409138f2de150805a0fe5b
+2022/07/21 13:23:11 password hashed and updated in user - forget password 
+2022/07/21 14:10:29 New Run!
+2022/07/21 14:10:29 Database connection was succesful
+2022/07/21 14:10:29 API is listening in the port:  8080
+2022/07/21 14:11:20 Checking whether user exists.
+2022/07/21 14:11:20 Signed Up Successfully
+2022/07/21 14:11:46 Checking whether User exists.
+2022/07/21 14:11:46 User exists.
+2022/07/21 14:11:46 User login sucessful
+2022/07/21 14:12:18 forgotten password 8368c4676582da8ff52e87067171ebed
+2022/07/21 14:12:19 password hashed and updated in user - forget password 
+2022/07/21 14:12:20 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials o6-20020a170902d4c600b0016c1b178628sm1071781plg.269 - gsmtp
+2022/07/21 14:12:20 email send for reseting the data
+2022/07/21 14:16:22 forgotten password 4d9abf1a18ed4cc6e29097a06ae08084
+2022/07/21 14:16:22 password hashed and updated in user - forget password 
+2022/07/21 14:16:24 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials f4-20020a170902ce8400b0016a1e2c2efcsm1050023plg.223 - gsmtp
+2022/07/21 14:16:24 email send for reseting the data
+2022/07/21 14:18:59 New Run!
+2022/07/21 14:18:59 Database connection was succesful
+2022/07/21 14:18:59 API is listening in the port:  8080
+2022/07/21 14:19:06 forgotten password 66d703b1c7fdf72ed933a4e807df2fa2
+2022/07/21 14:19:06 password hashed and updated in user - forget password 
+2022/07/21 14:19:08 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials 64-20020a630643000000b00419ffb6445dsm952221pgg.9 - gsmtp
+2022/07/21 14:32:51 New Run!
+2022/07/21 14:32:51 Database connection was succesful
+2022/07/21 14:32:51 API is listening in the port:  8080
+2022/07/21 14:32:57 non hashed token : LCP6ORk1FEMoimZBqhju
+2022/07/21 14:32:57 forgotten password 27cda7da77a9c14ee62b845c75008aa9
+2022/07/21 14:32:58 password hashed and updated in user - forget password 
+2022/07/21 14:32:59 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials o9-20020a17090a420900b001f209699d89sm912889pjg.18 - gsmtp
+2022/07/21 15:47:28 New Run!
+2022/07/21 15:47:28 Database connection was succesful
+2022/07/21 15:47:28 API is listening in the port:  8080
+2022/07/21 15:49:20 New Run!
+2022/07/21 15:49:20 Database connection was succesful
+2022/07/21 15:49:20 API is listening in the port:  8080
+2022/07/21 15:49:27 password hashed and updated in user - forget password 
+2022/07/21 15:49:29 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials i16-20020a63cd10000000b0041992864d69sm1097403pgg.77 - gsmtp
+2022/07/21 15:50:51 New Run!
+2022/07/21 15:50:51 Database connection was succesful
+2022/07/21 15:50:51 API is listening in the port:  8080
+2022/07/21 15:50:58 password hashed and updated in user - forget password 
+2022/07/21 15:51:00 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials 203-20020a6219d4000000b0052bbdffee7dsm5987pfz.113 - gsmtp
+2022/07/21 15:51:45 Invalid user password.
+2022/07/21 15:53:10 New Run!
+2022/07/21 15:53:10 Database connection was succesful
+2022/07/21 15:53:10 API is listening in the port:  8080
+2022/07/21 15:53:19 user email to chek in query activejobckr@gmail.com
+2022/07/21 15:53:19 Invalid user password.
+2022/07/21 15:55:24 New Run!
+2022/07/21 15:55:24 Database connection was succesful
+2022/07/21 15:55:24 API is listening in the port:  8080
+2022/07/21 15:55:32 Invalid user password.
+2022/07/21 15:56:12 New Run!
+2022/07/21 15:56:12 Database connection was succesful
+2022/07/21 15:56:12 API is listening in the port:  8080
+2022/07/21 15:56:18 Invalid user password.
+2022/07/21 15:56:52 New Run!
+2022/07/21 15:56:53 Database connection was succesful
+2022/07/21 15:56:53 API is listening in the port:  8080
+2022/07/21 15:56:58 Invalid user password.
+2022/07/21 15:59:08 New Run!
+2022/07/21 15:59:08 Database connection was succesful
+2022/07/21 15:59:08 API is listening in the port:  8080
+2022/07/21 15:59:17 Invalid user password.
+2022/07/21 16:03:14 New Run!
+2022/07/21 16:03:14 Database connection was succesful
+2022/07/21 16:03:14 API is listening in the port:  8080
+2022/07/21 16:03:21 Invalid user password.
+2022/07/21 16:08:37 New Run!
+2022/07/21 16:08:38 Database connection was succesful
+2022/07/21 16:08:38 API is listening in the port:  8080
+2022/07/21 16:08:45 Token and password match : updating the new password
+2022/07/21 16:08:45 new password updated

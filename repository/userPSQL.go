@@ -6,12 +6,6 @@ import (
 	"log"
 )
 
-func logFatal(err error) {
-	if err != nil {
-		log.Fatal(err)
-	}
-}
-
 //function to add user details to user database
 func (r Repository) UserSignup(user models.User) models.User {
 
@@ -22,21 +16,38 @@ func (r Repository) UserSignup(user models.User) models.User {
 				email, 
 				phone_number) 
 				VALUES($1, $2, $3, $4, $5) 
-				RETURNING user_id;`
+				RETURNING 
+				user_id,
+				is_active;`
 
 	//Makes query
-	err := r.DB.QueryRow(query, user.First_Name, user.Last_Name, user.Password, user.Email, user.Phone_Number).Scan(&user.User_ID)
-	logFatal(err)
+	err := r.DB.QueryRow(query,
+		user.First_Name,
+		user.Last_Name,
+		user.Password,
+		user.Email,
+		user.Phone_Number).Scan(
+		&user.User_ID,
+		&user.Is_Active)
+	//logFatal(err)
+	if err != nil {
+		log.Println("User signup error", err)
+	}
 	return user
 }
 
 // To check whether u.User exists
 func (r Repository) DoesUserExists(user models.User) bool {
 
-	query := `SELECT email FROM users 
-				WHERE email = $1`
+	query := `SELECT 
+		email 
+		FROM 
+		users 
+		WHERE 
+		email = $1`
 
-	err := r.DB.QueryRow(query, user.Email).Scan(
+	err := r.DB.QueryRow(query,
+		user.Email).Scan(
 		&user.User_ID)
 	// returns false if the user email does not exists
 	return (err != sql.ErrNoRows)
@@ -45,50 +56,57 @@ func (r Repository) DoesUserExists(user models.User) bool {
 func (r Repository) UserLogin(user models.User) (models.User, error) {
 
 	query := `SELECT 
-				is_active, 
-				first_name,
-				last_name,
-				password,
-				email,
-				phone_number,
-				created_at
-				FROM users 
-				WHERE email = $1`
+		user_id,
+		first_name,
+		last_name,
+		password,
+		email,
+		phone_number,
+		is_active 
+		FROM 
+		users 
+		WHERE email = $1`
 
 	err := r.DB.QueryRow(query, user.Email).Scan(
-		&user.Is_Active,
+		&user.User_ID,
 		&user.First_Name,
 		&user.Last_Name,
 		&user.Password,
 		&user.Email,
 		&user.Phone_Number,
-		&user.CreatedAt)
+		&user.Is_Active,
+	)
 
-	log.Println(user)
 	return user, err
 }
 
 func (r Repository) AdminLogin(admin models.User) (models.User, error) {
 
-	query := `SELECT * FROM users 
-				WHERE email = $1`
+	query := `SELECT 
+	user_id,
+	first_name,
+	last_name,
+	password,
+	email,
+	phone_number,
+	is_active
+	FROM 
+	users 
+	WHERE email = $1`
 
 	//var name sql.NullString //expecting the value being null
 
-	err := r.DB.QueryRow(query, admin.Email).Scan(
+	err := r.DB.QueryRow(query,
+		admin.Email).Scan(
 		&admin.User_ID,
-		&admin.Is_Active,
 		&admin.First_Name, //&name, //example check for null value
 		&admin.Last_Name,
 		&admin.Password,
 		&admin.Email,
 		&admin.Phone_Number,
 		&admin.IsAdmin,
-		&admin.CreatedAt)
+	)
 
-	// if name.Valid { //giving a default value to the cell.
-	// 	admin.First_Name = name.String
-	// }
 	return admin, err
 }
 
@@ -96,13 +114,24 @@ func (r Repository) BlockUser(user models.User) (models.User, error) {
 	query := `UPDATE users 
 				SET is_active =$1
 				WHERE email = $2
-				RETURNING is_active, first_name, last_name, email`
+				RETURNING 
+				user_id,
+				first_name, 
+				last_name, 
+				email,
+				phone_number,
+				is_active;`
 
-	err := r.DB.QueryRow(query, user.Is_Active, user.Email).Scan(
-		&user.Is_Active,
+	err := r.DB.QueryRow(query,
+		user.Is_Active,
+		user.Email).Scan(
+		&user.User_ID,
 		&user.First_Name,
 		&user.Last_Name,
-		&user.Email)
+		&user.Email,
+		&user.Phone_Number,
+		&user.Is_Active,
+	)
 	return user, err
 }
 
@@ -111,22 +140,33 @@ func (r Repository) ViewUser() ([]models.User, error) {
 
 	var users []models.User
 
-	query := `SELECT is_active, first_name, last_name, email, phone_number, is_admin
-				FROM users;`
+	query := `SELECT 
+		user_id,
+		first_name, 
+		last_name, 
+		email, 
+		phone_number, 
+		is_active, 
+		is_admin		
+		FROM 
+		users;`
 	row, err := r.DB.Query(query)
 
 	if err != nil {
 		return nil, err
 	}
+	defer row.Close()
 
 	//Loopingg through the rows
 	for row.Next() {
 		var user models.User
-		if err := row.Scan(&user.Is_Active,
+		if err := row.Scan(
+			&user.User_ID,
 			&user.First_Name,
 			&user.Last_Name,
 			&user.Email,
 			&user.Phone_Number,
+			&user.Is_Active,
 			&user.IsAdmin); err != nil {
 			return users, err
 		}
@@ -140,4 +180,47 @@ func (r Repository) ViewUser() ([]models.User, error) {
 		return users, err
 	}
 	return users, nil
+}
+
+func (r Repository) FindUserByEmail(user models.User) (models.User, error) {
+
+	//var user models.User
+
+	query := `SELECT 
+		user_id,
+		first_name,
+		last_name,
+		password,
+		email,
+		is_active 
+		FROM 
+		users 
+		WHERE email = $1`
+
+	err := r.DB.QueryRow(query, user.Email).Scan(
+		&user.User_ID,
+		&user.First_Name,
+		&user.Last_Name,
+		&user.Password,
+		&user.Email,
+		&user.Is_Active,
+	)
+
+	return user, err
+}
+
+func (r Repository) ForgetPasswordUpdate(user models.User, pass string) (models.ForgotPasswordInput, error) {
+
+	var usr models.ForgotPasswordInput
+
+	query := `UPDATE
+				users
+				SET password = $1
+				WHERE email = $2
+				RETURNING
+				email;`
+	err := r.DB.QueryRow(query, pass, user.Email).Scan(
+		&usr.Email,
+	)
+	return usr, err
 }

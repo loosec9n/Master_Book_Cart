@@ -8,20 +8,10 @@ import (
 	"github.com/golang-jwt/jwt"
 )
 
-type SignedDetails struct {
-	User_ID      int
-	First_Name   string
-	Last_Name    string
-	Email        string
-	Phone_Number int
-	Is_Admin     bool
-	jwt.StandardClaims
-}
-
 // to generate token
-func GenerateTokenAdmin(first_name string, last_name string, email string, phone_number int, user_id int, is_admin bool) (signedtoken string, signedrefreshtoken string) {
+func GenerateTokenUser(first_name string, last_name string, email string, phone_number int, user_id int, is_admin bool) (signedtoken string, signedrefreshtoken string) {
 
-	var secret_key = os.Getenv("SECRET_ADMIN")
+	var secret_key = os.Getenv("SECRET_USER")
 
 	//log.Println("jwt Secret key: ", secret_key)
 
@@ -51,10 +41,9 @@ func GenerateTokenAdmin(first_name string, last_name string, email string, phone
 	return token, refreshtoken
 }
 
-//to verify token
-func ValidateTokenAdmin(signedtoken string) (bool, error) {
+func ValidateTokenUser(signedtoken string) (bool, error) {
 	//validating token
-	var secret_key = os.Getenv("SECRET_ADMIN")
+	var secret_key = os.Getenv("SECRET_USER")
 
 	token, err := jwt.ParseWithClaims(
 		signedtoken,

@@ -5,9 +5,11 @@ import (
 	"Book_Cart_Project/repository"
 	"Book_Cart_Project/token"
 	"Book_Cart_Project/utils"
+	"database/sql"
 	"encoding/json"
 	"log"
 	"net/http"
+	"strconv"
 )
 
 type Controller struct {
@@ -32,29 +34,44 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 		requestPassword := admin.Password
 
 		log.Println("Checking whether Admin exists.")
-		admin, _ = c.UserRepo.AdminLogin(admin)
+		admin, err := c.UserRepo.AdminLogin(admin)
+
+		if err != nil {
+			if err == sql.ErrNoRows {
+				log.Println("Please enter correct admin details")
+				w.WriteHeader(http.StatusUnauthorized)
+				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid admin email", err))
+				return
+			} else {
+				log.Println("Please enter correct admin details")
+				w.WriteHeader(http.StatusUnauthorized)
+				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Please enter correct admin details", err))
+				return
+			}
+
+		}
 
 		if !admin.IsAdmin {
-			log.Println("Entered wrong admin details")
+			log.Println("Not a admin")
 			w.WriteHeader(http.StatusUnauthorized)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Incorrect admin details", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Not an admin", nil))
 			return
 		}
 
 		//getting hashed password from database
 		dbPassword := admin.Password
-
+		//fmt.Println("DB password", dbPassword)
 		//verifying password
-		passwordMatch := utils.VerifyPassword(requestPassword, dbPassword)
+		ok := utils.VerifyPassword(requestPassword, dbPassword)
 
-		if !passwordMatch {
+		if !ok {
 			log.Println("Invalid Admin Password.")
 			w.WriteHeader(http.StatusUnauthorized)
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Admin Password", nil))
 			return
 		}
 
-		token, refresh_token := token.GenerateToken(admin.First_Name, admin.Last_Name, admin.Email, admin.Phone_Number, admin.User_ID)
+		token, refresh_token := token.GenerateTokenAdmin(admin.First_Name, admin.Last_Name, admin.Email, admin.Phone_Number, admin.User_ID, admin.IsAdmin)
 
 		jwt.Token = token
 		jwt.Refresh_Token = refresh_token
@@ -69,21 +86,37 @@ func (c Controller) AdminLogin() http.HandlerFunc {
 func (c Controller) AdminProductView() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		var products []models.Product
+		params, err := strconv.Atoi(r.URL.Query().Get("page"))
+		if err != nil || params < 1 {
+			log.Println("Error converting string to int", err)
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting page to params for page number", err))
+			return
+		}
 
-		products, err := c.ProductRepo.ViewProduct()
+		f := models.Filter{
+			PageSize: 5,
+			Page:     params,
+		}
+
+		result := models.Metadata{}
+
+		products, result, err := c.ProductRepo.ViewProduct(f)
 
 		if err != nil {
 			log.Println("Error in Executing Query for Product View:", err)
 			w.WriteHeader(http.StatusNotImplemented)
-			//	utils.ResponseJSON(w, "Error in Executing Query for Product View.")
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error in Executing Query for Product View:", err))
 			return
 		}
 
-		//utils.ResponseJSON(w, products)
 		log.Println("Products are visible to the admin")
-		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Admin can view the products", products))
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Admin can view the products", map[string]interface{}{
+			"data":     &products,
+			"total":    result.TotalRecords,
+			"page":     result.CurrentPage,
+			"lastpage": result.LastPage,
+		}))
 	}
 }
 
@@ -98,19 +131,16 @@ func (c Controller) AdminProductAdd() http.HandlerFunc {
 
 		if err != nil {
 			w.WriteHeader(http.StatusNotImplemented)
-			//	utils.ResponseJSON(w, "Failed to add product.")
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add products", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add products", err))
 			return
 		}
 		log.Println("Product added by admin")
-		// utils.ResponseJSON(w, "Product added.")
-		// utils.ResponseJSON(w, &pro)
+
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Product added by admin", &pro))
 
 	}
 }
 
-//AdmiBlockUser toggles the active status of the User.
 func (c Controller) AdminBlockUser() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
@@ -146,6 +176,28 @@ func (c Controller) AdminViewUser() http.HandlerFunc {
 
 		//utils.ResponseJSON(w, &viewUser)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User found", &viewUser))
+	}
+}
+
+func (c Controller) AdminBlockProduct() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		var blockProduct models.Product
+
+		json.NewDecoder(r.Body).Decode(&blockProduct)
+
+		blockProduct, err := c.ProductRepo.BlockProduct(blockProduct)
+
+		if err != nil {
+			log.Println("unable to update product")
+			w.WriteHeader(http.StatusNotModified)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "unable to update product", err))
+			return
+		}
+
+		log.Println("updated the product active status")
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "updated the product status by admin", &blockProduct))
+
 	}
 }
 

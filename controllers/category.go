@@ -20,7 +20,7 @@ func (c Controller) AddCategory() http.HandlerFunc {
 		if err != nil {
 			log.Println("Failed to add category")
 			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add category", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add category", err))
 			return
 		}
 
@@ -60,7 +60,7 @@ func (c Controller) AddAuthor() http.HandlerFunc {
 		if err != nil {
 			log.Println("error adding author")
 			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error adding author", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error adding author", err))
 			return
 		}
 
