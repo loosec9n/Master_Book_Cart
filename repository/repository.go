@@ -24,6 +24,10 @@ type UserRepository interface {
 	UserSearchProduct(int) (Prod, error)
 	FindUserByEmail(models.User) (models.User, error)
 	ForgetPasswordUpdate(models.User, string) (models.ForgotPasswordInput, error)
+	AddAddress(models.Address) (models.Address, error)
+	AddWishlist(models.Wishlist) (models.Wishlist, error)
+	ViewWishlist(models.Filter, models.Wishlist) ([]wishList, models.Metadata, error)
+	DeleteProductWishlist(models.Wishlist) (int64, error)
 }
 
 type ProductRepository interface {
@@ -34,4 +38,5 @@ type ProductRepository interface {
 	ViewCategory() ([]models.ProductCategory, error)
 	AddAuthor(models.ProductAuthor) (models.ProductAuthor, error)
 	ViewAuthor() ([]models.ProductAuthor, error)
+	AddInventory(models.Inventory) (models.Inventory, error)
 }

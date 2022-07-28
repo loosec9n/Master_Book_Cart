@@ -11,10 +11,10 @@ CREATE TABLE IF NOT EXISTS product(
     product_inventory_id BIGINT REFERENCES inventory(inventory_id),
     product_price NUMERIC,
     product_rating NUMERIC,
-    product_created_at TIMESTAMP DEFAULT NOW(),
-    product_updated_at TIMESTAMP DEFAULT NOW(),
-    product_deleted_at TIMESTAMP DEFAULT NOW()
-)
+    product_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    product_updated_at TIMESTAMP DEFAULT NULL,
+    product_deleted_at TIMESTAMP DEFAULT NULL
+);
 
 -- +goose StatementEnd
 

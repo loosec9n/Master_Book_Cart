@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -22,7 +21,6 @@ func init() {
 }
 
 func main() {
-	fmt.Println("Welcome to the Book Cart Project")
 	file, err := os.OpenFile("loggingData.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
 
 	if err != nil {

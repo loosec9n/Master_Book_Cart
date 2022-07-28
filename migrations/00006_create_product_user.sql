@@ -10,10 +10,10 @@ CREATE TABLE IF NOT EXISTS products_user(
     product_user_price NUMERIC,
     product_user_rating NUMERIC,
     product_user_image VARCHAR(500),
-    product_user_created_at TIMESTAMP DEFAULT NOW(),
-    product_user_updated_at  TIMESTAMP,
-    product_user_deleted_at TIMESTAMP
-)
+    product_user_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    product_user_updated_at  TIMESTAMP NULL,
+    product_user_deleted_at TIMESTAMP NULL
+);
 
 -- +goose StatementEnd
 

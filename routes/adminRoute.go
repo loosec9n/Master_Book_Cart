@@ -24,5 +24,6 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 		r.Get("/admin/view/category", Controller.ViewCategory())
 		r.Post("/admin/add/author", Controller.AddAuthor())
 		r.Get("/admin/view/author", Controller.ViewAuthor())
+		r.Post("/admin/add/inventory", Controller.AdminAddInventory())
 	})
 }

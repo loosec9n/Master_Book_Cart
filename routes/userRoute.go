@@ -11,6 +11,7 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	//routes.Get("/user/signup", Controller.UserSignUpIndex)
 	routes.Post("/user/signup", Controller.UserSignUp())
 	//routes.Get("/user/login", Controller.UserLoginIndex)
+	routes.Post("/user/signup/address", Controller.UserAddress())
 	routes.Post("/user/login", Controller.UserLogin())
 	routes.Get("/", Controller.HomePage)
 	routes.Post("/user/forget/password", Controller.ForgetPassword())
@@ -23,6 +24,9 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 		r.Get("/homepage", Controller.UserHomePage())
 		r.Post("/user/add/cart", Controller.AddToCart())
 		r.Post("/user/view/cart", Controller.ViewCart())
+		r.Post("/user/add/wishlist", Controller.UserWishlist())
+		r.Get("/user/view/wishlist", Controller.UserViewWishlist())
+		r.Delete("/user/remove/wishlist", Controller.UserDeleteWishlist())
 	})
 
 }

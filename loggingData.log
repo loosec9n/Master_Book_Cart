@@ -322,3 +322,366 @@
 2022/07/21 16:08:38 API is listening in the port:  8080
 2022/07/21 16:08:45 Token and password match : updating the new password
 2022/07/21 16:08:45 new password updated
+2022/07/21 16:11:15 New Run!
+2022/07/21 16:11:15 Database connection was succesful
+2022/07/21 16:11:15 API is listening in the port:  8080
+2022/07/21 16:11:27 Invalid user password.
+2022/07/21 16:11:46 password hashed and updated in user - forget password 
+2022/07/21 16:11:48 error sending the email 535 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials u10-20020a17090341ca00b0016c68b56be7sm1334468ple.158 - gsmtp
+2022/07/21 16:12:00 Token and password match : updating the new password
+2022/07/21 16:12:00 new password updated
+2022/07/21 16:13:16 error parsing jwt:  token is expired by 24h34m26s
+2022/07/21 16:13:16 Token Invalid.
+2022/07/21 16:13:31 false
+2022/07/21 16:13:31 Sucess in Viewing Products
+2022/07/21 16:13:49 false
+2022/07/21 16:13:49 search product is visible
+2022/07/21 16:14:08 false
+2022/07/21 16:14:08 Product added to cart
+2022/07/21 16:14:20 false
+2022/07/21 16:14:20 Success viewing cart
+2022/07/21 16:43:40 New Run!
+2022/07/21 16:43:41 Database connection was succesful
+2022/07/21 16:43:41 API is listening in the port:  8080
+2022/07/21 16:43:49 Checking whether Admin exists.
+2022/07/21 16:43:49 Successfull Admin Login
+2022/07/21 17:38:00 New Run!
+2022/07/21 17:38:00 Database connection was succesful
+2022/07/21 17:38:00 API is listening in the port:  8080
+2022/07/21 17:38:08 false
+2022/07/21 17:38:08 Sucess in Viewing Products
+2022/07/21 17:38:35 false
+2022/07/21 17:38:35 Error converting string to int <nil>
+2022/07/21 17:39:43 false
+2022/07/21 17:39:43 Error converting string to int strconv.Atoi: parsing "1234566789789456321478236654789": value out of range
+2022/07/26 11:32:20 New Run!
+2022/07/26 11:32:20 Database connection was succesful
+2022/07/26 11:32:20 API is listening in the port:  8080
+2022/07/26 11:32:31 Checking whether user exists.
+2022/07/26 11:32:31 Signed Up Successfully
+2022/07/27 09:35:24 New Run!
+2022/07/27 09:35:24 Database connection was succesful
+2022/07/27 09:35:24 API is listening in the port:  8080
+2022/07/27 09:35:42 Checking whether User exists.
+2022/07/27 09:35:42 User exists.
+2022/07/27 09:35:42 User login sucessful
+2022/07/27 09:37:26 New Run!
+2022/07/27 09:37:26 Database connection was succesful
+2022/07/27 09:37:47 New Run!
+2022/07/27 09:37:47 Database connection was succesful
+2022/07/27 09:37:47 API is listening in the port:  8080
+2022/07/27 09:41:08 Failed to add address
+2022/07/27 09:41:08 Sucess adding address
+2022/07/27 09:45:34 New Run!
+2022/07/27 09:45:34 Database connection was succesful
+2022/07/27 09:45:34 API is listening in the port:  8080
+2022/07/27 09:45:42 Checking whether user exists.
+2022/07/27 09:45:42 Signed Up Successfully
+2022/07/27 09:57:38 New Run!
+2022/07/27 09:57:38 Database connection was succesful
+2022/07/27 09:57:38 API is listening in the port:  8080
+2022/07/27 09:57:56 Checking whether user exists.
+2022/07/27 09:57:56 User signup error pq: INSERT has more expressions than target columns
+2022/07/27 09:57:56 Signed Up Successfully
+2022/07/27 10:00:29 New Run!
+2022/07/27 10:00:29 Database connection was succesful
+2022/07/27 10:00:29 API is listening in the port:  8080
+2022/07/27 10:09:43 New Run!
+2022/07/27 10:09:43 Database connection was succesful
+2022/07/27 10:09:43 API is listening in the port:  8080
+2022/07/27 10:09:56 Checking whether user exists.
+2022/07/27 10:09:56 Signed Up Successfully
+2022/07/27 10:10:19 Failed to add address
+2022/07/27 10:11:13 New Run!
+2022/07/27 10:11:13 Database connection was succesful
+2022/07/27 10:11:13 API is listening in the port:  8080
+2022/07/27 10:11:20 Failed to add address
+2022/07/27 10:16:51 New Run!
+2022/07/27 10:16:51 Database connection was succesful
+2022/07/27 10:16:51 API is listening in the port:  8080
+2022/07/27 10:17:22 Failed to add address
+2022/07/27 10:17:32 Failed to add address
+2022/07/27 10:25:48 New Run!
+2022/07/27 10:25:48 Database connection was succesful
+2022/07/27 10:25:48 API is listening in the port:  8080
+2022/07/27 10:25:59 Checking whether user exists.
+2022/07/27 10:25:59 Signed Up Successfully
+2022/07/27 10:26:12 Failed to add address
+2022/07/27 10:28:14 New Run!
+2022/07/27 10:28:14 Database connection was succesful
+2022/07/27 10:28:14 API is listening in the port:  8080
+2022/07/27 10:28:24 Failed to add address
+2022/07/27 10:30:23 New Run!
+2022/07/27 10:30:23 Database connection was succesful
+2022/07/27 10:30:23 API is listening in the port:  8080
+2022/07/27 10:30:31 Failed to add address
+2022/07/27 10:33:10 New Run!
+2022/07/27 10:33:10 Database connection was succesful
+2022/07/27 10:33:10 API is listening in the port:  8080
+2022/07/27 10:33:17 Sucess adding address
+2022/07/27 10:36:34 Checking whether Admin exists.
+2022/07/27 10:36:34 Successfull Admin Login
+2022/07/27 10:36:55 true
+2022/07/27 10:39:07 New Run!
+2022/07/27 10:39:07 Database connection was succesful
+2022/07/27 10:39:07 API is listening in the port:  8080
+2022/07/27 10:39:18 true
+2022/07/27 10:40:43 New Run!
+2022/07/27 10:40:43 Database connection was succesful
+2022/07/27 10:40:43 API is listening in the port:  8080
+2022/07/27 10:40:50 true
+2022/07/27 10:42:53 New Run!
+2022/07/27 10:42:53 Database connection was succesful
+2022/07/27 10:42:53 API is listening in the port:  8080
+2022/07/27 10:42:59 true
+2022/07/27 10:45:48 New Run!
+2022/07/27 10:45:48 Database connection was succesful
+2022/07/27 10:45:48 API is listening in the port:  8080
+2022/07/27 10:45:55 true
+2022/07/27 10:48:54 New Run!
+2022/07/27 10:48:54 Database connection was succesful
+2022/07/27 10:48:54 API is listening in the port:  8080
+2022/07/27 10:49:08 true
+2022/07/27 10:54:40 New Run!
+2022/07/27 10:54:40 Database connection was succesful
+2022/07/27 10:54:40 API is listening in the port:  8080
+2022/07/27 10:54:56 true
+2022/07/27 11:00:02 New Run!
+2022/07/27 11:00:02 Database connection was succesful
+2022/07/27 11:00:02 API is listening in the port:  8080
+2022/07/27 11:00:08 true
+2022/07/27 11:01:05 false
+2022/07/27 11:01:05 Sucess in Viewing Products
+2022/07/27 11:01:24 false
+2022/07/27 11:01:24 search product is visible
+2022/07/27 11:01:39 false
+2022/07/27 11:01:39 Product added to cart
+2022/07/27 11:02:00 false
+2022/07/27 11:02:00 Success viewing cart
+2022/07/27 12:23:07 New Run!
+2022/07/27 12:23:07 Database connection was succesful
+2022/07/27 12:23:07 API is listening in the port:  8080
+2022/07/27 12:25:44 true
+2022/07/27 12:25:44 Iventory added for the product
+2022/07/27 12:31:11 true
+2022/07/27 12:31:11 Iventory added for the product
+2022/07/27 12:35:36 New Run!
+2022/07/27 12:35:36 Database connection was succesful
+2022/07/27 12:35:36 API is listening in the port:  8080
+2022/07/27 12:35:45 true
+2022/07/27 14:37:28 New Run!
+2022/07/27 14:37:28 Database connection was succesful
+2022/07/27 14:37:28 API is listening in the port:  8080
+2022/07/27 14:38:33 New Run!
+2022/07/27 14:38:33 Database connection was succesful
+2022/07/27 14:38:33 API is listening in the port:  8080
+2022/07/27 14:41:20 false
+2022/07/27 14:41:20 adding to wishlist failed
+2022/07/27 14:44:51 New Run!
+2022/07/27 14:44:51 Database connection was succesful
+2022/07/27 14:44:51 API is listening in the port:  8080
+2022/07/27 14:44:59 false
+2022/07/27 14:44:59 adding to wishlist failed
+2022/07/27 14:45:55 New Run!
+2022/07/27 14:45:55 Database connection was succesful
+2022/07/27 14:45:55 API is listening in the port:  8080
+2022/07/27 14:46:01 false
+2022/07/27 14:46:01 adding to wishlist failed
+2022/07/27 14:53:28 New Run!
+2022/07/27 14:53:28 Database connection was succesful
+2022/07/27 14:53:28 API is listening in the port:  8080
+2022/07/27 14:53:55 false
+2022/07/27 14:53:55 Sucess adding to wishlist
+2022/07/27 21:41:31 New Run!
+2022/07/27 21:41:31 Database connection was succesful
+2022/07/27 21:41:31 API is listening in the port:  8080
+2022/07/27 21:41:44 false
+2022/07/27 21:41:44 adding to wishlist failed
+2022/07/27 21:42:44 New Run!
+2022/07/27 21:42:44 Database connection was succesful
+2022/07/27 21:42:44 API is listening in the port:  8080
+2022/07/27 21:42:53 false
+2022/07/27 21:42:53 adding to wishlist failed
+2022/07/27 21:43:54 false
+2022/07/27 21:43:54 adding to wishlist failed
+2022/07/27 21:44:51 New Run!
+2022/07/27 21:44:52 Database connection was succesful
+2022/07/27 21:44:52 API is listening in the port:  8080
+2022/07/27 21:45:00 false
+2022/07/27 21:45:00 Sucess adding to wishlist
+2022/07/27 22:06:10 New Run!
+2022/07/27 22:06:10 Database connection was succesful
+2022/07/27 22:06:10 API is listening in the port:  8080
+2022/07/27 22:06:17 false
+2022/07/27 22:06:17 adding to wishlist failed
+2022/07/27 22:07:46 false
+2022/07/27 22:07:46 adding to wishlist failed
+2022/07/27 22:08:35 New Run!
+2022/07/27 22:08:35 Database connection was succesful
+2022/07/27 22:08:35 API is listening in the port:  8080
+2022/07/27 22:08:51 false
+2022/07/27 22:08:51 adding to wishlist failed
+2022/07/27 22:09:44 New Run!
+2022/07/27 22:09:44 Database connection was succesful
+2022/07/27 22:09:44 API is listening in the port:  8080
+2022/07/27 22:10:11 New Run!
+2022/07/27 22:10:11 Database connection was succesful
+2022/07/27 22:10:11 API is listening in the port:  8080
+2022/07/27 22:10:17 false
+2022/07/27 22:10:17 adding to wishlist failed
+2022/07/27 22:12:23 New Run!
+2022/07/27 22:12:23 Database connection was succesful
+2022/07/27 22:12:23 API is listening in the port:  8080
+2022/07/27 22:18:16 New Run!
+2022/07/27 22:18:16 Database connection was succesful
+2022/07/27 22:18:16 API is listening in the port:  8080
+2022/07/27 22:18:28 false
+2022/07/27 22:18:28 adding to wishlist failed
+2022/07/27 22:21:01 New Run!
+2022/07/27 22:21:01 Database connection was succesful
+2022/07/27 22:21:01 API is listening in the port:  8080
+2022/07/27 22:21:12 false
+2022/07/27 22:21:12 adding to wishlist failed
+2022/07/27 22:27:37 New Run!
+2022/07/27 22:27:37 Database connection was succesful
+2022/07/27 22:27:37 API is listening in the port:  8080
+2022/07/27 22:28:06 false
+2022/07/27 22:28:06 adding to wishlist failed
+2022/07/27 22:31:30 New Run!
+2022/07/27 22:31:30 Database connection was succesful
+2022/07/27 22:31:30 API is listening in the port:  8080
+2022/07/27 22:31:44 false
+2022/07/27 22:31:44 adding to wishlist failed
+2022/07/27 22:34:40 New Run!
+2022/07/27 22:34:40 Database connection was succesful
+2022/07/27 22:34:40 API is listening in the port:  8080
+2022/07/27 22:34:48 false
+2022/07/27 22:34:48 adding to wishlist failed
+2022/07/27 22:37:49 false
+2022/07/27 22:37:49 adding to wishlist failed
+2022/07/27 22:39:19 New Run!
+2022/07/27 22:39:19 Database connection was succesful
+2022/07/27 22:39:19 API is listening in the port:  8080
+2022/07/27 22:39:28 false
+2022/07/27 22:39:28 adding to wishlist failed
+2022/07/27 22:47:46 New Run!
+2022/07/27 22:47:46 Database connection was succesful
+2022/07/27 22:47:46 API is listening in the port:  8080
+2022/07/27 22:47:55 false
+2022/07/27 22:47:55 Sucess adding to wishlist
+2022/07/27 23:17:49 New Run!
+2022/07/27 23:17:49 Database connection was succesful
+2022/07/27 23:17:49 API is listening in the port:  8080
+2022/07/27 23:18:27 New Run!
+2022/07/27 23:18:27 Database connection was succesful
+2022/07/27 23:18:27 API is listening in the port:  8080
+2022/07/27 23:18:33 false
+2022/07/27 23:18:33 wishlist are visible
+2022/07/27 23:31:37 New Run!
+2022/07/27 23:31:37 Database connection was succesful
+2022/07/27 23:31:37 API is listening in the port:  8080
+2022/07/27 23:31:44 false
+2022/07/27 23:31:44 Error in Executing Query for Wishlist View: sql: converting argument $1 type: unsupported type models.User, a struct
+2022/07/27 23:34:46 New Run!
+2022/07/27 23:34:46 Database connection was succesful
+2022/07/27 23:34:46 API is listening in the port:  8080
+2022/07/27 23:34:53 false
+2022/07/27 23:34:53 w lst usr id {2 false     0 false 0 [] []}
+2022/07/27 23:34:53 Error in Executing Query for Wishlist View: sql: converting argument $1 type: unsupported type models.User, a struct
+2022/07/27 23:36:05 New Run!
+2022/07/27 23:36:05 Database connection was succesful
+2022/07/27 23:36:05 API is listening in the port:  8080
+2022/07/27 23:36:11 false
+2022/07/27 23:36:11 w lst usr id 2
+2022/07/27 23:36:11 Error in Executing Query for Wishlist View: sql: converting argument $1 type: unsupported type models.User, a struct
+2022/07/27 23:36:53 New Run!
+2022/07/27 23:36:53 Database connection was succesful
+2022/07/27 23:36:53 API is listening in the port:  8080
+2022/07/27 23:36:59 false
+2022/07/27 23:36:59 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": unsupported Scan, storing driver.Value type <nil> into type *models.Product
+2022/07/27 23:42:54 New Run!
+2022/07/27 23:42:55 Database connection was succesful
+2022/07/27 23:42:55 API is listening in the port:  8080
+2022/07/27 23:43:05 false
+2022/07/27 23:43:05 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": unsupported Scan, storing driver.Value type []uint8 into type *models.Product
+2022/07/27 23:46:54 New Run!
+2022/07/27 23:46:54 Database connection was succesful
+2022/07/27 23:46:54 API is listening in the port:  8080
+2022/07/27 23:47:04 false
+2022/07/27 23:47:04 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": unsupported Scan, storing driver.Value type []uint8 into type *models.Product
+2022/07/27 23:50:57 New Run!
+2022/07/27 23:50:57 Database connection was succesful
+2022/07/27 23:50:57 API is listening in the port:  8080
+2022/07/27 23:51:13 false
+2022/07/27 23:51:13 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": unsupported Scan, storing driver.Value type []uint8 into type *models.Product
+2022/07/27 23:53:47 New Run!
+2022/07/27 23:53:47 Database connection was succesful
+2022/07/27 23:53:47 API is listening in the port:  8080
+2022/07/27 23:53:55 false
+2022/07/27 23:53:55 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": converting driver.Value type []uint8 ("290.9") to a uint: invalid syntax
+2022/07/28 00:05:17 New Run!
+2022/07/28 00:05:17 Database connection was succesful
+2022/07/28 00:05:17 API is listening in the port:  8080
+2022/07/28 00:05:26 false
+2022/07/28 00:05:26 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": converting driver.Value type []uint8 ("290.9") to a int: invalid syntax
+2022/07/28 08:35:25 New Run!
+2022/07/28 08:35:25 Database connection was succesful
+2022/07/28 08:35:25 API is listening in the port:  8080
+2022/07/28 08:35:32 false
+2022/07/28 08:35:32 wishlist are visible
+2022/07/28 08:58:07 false
+2022/07/28 08:58:07 Sucess adding to wishlist
+2022/07/28 08:58:16 false
+2022/07/28 08:58:16 Error in Executing Query for Wishlist View: sql: Scan error on column index 2, name "product_price": converting driver.Value type []uint8 ("290.9") to a int: invalid syntax
+2022/07/28 09:03:40 New Run!
+2022/07/28 09:03:40 Database connection was succesful
+2022/07/28 09:03:40 API is listening in the port:  8080
+2022/07/28 09:03:51 false
+2022/07/28 09:03:51 Error in Executing Query for Wishlist View: sql: Scan error on column index 3, name "product_image": converting NULL to string is unsupported
+2022/07/28 09:05:17 New Run!
+2022/07/28 09:05:17 Database connection was succesful
+2022/07/28 09:05:17 API is listening in the port:  8080
+2022/07/28 09:05:27 false
+2022/07/28 09:05:27 wishlist are visible
+2022/07/28 10:18:01 New Run!
+2022/07/28 10:18:01 Database connection was succesful
+2022/07/28 10:18:01 API is listening in the port:  8080
+2022/07/28 10:18:56 error parsing jwt:  token is expired by 43m14s
+2022/07/28 10:18:56 Token Invalid.
+2022/07/28 10:19:14 error parsing jwt:  token is expired by 43m32s
+2022/07/28 10:19:14 Token Invalid.
+2022/07/28 10:19:17 Checking whether User exists.
+2022/07/28 10:19:17 The user does not exists.
+2022/07/28 10:19:17 User has been deactivated by Admin
+2022/07/28 10:19:33 Checking whether user exists.
+2022/07/28 10:19:33 User Already Exists.
+2022/07/28 10:19:54 Checking whether User exists.
+2022/07/28 10:19:54 User exists.
+2022/07/28 10:19:54 User login sucessful
+2022/07/28 10:20:10 false
+2022/07/28 10:20:10 Product deleted form the wishlist
+2022/07/28 10:33:12 New Run!
+2022/07/28 10:33:12 Database connection was succesful
+2022/07/28 10:33:12 API is listening in the port:  8080
+2022/07/28 10:33:34 false
+2022/07/28 10:33:34 Product_id: 0
+2022/07/28 10:33:34 Product deleted form the wishlist
+2022/07/28 10:42:36 New Run!
+2022/07/28 10:42:36 Database connection was succesful
+2022/07/28 10:42:36 API is listening in the port:  8080
+2022/07/28 10:42:46 false
+2022/07/28 10:42:46 Product_id: {0 {2 false     0 false 0 [] []} {19 false   {0 } {0  } 0 0 {0   0 false} {0 0} }  {0 false   {0 } {0  } 0 0 {0   0 false} {0 0} }}
+2022/07/28 10:42:46 deleting wish list failed sql: converting argument $1 type: unsupported type models.Product, a struct
+2022/07/28 10:43:57 New Run!
+2022/07/28 10:43:57 Database connection was succesful
+2022/07/28 10:43:57 API is listening in the port:  8080
+2022/07/28 10:44:04 false
+2022/07/28 10:44:04 Product_id: {19 false   {0 } {0  } 0 0 {0   0 false} {0 0} } UserID: {2 false     0 false 0 [] []}
+2022/07/28 10:44:04 deleting wish list failed sql: converting argument $1 type: unsupported type models.Product, a struct
+2022/07/28 10:44:42 New Run!
+2022/07/28 10:44:42 Database connection was succesful
+2022/07/28 10:44:42 API is listening in the port:  8080
+2022/07/28 10:44:48 false
+2022/07/28 10:44:48 Product_id: {19 false   {0 } {0  } 0 0 {0   0 false} {0 0} } UserID: {2 false     0 false 0 [] []}
+2022/07/28 10:44:48 Product deleted form the wishlist

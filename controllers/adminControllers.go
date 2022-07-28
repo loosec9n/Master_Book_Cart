@@ -141,6 +141,29 @@ func (c Controller) AdminProductAdd() http.HandlerFunc {
 	}
 }
 
+func (c Controller) AdminAddInventory() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		var inventory models.Inventory
+
+		json.NewDecoder(r.Body).Decode(&inventory)
+
+		inventory, err := c.ProductRepo.AddInventory(inventory)
+		if err != nil {
+			log.Println("failed to add inventory for the product")
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "failed to add inventory for the product", err))
+			return
+		}
+
+		log.Println("Iventory added for the product")
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Inventory added for the product", &inventory))
+	}
+}
+
 func (c Controller) AdminBlockUser() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
@@ -171,7 +194,8 @@ func (c Controller) AdminViewUser() http.HandlerFunc {
 		if err != nil {
 			w.WriteHeader((http.StatusNotFound))
 			//utils.ResponseJSON(w, "No User Found")
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "No user found", nil))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "No user found", err))
+			return
 		}
 
 		//utils.ResponseJSON(w, &viewUser)
