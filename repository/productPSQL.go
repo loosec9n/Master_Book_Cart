@@ -185,3 +185,21 @@ func (r Repository) CheckActiveProd(product_id int) (bool, error) {
 
 	return activeProduct.Is_Active, err
 }
+
+func (r Repository) AddInventory(inventory models.Inventory) (models.Inventory, error) {
+	query := `INSERT INTO inventory(
+		inventory_id,
+		inventory_quantity)
+		VALUES($1,$2)
+		RETURNING
+		inventory_id,
+		inventory_quantity;`
+
+	err := r.DB.QueryRow(query,
+		inventory.Inventory_ID,
+		inventory.Inventory_Quantity).Scan(
+		&inventory.Inventory_ID,
+		&inventory.Inventory_Quantity,
+	)
+	return inventory, err
+}

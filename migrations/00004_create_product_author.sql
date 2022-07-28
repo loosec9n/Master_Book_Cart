@@ -4,10 +4,10 @@
 CREATE TABLE IF NOT EXISTS product_author(
     author_id BIGSERIAL PRIMARY KEY,
     author_name VARCHAR(400) NOT NULL,
-    author_created_at TIMESTAMP DEFAULT NOW(),
-    author_updated_at TIMESTAMP DEFAULT NOW(),
-    author_deleted_at TIMESTAMP DEFAULT NOW()
-)
+    author_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    author_updated_at TIMESTAMP DEFAULT NULL,
+    author_deleted_at TIMESTAMP DEFAULT NULL
+);
 
 -- +goose StatementEnd
 

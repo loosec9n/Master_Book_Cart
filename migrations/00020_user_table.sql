@@ -10,7 +10,11 @@ CREATE TABLE IF NOT EXISTS users (
       email VARCHAR(200) NOT NULL,
       phone_number BIGINT,
       is_admin BOOLEAN DEFAULT FALSE,
-      created_at TIMESTAMP DEFAULT NOW()
+      user_address_id BIGINT REFERENCES user_address (user_address_id),
+      order_status BIGINT REFERENCES user_order_status(order_id),
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      updated_at TIMESTAMP DEFAULT NULL,
+      deleted_at TIMESTAMP NULL
    );
 
 -- +goose StatementEnd

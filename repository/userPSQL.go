@@ -6,6 +6,14 @@ import (
 	"log"
 )
 
+type wishList struct {
+	Id       int     `json:"wishID"`
+	Price    float64 `json:"wishPrice"`
+	PrImage  string  `json:"wishImage"`
+	PrName   string  `json:"wishName"`
+	PrUserID int     `json:"wishUserID"`
+}
+
 //function to add user details to user database
 func (r Repository) UserSignup(user models.User) models.User {
 
@@ -34,6 +42,38 @@ func (r Repository) UserSignup(user models.User) models.User {
 		log.Println("User signup error", err)
 	}
 	return user
+}
+
+func (r Repository) AddAddress(address models.Address) (models.Address, error) {
+
+	query := `INSERT INTO user_address(
+		address_id,
+		house_name,
+		street_name,
+		land_mark,
+		city,
+		add_state,
+		pincode)
+		VALUES($1,$2,$3,$4,$5,$6,$7)
+		RETURNING 
+		address_id,
+		house_name, 
+		city;`
+
+	err := r.DB.QueryRow(query,
+		address.AddressID,
+		address.HouseName,
+		address.StreetName,
+		address.LandMark,
+		address.City,
+		address.State,
+		address.Pincode).Scan(
+		&address.UserAddress_ID,
+		&address.HouseName,
+		&address.City,
+	)
+
+	return address, err
 }
 
 // To check whether u.User exists
@@ -147,7 +187,7 @@ func (r Repository) ViewUser() ([]models.User, error) {
 		email, 
 		phone_number, 
 		is_active, 
-		is_admin		
+		is_admin
 		FROM 
 		users;`
 	row, err := r.DB.Query(query)
@@ -167,19 +207,19 @@ func (r Repository) ViewUser() ([]models.User, error) {
 			&user.Email,
 			&user.Phone_Number,
 			&user.Is_Active,
-			&user.IsAdmin); err != nil {
+			&user.IsAdmin,
+			//&user.UserAddressID,
+		); err != nil {
 			return users, err
 		}
 		if !user.IsAdmin {
 			users = append(users, user)
 		}
-
 	}
-
 	if err = row.Err(); err != nil {
 		return users, err
 	}
-	return users, nil
+	return users, err
 }
 
 func (r Repository) FindUserByEmail(user models.User) (models.User, error) {
@@ -223,4 +263,90 @@ func (r Repository) ForgetPasswordUpdate(user models.User, pass string) (models.
 		&usr.Email,
 	)
 	return usr, err
+}
+
+func (r Repository) AddWishlist(wishlist models.Wishlist) (models.Wishlist, error) {
+	query := `INSERT INTO wishlist(
+		product_id,
+		user_id)
+		VALUES($1,$2)
+		RETURNING
+		wishlist_id,
+		user_id,
+		product_id;`
+
+	err := r.DB.QueryRow(query,
+		wishlist.Product_ID.Product_ID,
+		wishlist.User_ID.User_ID,
+	).Scan(
+		&wishlist.Wishlist_ID,
+		&wishlist.Product_ID.Product_ID,
+		&wishlist.User_ID.User_ID,
+	)
+
+	return wishlist, err
+}
+
+func (r Repository) ViewWishlist(filter models.Filter, wlist models.Wishlist) ([]wishList, models.Metadata, error) {
+	var lists []wishList
+
+	query := `SELECT COUNT(*) OVER(),
+	product.product_id,	
+	product.product_price,
+	product.product_name,
+	users.user_id
+	FROM
+	wishlist
+	INNER JOIN 
+	product ON wishlist.product_id = product.product_id
+	INNER JOIN
+	users ON wishlist.user_id=users.user_id
+	WHERE wishlist.user_id=$1
+	LIMIT $2 OFFSET $3;`
+
+	rows, err := r.DB.Query(query,
+		wlist.User_ID.User_ID,
+		filter.Limit(),
+		filter.Offset())
+	if err != nil {
+		return nil, models.Metadata{}, err
+	}
+	defer rows.Close()
+
+	var toatalRecords int
+
+	for rows.Next() {
+		var list wishList
+		if err := rows.Scan(&toatalRecords,
+			&list.Id,
+			&list.Price,
+			&list.PrName,
+			&list.PrUserID,
+		); err != nil {
+			return lists, models.Metadata{}, err
+		}
+		lists = append(lists, list)
+	}
+	if err = rows.Err(); err != nil {
+		return lists, models.Metadata{}, err
+	}
+
+	return lists, models.ComputeMetadata(toatalRecords, filter.Page, filter.PageSize), nil
+}
+
+func (r Repository) DeleteProductWishlist(delete models.Wishlist) (int64, error) {
+
+	query := `DELETE FROM 
+				wishlist
+					WHERE product_id = $1 AND user_id = $2;`
+	res, err := r.DB.Exec(query, delete.Product_ID.Product_ID, delete.User_ID.User_ID)
+	if err != nil {
+		return 0, err
+	}
+	count, err := res.RowsAffected()
+	if err != nil {
+		return 0, err
+	}
+
+	return count, err
 }

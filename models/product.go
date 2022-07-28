@@ -12,10 +12,10 @@ type Product struct {
 	Product_Rating      float32         `json:"productRating"`
 	Product_Discount_ID Discount        `json:"discountID"`
 	Product_Inventory   Inventory       `json:"inventoryID"`
-	Product_Image       string          `json:"productImage"`
-	// Product_Created_At  time.Time       `json:"productCreatedAt"`
-	// Product_Updated_At  time.Time       `json:"productUpdatedAt"`
-	// Product_Deleted_At  time.Time       `json:"productDeletedAt"`
+	Product_Image       string          `json:"productImage,omitempty"`
+	// Product_Created_At  time.Time       `json:"productCreatedAt,omitempty"`
+	// Product_Updated_At  time.Time       `json:"productUpdatedAt,omitempty"`
+	// Product_Deleted_At  time.Time       `json:"productDeletedAt,omitempty"`
 }
 
 // type ProductUser struct {
@@ -36,16 +36,16 @@ type ProductCategory struct {
 	Category_ID          uint   `json:"categoryID"`
 	Category_Name        string `json:"categoryName"`
 	Category_Description string `json:"categoryDescription"`
-	// Category_Created_At  time.Time `json:"categoryCreatedAt"`
-	// Category_Updated_At  time.Time `json:"categoryUpdatedAt"`
-	// Category_Deleted_At  time.Time `json:"categoryDeletedAt"`
+	// Category_Created_At  time.Time `json:"categoryCreatedAt,omitempty"`
+	// Category_Updated_At  time.Time `json:"categoryUpdatedAt,omitempty"`
+	// Category_Deleted_At  time.Time `json:"categoryDeletedAt,omitempty"`
 }
 type ProductAuthor struct {
 	Author_ID   uint   `json:"authorID"`
 	Author_Name string `json:"authorName"`
-	// Author_Created_At time.Time `json:"authorCreatedAt"`
-	// Author_Updated_At time.Time `json:"authorUpdatedAt"`
-	// Author_Deleted_At time.Time `json:"authorDeletedAt"`
+	// Author_Created_At time.Time `json:"authorCreatedAt,omitempty"`
+	// Author_Updated_At time.Time `json:"authorUpdatedAt,omitempty"`
+	// Author_Deleted_At time.Time `json:"authorDeletedAt,omitempty"`
 }
 type Discount struct {
 	Discount_ID          uint    `json:"discountId"`
@@ -53,14 +53,14 @@ type Discount struct {
 	Discount_Description string  `json:"discountDescription"`
 	Discount_Percentage  float32 `json:"discountPercentage"`
 	Discount_Status      bool    `json:"discountStatus"`
-	// Discount_Created_At  time.Time `json:"discountCreatedAt"`
-	// Discount_Updated_At  time.Time `json:"discountUpdatedAt"`
-	// Discount_Deleted_At  time.Time `json:"discountDeletedAt"`
+	// Discount_Created_At  time.Time `json:"discountCreatedAt,omitempty"`
+	// Discount_Updated_At  time.Time `json:"discountUpdatedAt,omitempty"`
+	// Discount_Deleted_At  time.Time `json:"discountDeletedAt,omitempty"`
 }
 type Inventory struct {
 	Inventory_ID       uint `json:"inventoryID"`
 	Inventory_Quantity int  `json:"inventoryQuantity"`
-	// Inventory_Created_At time.Time `json:"innentoryCreatedAt"`
-	// Inventory_Updated_At time.Time `json:"inventoryUpdatedAt"`
-	// Inventory_Deleted_At time.Time `json:"inventoryDeletedAt"`
+	// Inventory_Created_At time.Time `json:"inventoryCreatedAt,omitempty"`
+	// Inventory_Updated_At time.Time `json:"inventoryUpdatedAt,omitempty"`
+	// Inventory_Deleted_At time.Time `json:"inventoryDeletedAt,omitempty"`
 }

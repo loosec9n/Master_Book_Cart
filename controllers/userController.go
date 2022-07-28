@@ -56,6 +56,28 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 	}
 }
 
+func (c Controller) UserAddress() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var address models.Address
+
+		json.NewDecoder(r.Body).Decode(&address)
+
+		userAddress, err := c.UserRepo.AddAddress(address)
+		if err != nil {
+			log.Println("Failed to add address")
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "failed to add user address", err))
+			return
+		}
+
+		log.Println("Sucess adding address")
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "user address updated sucessfuly", userAddress))
+	}
+}
+
 func (c Controller) UserLoginIndex(w http.ResponseWriter, r *http.Request) {
 	//user login template will parse here
 }
@@ -157,10 +179,6 @@ func (c Controller) UserHomePage() http.HandlerFunc {
 			"total pages":    result.LastPage,
 			"data":           &products,
 		}))
-
-		// log.Println("Logged in Successfully")
-		// //utils.ResponseJSON(w, "Succesfully logged in")
-		// json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User Home page", "Sucessful login"))
 
 	}
 }
@@ -318,14 +336,104 @@ func (c Controller) ResetPassword() http.HandlerFunc {
 		updateUser, err := c.UserRepo.ForgetPasswordUpdate(user, hashedResetPassword)
 		if err != nil {
 			log.Println("not able to update the password in the user table")
+			w.Header().Add("Content-Type", "application/json")
 			w.WriteHeader(http.StatusNotImplemented)
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "ot able to update the password in the user table", &updateUser))
 			return
 		}
 
 		log.Println("new password updated")
+		w.Header().Add("Content-Type", "application/json")
 		w.WriteHeader(http.StatusAccepted)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "new password updated", &updateUser))
+
+	}
+}
+
+func (c Controller) UserWishlist() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var wishlist models.Wishlist
+
+		json.NewDecoder(r.Body).Decode(&wishlist)
+
+		wishlist, err := c.UserRepo.AddWishlist(wishlist)
+		if err != nil {
+			log.Println("adding to wishlist failed")
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "adding to wishlist failed", err))
+			return
+		}
+
+		log.Println("Sucess adding to wishlist")
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "success adding to wishlist", wishlist))
+	}
+}
+
+func (c Controller) UserViewWishlist() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		params, err := strconv.Atoi(r.URL.Query().Get("id"))
+		if err != nil || params < 1 {
+			log.Println("Error converting string to int", err)
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting page to params for page number", err))
+			return
+		}
+
+		var user models.Wishlist
+		json.NewDecoder(r.Body).Decode(&user)
+
+		f := models.Filter{
+			PageSize: 5,
+			Page:     params,
+		}
+
+		result := models.Metadata{}
+
+		wishlist, result, err := c.UserRepo.ViewWishlist(f, user)
+
+		if err != nil {
+			log.Println("Error in Executing Query for Wishlist View:", err)
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotImplemented)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error in Executing Query for wishlist View:", err))
+			return
+		}
+
+		log.Println("wishlist are visible")
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "wishlist is visible", map[string]interface{}{
+			"data":     &wishlist,
+			"total":    result.TotalRecords,
+			"page":     result.CurrentPage,
+			"lastpage": result.LastPage,
+		}))
+	}
+}
+
+func (c Controller) UserDeleteWishlist() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var deleteProduct models.Wishlist
+
+		json.NewDecoder(r.Body).Decode(&deleteProduct)
+
+		count, err := c.UserRepo.DeleteProductWishlist(deleteProduct)
+		if err != nil {
+			log.Println("deleting wish list failed", err)
+			w.Header().Add("Content-Type", "application/json")
+			w.WriteHeader(http.StatusNotModified)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "deleting the wishlist failed", err))
+			return
+		}
+
+		log.Println("Product deleted form the wishlist")
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "products deleted form wishlist", count))
 
 	}
 }

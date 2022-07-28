@@ -6,10 +6,10 @@ CREATE TABLE IF NOT EXISTS discount(
     discount_description VARCHAR(500),
     discount_percentage NUMERIC(2,2),
     discount_status BOOLEAN NOT NULL,
-    discount_created_at TIMESTAMP DEFAULT NOW(),
-    discount_updates_at TIMESTAMP,
-    discount_deleted_at TIMESTAMP
-)
+    discount_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    discount_updates_at TIMESTAMP NULL,
+    discount_deleted_at TIMESTAMP NULL
+);
 -- +goose StatementEnd
 
 -- +goose Down
