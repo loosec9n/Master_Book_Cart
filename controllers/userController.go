@@ -41,17 +41,12 @@ func (c Controller) UserSignUp() http.HandlerFunc {
 		// assigning hashed password to usermodels
 		user.Password = hashedPassword
 
-		//log.Println("Hashed Password: ", user.Password)
-
-		//creating update time
-		// user.CreatedAt, _ = time.Parse(time.RFC3339, time.Now().Format(time.RFC3339))
-
 		//Registering user to the database
 		user = c.UserRepo.UserSignup(user)
 
 		//writing userdata to the response
 		log.Println("Signed Up Successfully")
-		//utils.ResponseJSON(w, &user)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "new user created", &user))
 	}
 }
@@ -101,7 +96,6 @@ func (c Controller) UserLogin() http.HandlerFunc {
 			if err == sql.ErrNoRows {
 				log.Println("The user does not exists.")
 				w.WriteHeader(http.StatusBadGateway)
-				//utils.ResponseJSON(w, "Please Check the Username")
 				json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User does not exists", err))
 			} else {
 				log.Fatal(err)
@@ -112,7 +106,6 @@ func (c Controller) UserLogin() http.HandlerFunc {
 		if !founduser.Is_Active {
 			log.Println("User has been deactivated by Admin")
 			w.WriteHeader(http.StatusUnauthorized)
-			//utils.ResponseJSON(w, "This user is inactive, please contact the admin")
 			json.NewEncoder(w).Encode(utils.PrepareResponse(true, "This user is inactive, please contact the admin", nil))
 			return
 		}
@@ -173,13 +166,13 @@ func (c Controller) UserHomePage() http.HandlerFunc {
 		}
 
 		log.Println("Sucess in Viewing Products")
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "home page view products success", map[string]interface{}{
 			"total products": result.TotalRecords,
 			"current page":   result.CurrentPage,
 			"total pages":    result.LastPage,
 			"data":           &products,
 		}))
-
 	}
 }
 
@@ -213,7 +206,7 @@ func (c Controller) SearchProduct() http.HandlerFunc {
 		}
 
 		log.Println("search product is visible")
-		w.WriteHeader(http.StatusFound)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "search product is visible", &product))
 
 	}
@@ -248,7 +241,6 @@ func (c Controller) ForgetPassword() http.HandlerFunc {
 		resetToken := randstr.String(20)
 
 		//encoding the random string
-		//passwordResetToken := utils.Encode(resetToken)\
 		passwordResetToken := utils.HashPassword(resetToken)
 
 		//update the hashed password into the database
@@ -262,7 +254,7 @@ func (c Controller) ForgetPassword() http.HandlerFunc {
 		}
 
 		log.Println("password hashed and updated in user - forget password ")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "password hashed and updated in user - sending the email", map[string]interface{}{
 			"user":  &modUser,
 			"token": resetToken,
@@ -284,7 +276,7 @@ func (c Controller) ForgetPassword() http.HandlerFunc {
 		}
 
 		log.Println("email send for reseting the data")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "email send for reseting the data", map[string]interface{}{
 			"user":  &modUser,
 			"token": resetToken,
@@ -344,7 +336,7 @@ func (c Controller) ResetPassword() http.HandlerFunc {
 
 		log.Println("new password updated")
 		w.Header().Add("Content-Type", "application/json")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "new password updated", &updateUser))
 
 	}

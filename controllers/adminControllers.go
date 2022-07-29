@@ -111,6 +111,7 @@ func (c Controller) AdminProductView() http.HandlerFunc {
 		}
 
 		log.Println("Products are visible to the admin")
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Admin can view the products", map[string]interface{}{
 			"data":     &products,
 			"total":    result.TotalRecords,
@@ -135,7 +136,7 @@ func (c Controller) AdminProductAdd() http.HandlerFunc {
 			return
 		}
 		log.Println("Product added by admin")
-
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "Product added by admin", &pro))
 
 	}
@@ -175,12 +176,10 @@ func (c Controller) AdminBlockUser() http.HandlerFunc {
 
 		if err != nil {
 			w.WriteHeader(http.StatusNotModified)
-			//utils.ResponseJSON(w, "Failed to block user")
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "unable to update user", nil))
 		}
 		log.Println("Updated the User Active Status")
-		// utils.ResponseJSON(w, "Updates the User status")
-		// utils.ResponseJSON(w, &blockedUser)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "updated the user status by admin", &blockedUser))
 
 	}
@@ -192,13 +191,12 @@ func (c Controller) AdminViewUser() http.HandlerFunc {
 		viewUser, err := c.UserRepo.ViewUser()
 
 		if err != nil {
-			w.WriteHeader((http.StatusNotFound))
-			//utils.ResponseJSON(w, "No User Found")
+			w.WriteHeader(http.StatusNotFound)
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "No user found", err))
 			return
 		}
 
-		//utils.ResponseJSON(w, &viewUser)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "User found", &viewUser))
 	}
 }
@@ -220,6 +218,7 @@ func (c Controller) AdminBlockProduct() http.HandlerFunc {
 		}
 
 		log.Println("updated the product active status")
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "updated the product status by admin", &blockProduct))
 
 	}
