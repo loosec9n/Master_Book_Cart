@@ -19,7 +19,7 @@ type UserRepository interface {
 	BlockUser(models.User) (models.User, error)
 	ViewUser() ([]models.User, error)
 	AddToCart(models.Cart) (models.Cart, error)
-	ViewCart(models.Cart) ([]models.Cart, error)
+	ViewCart(models.Cart) ([]models.Cart, float64, error)
 	CheckActiveProd(int) (bool, error)
 	UserSearchProduct(int) (Prod, error)
 	FindUserByEmail(models.User) (models.User, error)

@@ -685,3 +685,230 @@
 2022/07/28 10:44:48 false
 2022/07/28 10:44:48 Product_id: {19 false   {0 } {0  } 0 0 {0   0 false} {0 0} } UserID: {2 false     0 false 0 [] []}
 2022/07/28 10:44:48 Product deleted form the wishlist
+2022/07/28 11:00:48 New Run!
+2022/07/28 11:00:48 Database connection was succesful
+2022/07/28 11:00:48 API is listening in the port:  8080
+2022/07/28 11:00:55 Checking whether Admin exists.
+2022/07/28 11:00:55 Successfull Admin Login
+2022/07/28 12:24:33 New Run!
+2022/07/28 12:24:33 Database connection was succesful
+2022/07/28 12:24:33 API is listening in the port:  8080
+2022/07/28 12:25:13 error parsing jwt:  token is expired by 2h49m31s
+2022/07/28 12:25:13 Token Invalid.
+2022/07/28 12:25:21 Checking whether User exists.
+2022/07/28 12:25:21 User exists.
+2022/07/28 12:25:21 User login sucessful
+2022/07/28 12:25:36 false
+2022/07/28 12:25:36 Product added to cart
+2022/07/28 12:25:57 false
+2022/07/28 12:25:57 Product added to cart
+2022/07/28 12:26:13 false
+2022/07/28 12:26:13 Success viewing cart
+2022/07/28 12:32:20 false
+2022/07/28 12:32:20 Product added to cart
+2022/07/28 12:32:25 false
+2022/07/28 12:32:25 Success viewing cart
+2022/07/29 08:49:25 New Run!
+2022/07/29 08:49:25 Database connection was succesful
+2022/07/29 08:49:25 API is listening in the port:  8080
+2022/07/29 08:49:39 false
+2022/07/29 08:49:39 product and its count : Book1 1
+2022/07/29 08:49:39 product and its count : Book1 1
+2022/07/29 08:49:39 product and its count : Book2 1
+2022/07/29 08:49:39 product and its count : Book3 2
+2022/07/29 08:49:39 Success viewing cart
+2022/07/29 09:05:29 New Run!
+2022/07/29 09:05:29 Database connection was succesful
+2022/07/29 09:05:29 API is listening in the port:  8080
+2022/07/29 09:05:39 false
+2022/07/29 09:05:39 Success viewing cart
+2022/07/29 09:20:22 New Run!
+2022/07/29 09:20:22 Database connection was succesful
+2022/07/29 09:20:22 API is listening in the port:  8080
+2022/07/29 09:20:29 false
+2022/07/29 09:20:29 Success viewing cart
+2022/07/29 11:42:21 New Run!
+2022/07/29 11:42:21 Database connection was succesful
+2022/07/29 11:42:21 API is listening in the port:  8080
+2022/07/29 11:44:25 false
+2022/07/29 11:44:25 Error adding to cart
+2022/07/29 11:49:50 New Run!
+2022/07/29 11:49:50 Database connection was succesful
+2022/07/29 11:49:50 API is listening in the port:  8080
+2022/07/29 11:49:58 false
+2022/07/29 11:49:58 update failed pq: syntax error at or near "+="
+2022/07/29 11:49:58 query2 failed
+2022/07/29 11:49:58 Error adding to cart
+2022/07/29 11:51:07 New Run!
+2022/07/29 11:51:07 Database connection was succesful
+2022/07/29 11:51:07 API is listening in the port:  8080
+2022/07/29 11:51:14 false
+2022/07/29 11:51:14 update failed pq: relation "product_count" does not exist
+2022/07/29 11:51:14 query2 failed
+2022/07/29 11:51:14 Error adding to cart
+2022/07/29 11:51:43 New Run!
+2022/07/29 11:51:43 Database connection was succesful
+2022/07/29 11:51:43 API is listening in the port:  8080
+2022/07/29 11:51:52 false
+2022/07/29 11:51:52 update failed sql: no rows in result set
+2022/07/29 11:51:52 query2 failed
+2022/07/29 11:51:52 Error adding to cart
+2022/07/29 12:11:11 New Run!
+2022/07/29 12:11:11 Database connection was succesful
+2022/07/29 12:11:11 API is listening in the port:  8080
+2022/07/29 12:11:20 false
+2022/07/29 12:11:20 failed query 1 sql: converting argument $2 type: unsupported type models.Product, a struct
+2022/07/29 12:11:20 no row selected rollback
+2022/07/29 12:11:20 Error adding to cart
+2022/07/29 12:12:44 New Run!
+2022/07/29 12:12:44 Database connection was succesful
+2022/07/29 12:12:44 API is listening in the port:  8080
+2022/07/29 12:12:50 false
+2022/07/29 12:12:50 failed query 1 <nil>
+2022/07/29 12:12:50 no row selected rollback
+2022/07/29 12:12:50 Error adding to cart
+2022/07/29 12:16:46 New Run!
+2022/07/29 12:16:46 Database connection was succesful
+2022/07/29 12:16:46 API is listening in the port:  8080
+2022/07/29 12:16:53 false
+2022/07/29 12:16:53 failed query 1 <nil> 2
+2022/07/29 12:16:53 no row selected rollback
+2022/07/29 12:16:53 Error adding to cart
+2022/07/29 12:17:50 New Run!
+2022/07/29 12:17:50 Database connection was succesful
+2022/07/29 12:17:50 API is listening in the port:  8080
+2022/07/29 12:17:57 false
+2022/07/29 12:17:57 failed query 1 <nil> 2 3
+2022/07/29 12:17:57 no row selected rollback
+2022/07/29 12:17:57 Error adding to cart
+2022/07/29 12:19:07 New Run!
+2022/07/29 12:19:07 Database connection was succesful
+2022/07/29 12:19:07 API is listening in the port:  8080
+2022/07/29 12:19:15 false
+2022/07/29 12:19:15 failed query 1 sql: expected 1 destination arguments in Scan, not 3 2 3
+2022/07/29 12:19:15 no row selected rollback
+2022/07/29 12:19:15 Error adding to cart
+2022/07/29 12:20:47 New Run!
+2022/07/29 12:20:47 Database connection was succesful
+2022/07/29 12:20:47 API is listening in the port:  8080
+2022/07/29 12:20:53 false
+2022/07/29 12:20:53 failed query 1 <nil> 2 3 4
+2022/07/29 12:20:53 row selected: <nil>
+2022/07/29 12:20:53 no row selected rollback
+2022/07/29 12:20:53 Error adding to cart
+2022/07/29 12:27:10 New Run!
+2022/07/29 12:27:10 Database connection was succesful
+2022/07/29 12:27:10 API is listening in the port:  8080
+2022/07/29 12:27:19 error parsing jwt:  token is expired by 1m58s
+2022/07/29 12:27:19 Token Invalid.
+2022/07/29 12:27:28 Checking whether User exists.
+2022/07/29 12:27:28 User exists.
+2022/07/29 12:27:28 User login sucessful
+2022/07/29 12:27:43 false
+2022/07/29 12:27:43 failed query 1 <nil> 2 3 4
+2022/07/29 12:27:43 row selected: 4
+2022/07/29 12:27:43 no row selected rollback
+2022/07/29 12:27:43 Error adding to cart
+2022/07/29 12:31:59 New Run!
+2022/07/29 12:31:59 Database connection was succesful
+2022/07/29 12:31:59 API is listening in the port:  8080
+2022/07/29 12:32:05 false
+2022/07/29 12:32:05 query1 <nil>
+2022/07/29 12:32:05 row selected: 4
+2022/07/29 12:32:05 no row selected rollback pq: there is no parameter $1
+2022/07/29 12:32:05 Error adding to cart
+2022/07/29 12:37:29 New Run!
+2022/07/29 12:37:29 Database connection was succesful
+2022/07/29 12:37:29 API is listening in the port:  8080
+2022/07/29 12:37:39 false
+2022/07/29 12:37:39 query1 <nil>
+2022/07/29 12:37:39 row selected: 4
+2022/07/29 12:37:39 no row selected rollback pq: there is no parameter $1
+2022/07/29 12:37:39 Error adding to cart
+2022/07/29 13:28:42 New Run!
+2022/07/29 13:28:42 Database connection was succesful
+2022/07/29 13:28:42 API is listening in the port:  8080
+2022/07/29 13:28:52 false
+2022/07/29 13:28:52 query2 failed
+2022/07/29 13:28:52 Error adding to cart
+2022/07/29 13:31:53 New Run!
+2022/07/29 13:31:53 Database connection was succesful
+2022/07/29 13:31:53 API is listening in the port:  8080
+2022/07/29 13:32:04 false
+2022/07/29 13:32:04 query2 failed sql: no rows in result set 2 4
+2022/07/29 13:32:04 Error adding to cart
+2022/07/29 13:36:56 New Run!
+2022/07/29 13:36:56 Database connection was succesful
+2022/07/29 13:36:56 API is listening in the port:  8080
+2022/07/29 13:37:06 false
+2022/07/29 13:37:06 query2 failed sql: no rows in result set 2 4
+2022/07/29 13:37:06 Error adding to cart
+2022/07/29 13:38:57 false
+2022/07/29 13:38:57 Inside Insert Query
+2022/07/29 13:38:57 Product added to cart
+2022/07/29 13:42:22 New Run!
+2022/07/29 13:42:22 Database connection was succesful
+2022/07/29 13:42:22 API is listening in the port:  8080
+2022/07/29 13:42:30 false
+2022/07/29 13:42:30 Inside Insert Query
+2022/07/29 13:42:30 no row selected rollback sql: no rows in result set
+2022/07/29 13:42:30 Error adding to cart
+2022/07/29 13:45:35 New Run!
+2022/07/29 13:45:35 Database connection was succesful
+2022/07/29 13:45:35 API is listening in the port:  8080
+2022/07/29 13:45:42 false
+2022/07/29 13:45:42 Inside Insert Query
+2022/07/29 13:45:42 updated the query
+2022/07/29 13:45:42 no row selected rollback sql: no rows in result set
+2022/07/29 13:45:42 Error adding to cart
+2022/07/29 13:47:05 New Run!
+2022/07/29 13:47:05 Database connection was succesful
+2022/07/29 13:47:05 API is listening in the port:  8080
+2022/07/29 13:47:12 false
+2022/07/29 13:47:12 Inside Insert Query
+2022/07/29 13:47:12 updated the query
+2022/07/29 13:47:12 no row selected rollback sql: no rows in result set
+2022/07/29 13:47:12 Error adding to cart
+2022/07/29 13:47:36 New Run!
+2022/07/29 13:47:36 Database connection was succesful
+2022/07/29 13:47:36 API is listening in the port:  8080
+2022/07/29 13:47:42 false
+2022/07/29 13:47:42 Inside Insert Query
+2022/07/29 13:47:42 updated the query
+2022/07/29 13:47:42 query2 failed sql: no rows in result set 1 9
+2022/07/29 13:47:42 Error adding to cart
+2022/07/29 13:51:27 New Run!
+2022/07/29 13:51:27 Database connection was succesful
+2022/07/29 13:51:27 API is listening in the port:  8080
+2022/07/29 13:51:34 false
+2022/07/29 13:51:34 Inside Insert Query
+2022/07/29 13:51:34 updated the query
+2022/07/29 13:51:34 commit sucess
+2022/07/29 13:51:34 Product added to cart
+2022/07/29 13:52:11 false
+2022/07/29 13:52:11 query2 failed sql: no rows in result set 1 10
+2022/07/29 13:52:11 Error adding to cart
+2022/07/29 13:54:46 New Run!
+2022/07/29 13:54:46 Database connection was succesful
+2022/07/29 13:54:46 API is listening in the port:  8080
+2022/07/29 13:54:54 false
+2022/07/29 13:54:54 commit sucess
+2022/07/29 13:54:54 Product added to cart
+2022/07/29 13:56:16 New Run!
+2022/07/29 13:56:16 Database connection was succesful
+2022/07/29 13:56:16 API is listening in the port:  8080
+2022/07/29 13:56:25 false
+2022/07/29 13:56:25 query2 failed sql: expected 2 destination arguments in Scan, not 4 1 10
+2022/07/29 13:56:25 Error adding to cart
+2022/07/29 13:57:12 New Run!
+2022/07/29 13:57:12 Database connection was succesful
+2022/07/29 13:57:12 API is listening in the port:  8080
+2022/07/29 13:57:19 false
+2022/07/29 13:57:19 commit sucess
+2022/07/29 13:57:19 Product added to cart
+2022/07/29 14:00:26 New Run!
+2022/07/29 14:00:26 Database connection was succesful
+2022/07/29 14:00:26 API is listening in the port:  8080
+2022/07/29 14:00:35 false
+2022/07/29 14:00:35 commit sucess
+2022/07/29 14:00:35 Product added to cart
