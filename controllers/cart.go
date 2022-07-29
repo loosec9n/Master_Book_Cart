@@ -26,7 +26,7 @@ func (c Controller) AddToCart() http.HandlerFunc {
 		}
 
 		log.Println("Product added to cart")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucessfully added to cart", &cart))
 	}
 }
@@ -47,7 +47,7 @@ func (c Controller) ViewCart() http.HandlerFunc {
 		}
 
 		log.Println("Success viewing cart")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucess viewing cart", map[string]interface{}{
 			"Total Price":      total,
 			"Products in cart": &carts,

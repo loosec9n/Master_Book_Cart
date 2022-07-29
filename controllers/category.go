@@ -25,6 +25,7 @@ func (c Controller) AddCategory() http.HandlerFunc {
 		}
 
 		log.Println("category added by admin")
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode((utils.PrepareResponse(true, "Succesfully added category", &category)))
 
 	}
@@ -65,7 +66,7 @@ func (c Controller) AddAuthor() http.HandlerFunc {
 		}
 
 		log.Println("Successfuly added author")
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucess adding author", &author))
 
 	}
