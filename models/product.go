@@ -47,16 +47,7 @@ type ProductAuthor struct {
 	// Author_Updated_At time.Time `json:"authorUpdatedAt,omitempty"`
 	// Author_Deleted_At time.Time `json:"authorDeletedAt,omitempty"`
 }
-type Discount struct {
-	Discount_ID          uint    `json:"discountId"`
-	Discount_Name        string  `json:"discountName"`
-	Discount_Description string  `json:"discountDescription"`
-	Discount_Percentage  float32 `json:"discountPercentage"`
-	Discount_Status      bool    `json:"discountStatus"`
-	// Discount_Created_At  time.Time `json:"discountCreatedAt,omitempty"`
-	// Discount_Updated_At  time.Time `json:"discountUpdatedAt,omitempty"`
-	// Discount_Deleted_At  time.Time `json:"discountDeletedAt,omitempty"`
-}
+
 type Inventory struct {
 	Inventory_ID       uint `json:"inventoryID"`
 	Inventory_Quantity int  `json:"inventoryQuantity"`

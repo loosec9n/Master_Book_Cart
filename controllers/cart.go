@@ -37,7 +37,7 @@ func (c Controller) ViewCart() http.HandlerFunc {
 
 		json.NewDecoder(r.Body).Decode(&cart)
 
-		carts, err := c.UserRepo.ViewCart(cart)
+		carts, total, err := c.UserRepo.ViewCart(cart)
 
 		if err != nil {
 			log.Println("Error viewing cart")
@@ -48,6 +48,9 @@ func (c Controller) ViewCart() http.HandlerFunc {
 
 		log.Println("Success viewing cart")
 		w.WriteHeader(http.StatusAccepted)
-		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucess viewing cart", &carts))
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "sucess viewing cart", map[string]interface{}{
+			"Total Price":      total,
+			"Products in cart": &carts,
+		}))
 	}
 }
