@@ -918,3 +918,740 @@
 2022/07/29 14:13:39 false
 2022/07/29 14:13:39 commit sucess
 2022/07/29 14:13:39 Product added to cart
+2022/07/29 14:30:30 New Run!
+2022/07/29 14:30:30 Database connection was succesful
+2022/07/29 14:30:30 API is listening in the port:  8080
+2022/07/29 14:30:40 error parsing jwt:  token is expired by 28h54m58s
+2022/07/29 14:30:40 Token Invalid.
+2022/07/29 14:30:57 false
+2022/07/29 14:30:57 wishlist are visible
+2022/07/29 14:31:15 false
+2022/07/29 14:31:15 Sucess adding to wishlist
+2022/07/29 14:31:48 false
+2022/07/29 14:31:48 wishlist are visible
+2022/07/29 14:32:02 false
+2022/07/29 14:32:02 commit sucess
+2022/07/29 14:32:02 Product added to cart
+2022/07/30 13:39:09 New Run!
+2022/07/30 13:39:09 Database connection was succesful
+2022/07/30 13:39:09 API is listening in the port:  8080
+2022/07/30 13:42:45 New Run!
+2022/07/30 13:42:45 Database connection was succesful
+2022/07/30 13:42:45 API is listening in the port:  8080
+2022/07/30 13:42:53 Checking whether User exists.
+2022/07/30 13:42:53 The user does not exists.
+2022/07/30 13:42:53 User has been deactivated by Admin
+2022/07/30 13:43:51 Checking whether User exists.
+2022/07/30 13:43:51 User exists.
+2022/07/30 13:43:51 User login sucessful
+2022/07/30 13:44:59 false
+2022/07/30 13:44:59 http: panic serving [::1]:54440: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0xf7afc0, 0x1235030})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:23 +0x237
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x181e9a34100, 0xc0000dac40}, 0xc0000de200)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc0000e2008?, {0x181e9a34100?, 0xc0000dac40?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x181e9a34100, 0xc0000dac40}, 0xc0000de200)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000096b10?, {0x181e9a34100?, 0xc0000dac40?}, 0xc0000d83e0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0xf78f80?, {0x181e9a34100?, 0xc0000dac40?}, 0xc0000b6124?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000088360, {0x181e9a34100, 0xc0000dac40}, 0xc0000de200)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0000de100?, {0x181e9a34100?, 0xc0000dac40?}, 0xc0000d6f30?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x1064fb0, 0xc0000a61c0}, 0xc0000de100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x10651d0?, {0x1064fb0?, 0xc0000a61c0?}, 0x1234ef0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000088360, {0x1064fb0, 0xc0000a61c0}, 0xc0000de000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x1064198?}, {0x1064fb0, 0xc0000a61c0}, 0xc0000de000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000178320, {0x1065278, 0xc000096c60})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 13:46:28 New Run!
+2022/07/30 13:46:28 Database connection was succesful
+2022/07/30 13:46:28 API is listening in the port:  8080
+2022/07/30 13:46:36 false
+2022/07/30 13:46:36 http: panic serving [::1]:65155: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0xe0afc0, 0x10c5030})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:23 +0x237
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x23ae32b40f8, 0xc000196100}, 0xc0001a4100)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:19 +0x1c9
+net/http.HandlerFunc.ServeHTTP(0xc00018e008?, {0x23ae32b40f8?, 0xc000196100?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x23ae32b40f8, 0xc000196100}, 0xc0001a4100)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000020b40?, {0x23ae32b40f8?, 0xc000196100?}, 0xc000186170?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0xe08f80?, {0x23ae32b40f8?, 0xc000196100?}, 0xc000182004?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000046360, {0x23ae32b40f8, 0xc000196100}, 0xc0001a4100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0001a4000?, {0x23ae32b40f8?, 0xc000196100?}, 0xc000184120?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0xef4ff0, 0xc00019e000}, 0xc0001a4000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0xef5210?, {0xef4ff0?, 0xc00019e000?}, 0x10c4ef0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000046360, {0xef4ff0, 0xc00019e000}, 0xc00012e300)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0xef41d8?}, {0xef4ff0, 0xc00019e000}, 0xc00012e300)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc00015a1e0, {0xef52b8, 0xc000020c90})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 13:48:29 false
+2022/07/30 13:48:29 Sucess in Viewing Products
+2022/07/30 13:50:52 New Run!
+2022/07/30 13:50:52 Database connection was succesful
+2022/07/30 13:50:52 API is listening in the port:  8080
+2022/07/30 13:51:00 false
+2022/07/30 13:51:00 http: panic serving [::1]:58756: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x9eafc0, 0xca5030})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:23 +0x237
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x21ff8508378, 0xc0000dadc0}, 0xc0000e0300)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc0000e4008?, {0x21ff8508378?, 0xc0000dadc0?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x21ff8508378, 0xc0000dadc0}, 0xc0000e0300)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000096b10?, {0x21ff8508378?, 0xc0000dadc0?}, 0xc0000d83e0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x9e8f80?, {0x21ff8508378?, 0xc0000dadc0?}, 0xc0000b6124?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000088360, {0x21ff8508378, 0xc0000dadc0}, 0xc0000e0300)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0000e0200?, {0x21ff8508378?, 0xc0000dadc0?}, 0xc0000d6fc0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0xad4ff0, 0xc0000a61c0}, 0xc0000e0200)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0xad5210?, {0xad4ff0?, 0xc0000a61c0?}, 0xca4ef0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000088360, {0xad4ff0, 0xc0000a61c0}, 0xc0000e0100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0xad41d8?}, {0xad4ff0, 0xc0000a61c0}, 0xc0000e0100)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000d37c0, {0xad52b8, 0xc000096c60})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 13:52:45 New Run!
+2022/07/30 13:52:45 Database connection was succesful
+2022/07/30 13:52:45 API is listening in the port:  8080
+2022/07/30 13:52:56 false
+2022/07/30 13:52:56 http: panic serving [::1]:53897: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0xd2afc0, 0xfe5050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:27 +0x27f
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x205643b0140, 0xc000294100}, 0xc0002a2100)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc00028c008?, {0x205643b0140?, 0xc000294100?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x205643b0140, 0xc000294100}, 0xc0002a2100)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc0001a87b0?, {0x205643b0140?, 0xc000294100?}, 0xc000284170?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0xd28f80?, {0x205643b0140?, 0xc000294100?}, 0xc000280004?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000050780, {0x205643b0140, 0xc000294100}, 0xc0002a2100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0002a2000?, {0x205643b0140?, 0xc000294100?}, 0xc000282120?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0xe15070, 0xc00029c000}, 0xc0002a2000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0xe15290?, {0xe15070?, 0xc00029c000?}, 0xfe4f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000050780, {0xe15070, 0xc00029c000}, 0xc000094000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0xe14258?}, {0xe15070, 0xc00029c000}, 0xc000094000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000208000, {0xe15338, 0xc0001a8900})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 13:53:50 New Run!
+2022/07/30 13:53:50 Database connection was succesful
+2022/07/30 13:53:50 API is listening in the port:  8080
+2022/07/30 13:53:59 false
+2022/07/30 13:53:59 http: panic serving [::1]:63776: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x38afc0, 0x645050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:26 +0x282
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x2d5fd0e4100, 0xc0002041c0}, 0xc00020c200)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc000216008?, {0x2d5fd0e4100?, 0xc0002041c0?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x2d5fd0e4100, 0xc0002041c0}, 0xc00020c200)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc00018e780?, {0x2d5fd0e4100?, 0xc0002041c0?}, 0xc000212170?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x388f80?, {0x2d5fd0e4100?, 0xc0002041c0?}, 0xc00020e004?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000106720, {0x2d5fd0e4100, 0xc0002041c0}, 0xc00020c200)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc00020c100?, {0x2d5fd0e4100?, 0xc0002041c0?}, 0xc000210120?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x475050, 0xc000222000}, 0xc00020c100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x475270?, {0x475050?, 0xc000222000?}, 0x644f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000106720, {0x475050, 0xc000222000}, 0xc00020c000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x474238?}, {0x475050, 0xc000222000}, 0xc00020c000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000153a40, {0x475318, 0xc00018e8d0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 15:08:52 New Run!
+2022/07/30 15:08:52 Database connection was succesful
+2022/07/30 15:08:52 API is listening in the port:  8080
+2022/07/30 15:09:04 false
+2022/07/30 15:09:04 http: panic serving [::1]:62525: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x3dafc0, 0x695050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:26 +0x282
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x2ebc7896b40, 0xc0000dac40}, 0xc0000e4100)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc0000e0008?, {0x2ebc7896b40?, 0xc0000dac40?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x2ebc7896b40, 0xc0000dac40}, 0xc0000e4100)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000096b10?, {0x2ebc7896b40?, 0xc0000dac40?}, 0xc0000d83e0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x3d8f80?, {0x2ebc7896b40?, 0xc0000dac40?}, 0xc0000b6124?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000088360, {0x2ebc7896b40, 0xc0000dac40}, 0xc0000e4100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0000e4000?, {0x2ebc7896b40?, 0xc0000dac40?}, 0xc0000d6fc0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x4c5050, 0xc0000a61c0}, 0xc0000e4000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x4c5270?, {0x4c5050?, 0xc0000a61c0?}, 0x694f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000088360, {0x4c5050, 0xc0000a61c0}, 0xc00020c000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x4c4238?}, {0x4c5050, 0xc0000a61c0}, 0xc00020c000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000178280, {0x4c5318, 0xc000096c60})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 15:10:23 New Run!
+2022/07/30 15:10:23 Database connection was succesful
+2022/07/30 15:10:23 API is listening in the port:  8080
+2022/07/30 15:10:29 false
+2022/07/30 15:10:29 http: panic serving [::1]:59062: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x45afc0, 0x715050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:26 +0x277
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x23773e940f8, 0xc000216100}, 0xc000224100)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc00020e008?, {0x23773e940f8?, 0xc000216100?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x23773e940f8, 0xc000216100}, 0xc000224100)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000096b10?, {0x23773e940f8?, 0xc000216100?}, 0xc000206170?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x458f80?, {0x23773e940f8?, 0xc000216100?}, 0xc000202004?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000088360, {0x23773e940f8, 0xc000216100}, 0xc000224100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000224000?, {0x23773e940f8?, 0xc000216100?}, 0xc000204120?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x545050, 0xc00021e000}, 0xc000224000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x545270?, {0x545050?, 0xc00021e000?}, 0x714f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000088360, {0x545050, 0xc00021e000}, 0xc0000e0000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x544238?}, {0x545050, 0xc00021e000}, 0xc0000e0000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001781e0, {0x545318, 0xc000096c60})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 15:11:39 New Run!
+2022/07/30 15:11:39 Database connection was succesful
+2022/07/30 15:11:39 API is listening in the port:  8080
+2022/07/30 15:11:45 false
+2022/07/30 15:11:45 http: panic serving [::1]:59620: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x81afc0, 0xad5050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:26 +0x26e
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x214519b69f8, 0xc0000dac40}, 0xc0000e4100)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc0000e0008?, {0x214519b69f8?, 0xc0000dac40?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x214519b69f8, 0xc0000dac40}, 0xc0000e4100)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000096b10?, {0x214519b69f8?, 0xc0000dac40?}, 0xc0000d83e0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x818f80?, {0x214519b69f8?, 0xc0000dac40?}, 0xc0000b6124?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc000088360, {0x214519b69f8, 0xc0000dac40}, 0xc0000e4100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc0000e4000?, {0x214519b69f8?, 0xc0000dac40?}, 0xc0000d6fc0?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x905050, 0xc0000a61c0}, 0xc0000e4000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x905270?, {0x905050?, 0xc0000a61c0?}, 0xad4f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc000088360, {0x905050, 0xc0000a61c0}, 0xc00020c000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x904238?}, {0x905050, 0xc0000a61c0}, 0xc00020c000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc000178280, {0x905318, 0xc000096c60})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 15:12:40 New Run!
+2022/07/30 15:12:40 Database connection was succesful
+2022/07/30 15:12:40 API is listening in the port:  8080
+2022/07/30 15:12:46 false
+2022/07/30 15:12:46 http: panic serving [::1]:59483: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x120afc0, 0x14c5050})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+Book_Cart_Project/repository.Repository.CreateNewOrder({_}, {_}, {0x0, {0x0, 0x0, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...}, ...})
+	D:/Master_Project_Book_Cart/repository/order.go:25 +0x227
+Book_Cart_Project/controllers.Controller.CreateOrder.func1({0x25ee3d04120, 0xc00008e1c0}, 0xc000094200)
+	D:/Master_Project_Book_Cart/controllers/userOrder.go:18 +0x17d
+net/http.HandlerFunc.ServeHTTP(0xc00009e008?, {0x25ee3d04120?, 0xc00008e1c0?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+Book_Cart_Project/middleware.UserVerifyMiddleware.func1({0x25ee3d04120, 0xc00008e1c0}, 0xc000094200)
+	D:/Master_Project_Book_Cart/middleware/middleware.go:71 +0xd5
+net/http.HandlerFunc.ServeHTTP(0xc000206ae0?, {0x25ee3d04120?, 0xc00008e1c0?}, 0xc00009a170?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*ChainHandler).ServeHTTP(0x1208f80?, {0x25ee3d04120?, 0xc00008e1c0?}, 0xc000096004?)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/chain.go:31 +0x2c
+github.com/go-chi/chi/v5.(*Mux).routeHTTP(0xc00020c2a0, {0x25ee3d04120, 0xc00008e1c0}, 0xc000094200)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:442 +0x216
+net/http.HandlerFunc.ServeHTTP(0xc000094100?, {0x25ee3d04120?, 0xc00008e1c0?}, 0xc000098120?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/middleware.RequestLogger.func1.1({0x12f5070, 0xc0000a8000}, 0xc000094100)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi@v1.5.4/middleware/logger.go:57 +0x3aa
+net/http.HandlerFunc.ServeHTTP(0x12f5290?, {0x12f5070?, 0xc0000a8000?}, 0x14c4f10?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP(0xc00020c2a0, {0x12f5070, 0xc0000a8000}, 0xc000094000)
+	C:/Users/jstnj/go/pkg/mod/github.com/go-chi/chi/v5@v5.0.7/mux.go:88 +0x442
+net/http.serverHandler.ServeHTTP({0x12f4258?}, {0x12f5070, 0xc0000a8000}, 0xc000094000)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0002457c0, {0x12f5338, 0xc000206c30})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/07/30 15:20:09 New Run!
+2022/07/30 15:20:09 Database connection was succesful
+2022/07/30 15:20:09 API is listening in the port:  8080
+2022/07/30 15:20:17 false
+2022/07/30 15:20:17 Error running query: Order was not created
+2022/07/30 15:24:45 New Run!
+2022/07/30 15:24:45 Database connection was succesful
+2022/07/30 15:24:45 API is listening in the port:  8080
+2022/07/30 15:25:07 false
+2022/07/30 15:25:07 User order placed
+2022/07/30 15:27:45 New Run!
+2022/07/30 15:27:45 Database connection was succesful
+2022/07/30 15:27:45 API is listening in the port:  8080
+2022/07/30 15:27:53 false
+2022/07/30 15:27:53 User order placed
+2022/08/03 11:35:04 New Run!
+2022/08/03 11:35:04 Database connection was succesful
+2022/08/03 11:35:04 API is listening in the port:  8080
+2022/08/03 23:23:43 New Run!
+2022/08/03 23:23:43 Database connection was succesful
+2022/08/03 23:23:43 API is listening in the port:  8080
+2022/08/03 23:28:39 New Run!
+2022/08/03 23:28:39 Database connection was succesful
+2022/08/03 23:28:39 API is listening in the port:  8080
+2022/08/03 23:28:49 Select query have a probelm
+2022/08/03 23:28:49 Error running query: order was not confirmed
+2022/08/03 23:28:49 Order confirmed
+2022/08/03 23:38:41 New Run!
+2022/08/03 23:38:41 Database connection was succesful
+2022/08/03 23:38:41 API is listening in the port:  8080
+2022/08/03 23:38:53 Select query have a problem
+2022/08/03 23:38:53 Error running query: order was not confirmed
+2022/08/03 23:39:39 New Run!
+2022/08/03 23:39:39 Database connection was succesful
+2022/08/03 23:39:39 API is listening in the port:  8080
+2022/08/03 23:39:46 Select query have a problem sql: converting argument $1 type: unsupported type models.OrderBody, a struct
+2022/08/03 23:39:46 Error running query: order was not confirmed
+2022/08/03 23:40:42 New Run!
+2022/08/03 23:40:42 Database connection was succesful
+2022/08/03 23:40:42 API is listening in the port:  8080
+2022/08/03 23:40:49 Select query have a problem sql: Scan error on column index 2, name "product_id": unsupported Scan, storing driver.Value type int64 into type *[]int
+2022/08/03 23:40:49 Error running query: order was not confirmed
+2022/08/03 23:54:44 New Run!
+2022/08/03 23:54:44 Database connection was succesful
+2022/08/03 23:54:44 API is listening in the port:  8080
+2022/08/03 23:54:51 User ID : 2
+2022/08/03 23:54:51 Select query have a problem sql: Scan error on column index 2, name "product_id": unsupported Scan, storing driver.Value type int64 into type *[]int
+2022/08/03 23:54:51 Error running query: order was not confirmed
+2022/08/04 00:00:53 New Run!
+2022/08/04 00:00:53 Database connection was succesful
+2022/08/04 00:00:53 API is listening in the port:  8080
+2022/08/04 09:16:07 New Run!
+2022/08/04 09:16:07 Database connection was succesful
+2022/08/04 09:16:07 API is listening in the port:  8080
+2022/08/04 09:16:20 orders &[{2 2 1 301 1 2 0}]
+2022/08/04 09:16:20 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0}]
+2022/08/04 09:16:20 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0} {2 2 2 302 1 3 0}]
+2022/08/04 09:16:20 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0} {2 2 2 302 1 3 0} {2 2 3 303 12 4 0}]
+2022/08/04 09:16:20 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0} {2 2 2 302 1 3 0} {2 2 3 303 12 4 0} {2 2 4 304 6 10 0}]
+2022/08/04 09:16:20 Commit sucessful
+2022/08/04 09:16:20 Order confirmed
+2022/08/04 09:28:40 New Run!
+2022/08/04 09:28:40 Database connection was succesful
+2022/08/04 09:28:40 API is listening in the port:  8080
+2022/08/04 09:29:00 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0} {2 2 2 302 1 3 0} {2 2 3 303 12 4 0} {2 2 4 304 6 10 0}]
+2022/08/04 09:29:00 deleting the cart failed
+2022/08/04 09:29:00 Error running query: order was not confirmed
+2022/08/04 09:29:59 New Run!
+2022/08/04 09:29:59 Database connection was succesful
+2022/08/04 09:29:59 API is listening in the port:  8080
+2022/08/04 09:30:09 orders &[{2 2 1 301 1 2 0} {2 2 1 301 1 1 0} {2 2 2 302 1 3 0} {2 2 3 303 12 4 0} {2 2 4 304 6 10 0}]
+2022/08/04 09:30:09 Commit sucessful
+2022/08/04 09:30:09 Order confirmed
+2022/08/04 10:33:47 New Run!
+2022/08/04 10:33:47 Database connection was succesful
+2022/08/04 10:33:47 API is listening in the port:  8080
+2022/08/04 10:35:08 report generated
+2022/08/04 10:50:11 New Run!
+2022/08/04 10:50:11 Database connection was succesful
+2022/08/04 10:50:11 API is listening in the port:  8080
+2022/08/04 10:51:55 New Run!
+2022/08/04 10:51:55 Database connection was succesful
+2022/08/04 10:51:55 API is listening in the port:  8080
+2022/08/04 10:52:29 report generated
+2022/08/04 11:16:13 New Run!
+2022/08/04 11:16:13 Database connection was succesful
+2022/08/04 11:16:13 API is listening in the port:  8080
+2022/08/04 11:21:15 New Run!
+2022/08/04 11:21:15 Database connection was succesful
+2022/08/04 11:21:15 API is listening in the port:  8080
+2022/08/04 11:21:26 order status not changes
+2022/08/04 11:23:41 order status not changes
+2022/08/04 11:24:07 New Run!
+2022/08/04 11:24:07 Database connection was succesful
+2022/08/04 11:24:07 API is listening in the port:  8080
+2022/08/04 11:24:14 order status not changes sql: Scan error on column index 1, name "order_status": converting driver.Value type string ("delivered") to a int: invalid syntax
+2022/08/04 11:25:33 New Run!
+2022/08/04 11:25:34 Database connection was succesful
+2022/08/04 11:25:34 API is listening in the port:  8080
+2022/08/04 11:25:42 order status  changes
+2022/08/04 11:56:31 New Run!
+2022/08/04 11:56:31 Database connection was succesful
+2022/08/04 11:56:31 API is listening in the port:  8080
+2022/08/04 11:56:38 update paymnets failed pq: relation "user_paymnet" does not exist
+2022/08/04 11:56:38 Error running query
+2022/08/04 11:58:39 New Run!
+2022/08/04 11:58:39 Database connection was succesful
+2022/08/04 11:58:39 API is listening in the port:  8080
+2022/08/04 11:58:46 update paymnets failed pq: column "cod_paymnet" of relation "user_payment" does not exist
+2022/08/04 11:58:46 Error running query
+2022/08/04 11:59:08 New Run!
+2022/08/04 11:59:08 Database connection was succesful
+2022/08/04 11:59:08 API is listening in the port:  8080
+2022/08/04 11:59:15 Paymnet selected
+2022/08/04 13:21:23 New Run!
+2022/08/04 13:21:23 Database connection was succesful
+2022/08/04 13:21:23 API is listening in the port:  8080
+2022/08/04 13:21:41 User ID : 0
+2022/08/04 13:21:41 Select query have a problem sql: no rows in result set
+2022/08/04 13:21:41 Error running query: order was not confirmed
+2022/08/04 14:14:05 New Run!
+2022/08/04 14:14:05 Database connection was succesful
+2022/08/04 14:14:05 API is listening in the port:  8080
+2022/08/04 14:14:21 Product ID : 0
+2022/08/04 14:14:21 Commit sucessful
+2022/08/04 14:14:21 Order confirmed
+2022/08/04 14:15:46 Product ID : 0
+2022/08/04 14:15:46 Commit sucessful
+2022/08/04 14:15:46 Order confirmed
+2022/08/04 14:21:30 New Run!
+2022/08/04 14:21:30 Database connection was succesful
+2022/08/04 14:21:30 API is listening in the port:  8080
+2022/08/04 14:21:40 deleting the cart failed
+2022/08/04 14:21:40 Error running query: order was not confirmed
+2022/08/04 14:23:52 New Run!
+2022/08/04 14:23:52 Database connection was succesful
+2022/08/04 14:23:52 API is listening in the port:  8080
+2022/08/04 14:24:02 Commit sucessful
+2022/08/04 14:24:02 Order confirmed
+2022/08/04 14:25:48 Checking whether User exists.
+2022/08/04 14:25:48 User exists.
+2022/08/04 14:25:48 User login sucessful
+2022/08/04 14:26:03 false
+2022/08/04 14:26:03 updated the query
+2022/08/04 14:26:03 commit sucess
+2022/08/04 14:26:03 Product added to cart
+2022/08/04 14:26:54 false
+2022/08/04 14:26:54 updated the query
+2022/08/04 14:26:54 commit sucess
+2022/08/04 14:26:54 Product added to cart
+2022/08/04 14:27:26 Commit sucessful
+2022/08/04 14:27:26 Order confirmed
+2022/08/04 14:28:56 false
+2022/08/04 14:28:56 updated the query
+2022/08/04 14:28:56 commit sucess
+2022/08/04 14:28:56 Product added to cart
+2022/08/04 14:29:07 Commit sucessful
+2022/08/04 14:29:07 Order confirmed
+2022/08/04 14:29:21 New Run!
+2022/08/04 14:29:21 Database connection was succesful
+2022/08/04 14:29:21 API is listening in the port:  8080
+2022/08/04 14:29:30 false
+2022/08/04 14:29:30 updated the query
+2022/08/04 14:29:30 commit sucess
+2022/08/04 14:29:30 Product added to cart
+2022/08/04 14:29:45 deleting the cart failed
+2022/08/04 14:29:45 Error running query: order was not confirmed
+2022/08/04 14:31:19 New Run!
+2022/08/04 14:31:19 Database connection was succesful
+2022/08/04 14:31:19 API is listening in the port:  8080
+2022/08/04 14:31:29 false
+2022/08/04 14:31:29 commit sucess
+2022/08/04 14:31:29 Product added to cart
+2022/08/04 14:31:30 false
+2022/08/04 14:31:30 commit sucess
+2022/08/04 14:31:30 Product added to cart
+2022/08/04 14:31:31 false
+2022/08/04 14:31:31 commit sucess
+2022/08/04 14:31:31 Product added to cart
+2022/08/04 14:31:54 Commit sucessful
+2022/08/04 14:31:54 Order confirmed
+2022/08/04 14:32:29 New Run!
+2022/08/04 14:32:29 Database connection was succesful
+2022/08/04 14:32:29 API is listening in the port:  8080
+2022/08/04 14:32:41 deleting the cart failed
+2022/08/04 14:32:41 Error running query: order was not confirmed
+2022/08/04 14:59:16 New Run!
+2022/08/04 14:59:16 Database connection was succesful
+2022/08/04 14:59:16 API is listening in the port:  8080
+2022/08/04 14:59:33 false
+2022/08/04 14:59:33 commit sucess
+2022/08/04 14:59:33 Product added to cart
+2022/08/04 15:00:05 Commit sucessful
+2022/08/04 15:00:05 Order confirmed
+2022/08/04 15:03:14 New Run!
+2022/08/04 15:03:14 Database connection was succesful
+2022/08/04 15:03:14 API is listening in the port:  8080
+2022/08/04 15:03:25 false
+2022/08/04 15:03:25 updated the query
+2022/08/04 15:03:25 commit sucess
+2022/08/04 15:03:25 Product added to cart
+2022/08/04 15:03:40 Commit sucessful
+2022/08/04 15:03:40 Order confirmed
+2022/08/04 15:04:20 New Run!
+2022/08/04 15:04:20 Database connection was succesful
+2022/08/04 15:04:20 API is listening in the port:  8080
+2022/08/04 15:04:38 false
+2022/08/04 15:04:38 commit sucess
+2022/08/04 15:04:38 Product added to cart
+2022/08/04 15:04:55 Commit sucessful
+2022/08/04 15:04:55 Order confirmed
+2022/08/04 15:06:04 false
+2022/08/04 15:06:04 updated the query
+2022/08/04 15:06:04 commit sucess
+2022/08/04 15:06:04 Product added to cart
+2022/08/04 15:06:12 New Run!
+2022/08/04 15:06:12 Database connection was succesful
+2022/08/04 15:06:12 API is listening in the port:  8080
+2022/08/04 15:06:24 false
+2022/08/04 15:06:24 commit sucess
+2022/08/04 15:06:24 Product added to cart
+2022/08/04 15:06:25 false
+2022/08/04 15:06:25 commit sucess
+2022/08/04 15:06:25 Product added to cart
+2022/08/04 15:06:44 deleting the cart failed
+2022/08/04 15:06:44 Error running query: order was not confirmed
+2022/08/04 15:07:38 New Run!
+2022/08/04 15:07:38 Database connection was succesful
+2022/08/04 15:07:38 API is listening in the port:  8080
+2022/08/04 15:07:48 false
+2022/08/04 15:07:48 commit sucess
+2022/08/04 15:07:48 Product added to cart
+2022/08/04 15:07:51 Commit sucessful
+2022/08/04 15:07:51 Order confirmed
+2022/08/04 15:09:50 New Run!
+2022/08/04 15:09:50 Database connection was succesful
+2022/08/04 15:09:50 API is listening in the port:  8080
+2022/08/04 15:09:58 false
+2022/08/04 15:09:58 updated the query
+2022/08/04 15:09:58 commit sucess
+2022/08/04 15:09:58 Product added to cart
+2022/08/04 15:09:59 false
+2022/08/04 15:09:59 commit sucess
+2022/08/04 15:09:59 Product added to cart
+2022/08/04 15:10:00 false
+2022/08/04 15:10:00 commit sucess
+2022/08/04 15:10:00 Product added to cart
+2022/08/04 15:10:14 Commit sucessful
+2022/08/04 15:10:14 Order confirmed
+2022/08/04 15:10:52 New Run!
+2022/08/04 15:10:52 Database connection was succesful
+2022/08/04 15:10:52 API is listening in the port:  8080
+2022/08/04 15:11:00 false
+2022/08/04 15:11:00 updated the query
+2022/08/04 15:11:00 commit sucess
+2022/08/04 15:11:00 Product added to cart
+2022/08/04 15:11:02 false
+2022/08/04 15:11:02 commit sucess
+2022/08/04 15:11:02 Product added to cart
+2022/08/04 15:11:05 Commit sucessful
+2022/08/04 15:11:05 Order confirmed
+2022/08/04 15:13:13 New Run!
+2022/08/04 15:13:13 Database connection was succesful
+2022/08/04 15:13:13 API is listening in the port:  8080
+2022/08/04 15:13:28 false
+2022/08/04 15:13:28 commit sucess
+2022/08/04 15:13:28 Product added to cart
+2022/08/04 15:13:29 false
+2022/08/04 15:13:29 commit sucess
+2022/08/04 15:13:29 Product added to cart
+2022/08/04 15:13:40 deleting the cart failed
+2022/08/04 15:13:40 Order confirmed
+2022/08/04 15:15:10 New Run!
+2022/08/04 15:15:10 Database connection was succesful
+2022/08/04 15:15:10 API is listening in the port:  8080
+2022/08/04 15:15:27 false
+2022/08/04 15:15:27 commit sucess
+2022/08/04 15:15:27 Product added to cart
+2022/08/04 15:15:40 Commit sucessful
+2022/08/04 15:15:40 Order confirmed
+2022/08/04 15:17:19 false
+2022/08/04 15:17:19 updated the query
+2022/08/04 15:17:19 commit sucess
+2022/08/04 15:17:19 Product added to cart
+2022/08/04 15:17:20 false
+2022/08/04 15:17:20 commit sucess
+2022/08/04 15:17:20 Product added to cart
+2022/08/04 15:19:54 New Run!
+2022/08/04 15:19:55 Database connection was succesful
+2022/08/04 15:19:55 API is listening in the port:  8080
+2022/08/04 15:20:04 false
+2022/08/04 15:20:04 commit sucess
+2022/08/04 15:20:04 Product added to cart
+2022/08/04 15:20:05 false
+2022/08/04 15:20:05 commit sucess
+2022/08/04 15:20:05 Product added to cart
+2022/08/04 15:20:26 deleting the cart failed
+2022/08/04 15:20:26 Order confirmed
+2022/08/04 15:22:59 New Run!
+2022/08/04 15:22:59 Database connection was succesful
+2022/08/04 15:22:59 API is listening in the port:  8080
+2022/08/04 15:23:09 false
+2022/08/04 15:23:09 commit sucess
+2022/08/04 15:23:09 Product added to cart
+2022/08/04 15:23:10 false
+2022/08/04 15:23:10 commit sucess
+2022/08/04 15:23:10 Product added to cart
+2022/08/04 15:23:14 Commit sucessful
+2022/08/04 15:23:14 Order confirmed
+2022/08/04 15:24:54 New Run!
+2022/08/04 15:24:54 Database connection was succesful
+2022/08/04 15:24:54 API is listening in the port:  8080
+2022/08/04 15:25:05 false
+2022/08/04 15:25:05 updated the query
+2022/08/04 15:25:05 commit sucess
+2022/08/04 15:25:05 Product added to cart
+2022/08/04 15:25:07 false
+2022/08/04 15:25:07 commit sucess
+2022/08/04 15:25:07 Product added to cart
+2022/08/04 15:25:22 deleting the cart failed pq: syntax error at or near "TRUCATE"
+2022/08/04 15:25:22 commit failed
+2022/08/04 15:25:22 Error running query: order was not confirmed
+2022/08/04 15:26:04 New Run!
+2022/08/04 15:26:04 Database connection was succesful
+2022/08/04 15:26:04 API is listening in the port:  8080
+2022/08/04 15:26:13 false
+2022/08/04 15:26:13 commit sucess
+2022/08/04 15:26:13 Product added to cart
+2022/08/04 15:26:16 deleting the cart failed &{0xc000234000 <nil>}
+2022/08/04 15:26:16 commit failed
+2022/08/04 15:26:16 Error running query: order was not confirmed
+2022/08/04 15:27:00 New Run!
+2022/08/04 15:27:00 Database connection was succesful
+2022/08/04 15:27:00 API is listening in the port:  8080
+2022/08/04 15:27:09 false
+2022/08/04 15:27:09 commit sucess
+2022/08/04 15:27:09 Product added to cart
+2022/08/04 15:27:13 deleting the cart failed pq: syntax error at or near "TRUCATE"
+2022/08/04 15:27:13 commit failed
+2022/08/04 15:27:13 Error running query: order was not confirmed
+2022/08/04 15:29:16 New Run!
+2022/08/04 15:29:16 Database connection was succesful
+2022/08/04 15:29:16 API is listening in the port:  8080
+2022/08/04 15:29:31 false
+2022/08/04 15:29:31 commit sucess
+2022/08/04 15:29:31 Product added to cart
+2022/08/04 15:29:42 deleting the cart failed pq: syntax error at or near "TRUCATE"
+2022/08/04 15:29:42 commit failed
+2022/08/04 15:29:42 Error running query: order was not confirmed
+2022/08/04 15:31:03 New Run!
+2022/08/04 15:31:03 Database connection was succesful
+2022/08/04 15:31:03 API is listening in the port:  8080
+2022/08/04 15:31:13 deleting the cart failed pq: syntax error at or near "TRUCATE"
+2022/08/04 15:31:13 commit failed
+2022/08/04 15:31:13 Error running query: order was not confirmed
+2022/08/04 15:35:29 deleting the cart failed pq: syntax error at or near "TRUCATE"
+2022/08/04 15:35:29 commit failed
+2022/08/04 15:35:29 Error running query: order was not confirmed
+2022/08/04 15:35:53 New Run!
+2022/08/04 15:35:53 Database connection was succesful
+2022/08/04 15:35:53 API is listening in the port:  8080
+2022/08/04 15:36:08 false
+2022/08/04 15:36:08 updated the query
+2022/08/04 15:36:08 commit sucess
+2022/08/04 15:36:08 Product added to cart
+2022/08/04 15:36:09 false
+2022/08/04 15:36:09 commit sucess
+2022/08/04 15:36:09 Product added to cart
+2022/08/04 15:36:12 Commit sucessful
+2022/08/04 15:36:12 Order confirmed

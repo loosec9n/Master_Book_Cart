@@ -224,6 +224,46 @@ func (c Controller) AdminBlockProduct() http.HandlerFunc {
 	}
 }
 
+func (c Controller) AdminReport() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		var reports models.ReportIn
+		json.NewDecoder(r.Body).Decode(&reports)
+
+		report, err := c.ProductRepo.AdminReport(reports)
+
+		if err != nil {
+			log.Println("report not generated")
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "report not generated", err))
+			return
+		}
+		log.Println("report generated")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "report generated", &report))
+	}
+}
+
+func (c Controller) AdminEditOrderStatus() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		var order_status models.ChangeOrder
+		json.NewDecoder(r.Body).Decode(&order_status)
+
+		status, err := c.ProductRepo.EditOrderStatus(order_status)
+		if err != nil {
+			log.Println("order status not changes", err)
+			w.WriteHeader(http.StatusNotFound)
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "order status not changes", err))
+			return
+		}
+		log.Println("order status  changes")
+		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(true, "order status  changes", &status))
+	}
+
+}
+
 func (c Controller) AdminLogout(w http.ResponseWriter, r *http.Request) {
 	//logout function for the admin goes here.
 }

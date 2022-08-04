@@ -10,12 +10,12 @@ type Session_Cart struct {
 }
 
 type Cart struct {
-	Cart_ID uint `json:"cartId"`
+	Cart_ID uint `json:"cartId,omitempty"`
 	// Session_ID      Session_Cart `json:"session_cart"`
-	User_ID         int       `json:"cartUserId"`
-	Product_ID      Product   `json:"productId"`
-	Product_Count   int       `json:"productCount"`
-	Inventory_ID    Inventory `json:"inventoryID"`
-	Cart_Created_At time.Time `json:"cartCreatedAt"`
+	User_ID         int       `json:"cartUserId,omitempty"`
+	Product_ID      Product   `json:"productId,omitempty"`
+	Product_Count   int       `json:"productCount,omitempty"`
+	Inventory_ID    Inventory `json:"inventoryID,omitempty"`
+	Cart_Created_At time.Time `json:"cartCreatedAt,omitempty"`
 	Cart_Updated_At time.Time `json:"cartUpdatedAt,omitempty"`
 }

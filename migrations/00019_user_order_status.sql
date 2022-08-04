@@ -1,10 +1,15 @@
 -- +goose Up
 -- +goose StatementBegin
-CREATE TABLE IF NOT EXISTS user_order_status (
+CREATE TABLE IF NOT EXISTS user_order (
     order_id BIGINT PRIMARY KEY,
-    order_price NUMERIC(5,2) NOT NULL,
-    order_discount INTEGER,
-    payment_method BIGINT REFERENCES user_payment(payment_id),
+    user_id BIGINT REFERENCES users(user_id),
+    address_id BIGINT REFERENCES user_address(user_address_id),
+    product_id BIGINT REFERENCES product(product_id),
+    inventory_id BIGINT REFERENCES inventory(inventory_id),
+    quantity BIGINT NOT NULL,
+    cart_id BIGINT REFERENCES cart(cart_id),
+    total_price NUMERIC,
+    order_status VARCHAR(100) DEFAULT 'ordered',
     order_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT NULL
 );
@@ -12,7 +17,7 @@ CREATE TABLE IF NOT EXISTS user_order_status (
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS user_order_status;
+DROP TABLE IF EXISTS user_order CASCADE;
 -- +goose StatementEnd
 
 

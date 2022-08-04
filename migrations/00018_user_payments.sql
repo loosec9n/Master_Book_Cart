@@ -3,7 +3,7 @@
 CREATE TABLE IF NOT  EXISTS user_payment(
     payment_id BIGSERIAL PRIMARY KEY,
     cod_payment BOOLEAN,
-    payment_status BOOLEAN,
+    user_id BIGINT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT NULL
 );
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT  EXISTS user_payment(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS user_payments;
+DROP TABLE IF EXISTS user_payments CASCADE;
 -- +goose StatementEnd 
 
 

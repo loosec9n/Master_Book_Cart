@@ -28,6 +28,9 @@ type UserRepository interface {
 	AddWishlist(models.Wishlist) (models.Wishlist, error)
 	ViewWishlist(models.Filter, models.Wishlist) ([]wishList, models.Metadata, error)
 	DeleteProductWishlist(models.Wishlist) (int64, error)
+	CreateNewOrder(models.OrderBody, models.Order) ([]models.Order, float64, error)
+	OrderPayments(models.Payment) error
+	OrderedProduct(models.OrderBody) error
 }
 
 type ProductRepository interface {
@@ -39,4 +42,6 @@ type ProductRepository interface {
 	AddAuthor(models.ProductAuthor) (models.ProductAuthor, error)
 	ViewAuthor() ([]models.ProductAuthor, error)
 	AddInventory(models.Inventory) (models.Inventory, error)
+	AdminReport(models.ReportIn) ([]models.OrderReport, error)
+	EditOrderStatus(models.ChangeOrder) (models.ChangeOrder, error)
 }

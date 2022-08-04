@@ -1,7 +1,7 @@
 package models
 
 type Discount struct {
-	Discount_id    int    `json:"discountID"`
-	Discount_code  string `json:"discountCode"`
-	Discount_price int    `json:"discountPercentage"`
+	Discount_id    int    `json:"discountID,omitempty"`
+	Discount_code  string `json:"discountCode,omitempty"`
+	Discount_price int    `json:"discountPercentage,omitempty"`
 }

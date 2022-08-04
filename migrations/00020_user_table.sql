@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS users (
       phone_number BIGINT,
       is_admin BOOLEAN DEFAULT FALSE,
       user_address_id BIGINT REFERENCES user_address (user_address_id),
-      order_status BIGINT REFERENCES user_order_status(order_id),
+      order_status BIGINT REFERENCES user_order_status(order_id) ON DELETE CASCADE,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT NULL,
       deleted_at TIMESTAMP NULL
