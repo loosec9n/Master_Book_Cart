@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS user_order (
     product_id BIGINT REFERENCES product(product_id),
     inventory_id BIGINT REFERENCES inventory(inventory_id),
     quantity BIGINT NOT NULL,
-    cart_id BIGINT REFERENCES cart(cart_id),
+    cart_id BIGINT REFERENCES cart(cart_id) ON DELETE CASCADE,
     total_price NUMERIC,
     order_status VARCHAR(100) DEFAULT 'ordered',
     order_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -19,7 +19,3 @@ CREATE TABLE IF NOT EXISTS user_order (
 -- +goose StatementBegin
 DROP TABLE IF EXISTS user_order CASCADE;
 -- +goose StatementEnd
-
-
-
-

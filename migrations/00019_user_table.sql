@@ -1,6 +1,5 @@
 -- +goose Up
 -- +goose StatementBegin
-
 CREATE TABLE IF NOT EXISTS users (
       user_id BIGSERIAL PRIMARY KEY,
       is_active BOOLEAN DEFAULT TRUE,
@@ -11,7 +10,7 @@ CREATE TABLE IF NOT EXISTS users (
       phone_number BIGINT,
       is_admin BOOLEAN DEFAULT FALSE,
       user_address_id BIGINT REFERENCES user_address (user_address_id),
-      order_status BIGINT REFERENCES user_order_status(order_id) ON DELETE CASCADE,
+      order_status BIGINT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT NULL,
       deleted_at TIMESTAMP NULL
@@ -23,3 +22,5 @@ CREATE TABLE IF NOT EXISTS users (
 -- +goose StatementBegin
 DROP TABLE  IF EXISTS users CASCADE;
 -- +goose StatementEnd
+
+

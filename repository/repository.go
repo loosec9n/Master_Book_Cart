@@ -30,7 +30,7 @@ type UserRepository interface {
 	DeleteProductWishlist(models.Wishlist) (int64, error)
 	CreateNewOrder(models.OrderBody, models.Order) ([]models.Order, float64, error)
 	OrderPayments(models.Payment) error
-	OrderedProduct(models.OrderBody) error
+	OrderedProduct(models.OrderBody, models.Cart) error
 }
 
 type ProductRepository interface {

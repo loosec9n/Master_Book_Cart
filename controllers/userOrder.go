@@ -54,10 +54,11 @@ func (c Controller) UserOrderPaymnet() http.HandlerFunc {
 func (c Controller) OrderPlaced() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		var orderBody models.OrderBody
+		var orders models.Cart
 
 		json.NewDecoder(r.Body).Decode(&orderBody)
 
-		err := c.UserRepo.OrderedProduct(orderBody)
+		err := c.UserRepo.OrderedProduct(orderBody, orders)
 
 		if err != nil {
 			log.Println("Error running query: order was not confirmed")
