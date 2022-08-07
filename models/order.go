@@ -33,13 +33,15 @@ type Wishlist struct {
 }
 
 type OrderConfirm struct {
+	Order_id     uint
 	User_id      uint    `json:"user_id"`
 	Address_id   uint    `json:"address_id"`
-	Product_id   []int   `josn:"product_id"`
-	Inventory_id []int   `json:"inventory_id"`
-	Quantity     []int   `json:"quantity"`
+	Product_id   int     `josn:"product_id"`
+	Inventory_id int     `json:"inventory_id"`
+	Quantity     int     `json:"quantity"`
 	Cart_id      int     `json:"cart_id"`
-	TotalPrice   float64 `json:"total_price"`
+	Pro_price    float64 `json:"product_price"`
+	Total_price  float64 `json:"total_price"`
 	//Payment_id   string  `json:"payment_id"`
 }
 type OrderSelect struct {

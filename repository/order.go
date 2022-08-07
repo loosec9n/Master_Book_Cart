@@ -71,6 +71,7 @@ func (r Repository) OrderPayments(pay models.Payment) error {
 
 func (r Repository) OrderedProduct(usrId models.OrderBody, orderIn models.Cart) error {
 	var orders []models.OrderConfirm
+	//var total_price float64
 	//begin transactions
 	ctx := context.Background()
 	tx, err := r.DB.BeginTx(ctx, nil)
@@ -85,6 +86,7 @@ func (r Repository) OrderedProduct(usrId models.OrderBody, orderIn models.Cart) 
 		users.user_id,
 		users.user_address_id,
 		product.product_id,
+		product.product_price,
 		product.product_inventory_id,
 		cart.product_count,
 		cart_id
@@ -107,35 +109,42 @@ func (r Repository) OrderedProduct(usrId models.OrderBody, orderIn models.Cart) 
 			&order.User_id,
 			&order.Address_id,
 			&order.Product_id,
+			&order.Pro_price,
 			&order.Inventory_id,
 			&order.Quantity,
 			&order.Cart_id,
 		)
 		if err != nil {
+			log.Println("error in rows.next", err)
 			return err
 		}
+		order.Total_price += (order.Pro_price * float64(order.Quantity))
+
 		orders = append(orders, order)
 	}
+
 	if err = rows.Err(); err != nil {
 		log.Println("Select query have a problem", err)
 		tx.Rollback()
 		return err
 	}
+	log.Println("Select from cart worked")
 
 	//looping with productId
 	for _, v := range orders {
 		//need to reduce product quantity in inventory
 		_, err := tx.Exec(`UPDATE inventory
-					SET inventory_quantity = invetory_quantity = $1
+					SET inventory_quantity = inventory_quantity - $1
 					WHERE inventory_id = $2;`,
 			v.Product_id,
 			v.Inventory_id,
 		)
 		if err != nil {
-			log.Println("Update inventory failed")
+			log.Println("Update inventory failed", err)
 			tx.Rollback()
 			return err
 		}
+		log.Println("inventory updation worked")
 
 		//inserting the products form cart into order confirm
 
@@ -146,25 +155,27 @@ func (r Repository) OrderedProduct(usrId models.OrderBody, orderIn models.Cart) 
 			product_id,
 			inventory_id,
 			quantity,
-			cart_id,
+			product_price,
+			total_price,
 			order_at)
-			VALUES($1,$2,$3,$4,$5,$6,$7);`,
+			VALUES($1,$2,$3,$4,$5,$6,$7,$8);`,
 			v.User_id,
 			v.Address_id,
 			v.Product_id,
 			v.Inventory_id,
 			v.Quantity,
-			v.Cart_id,
+			v.Pro_price,
+			v.Total_price,
 			time.Now(),
 		)
 		if err != nil {
-			log.Println("Insertion into the orderConfirm failed")
+			log.Println("Insertion into the orderConfirm failed", err)
 			tx.Rollback()
 			return err
 		}
-
+		log.Println("Insertion into user order worked")
 		//deleting the confirmed order from the cart
-		//_, err = tx.Exec(`TRUNCATE TABLE cart;`)
+
 		_, err = tx.Exec(`DELETE FROM
 		 					cart
 		 					WHERE
@@ -172,10 +183,11 @@ func (r Repository) OrderedProduct(usrId models.OrderBody, orderIn models.Cart) 
 			usrId.User_ID)
 
 		if err != nil {
-			log.Println("deleting the cart failed")
+			log.Println("deleting the cart failed", err)
 			tx.Rollback()
 			return err
 		}
+		log.Println("delete from cart worked")
 	}
 	err = tx.Commit()
 	if err != nil {

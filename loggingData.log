@@ -1669,3 +1669,354 @@ created by net/http.(*Server).Serve
 2022/08/04 16:41:14 report generated
 2022/08/04 16:45:37 true
 2022/08/04 16:45:37 Products are visible to the admin
+2022/08/05 12:08:12 New Run!
+2022/08/05 12:08:12 Database connection was succesful
+2022/08/05 12:08:12 API is listening in the port:  8080
+2022/08/05 12:28:07 New Run!
+2022/08/05 12:28:08 Database connection was succesful
+2022/08/05 12:28:08 API is listening in the port:  8080
+2022/08/05 12:29:03 Checking whether user exists.
+2022/08/05 12:29:03 Signed Up Successfully
+2022/08/05 12:29:23 Checking whether User exists.
+2022/08/05 12:29:23 User exists.
+2022/08/05 12:29:23 User login sucessful
+2022/08/05 12:29:31 false
+2022/08/05 12:29:31 updated the query
+2022/08/05 12:29:31 commit sucess
+2022/08/05 12:29:31 Product added to cart
+2022/08/05 12:29:52 false
+2022/08/05 12:29:52 commit sucess
+2022/08/05 12:29:52 Product added to cart
+2022/08/05 12:30:00 Error running query: order was not confirmed
+2022/08/05 13:11:44 New Run!
+2022/08/05 13:11:44 Database connection was succesful
+2022/08/05 13:11:44 API is listening in the port:  8080
+2022/08/05 13:12:00 false
+2022/08/05 13:12:00 commit sucess
+2022/08/05 13:12:00 Product added to cart
+2022/08/05 13:12:05 Error running query: order was not confirmed
+2022/08/05 13:13:03 Error running query: order was not confirmed
+2022/08/05 13:14:43 New Run!
+2022/08/05 13:14:43 Database connection was succesful
+2022/08/05 13:14:43 API is listening in the port:  8080
+2022/08/05 13:14:53 i'm here
+2022/08/05 13:14:53 Error running query: order was not confirmed
+2022/08/05 13:15:11 New Run!
+2022/08/05 13:15:11 Database connection was succesful
+2022/08/05 13:15:11 API is listening in the port:  8080
+2022/08/05 13:15:18 i'm here
+2022/08/05 13:15:18 Error running query: order was not confirmed
+2022/08/05 13:16:09 New Run!
+2022/08/05 13:16:09 Database connection was succesful
+2022/08/05 13:16:09 API is listening in the port:  8080
+2022/08/05 13:16:18 i'm here 1
+2022/08/05 13:16:18 i'm here 2
+2022/08/05 13:16:18 i'm here 3
+2022/08/05 13:16:18 Error running query: order was not confirmed
+2022/08/05 13:17:14 New Run!
+2022/08/05 13:17:14 Database connection was succesful
+2022/08/05 13:17:14 API is listening in the port:  8080
+2022/08/05 13:17:21 i'm here 1
+2022/08/05 13:17:21 i'm here 2
+2022/08/05 13:17:21 i'm here 3
+2022/08/05 13:17:21 error in rows.next sql: Scan error on column index 1, name "user_address_id": converting NULL to uint is unsupported
+2022/08/05 13:17:21 Error running query: order was not confirmed
+2022/08/05 13:18:59 Sucess adding address
+2022/08/05 13:19:07 New Run!
+2022/08/05 13:19:07 Database connection was succesful
+2022/08/05 13:19:07 API is listening in the port:  8080
+2022/08/05 13:19:16 i'm here 1
+2022/08/05 13:19:16 i'm here 2
+2022/08/05 13:19:16 i'm here 3
+2022/08/05 13:19:16 error in rows.next sql: Scan error on column index 1, name "user_address_id": converting NULL to uint is unsupported
+2022/08/05 13:19:16 Error running query: order was not confirmed
+2022/08/05 13:32:19 New Run!
+2022/08/05 13:32:19 Database connection was succesful
+2022/08/05 13:32:19 API is listening in the port:  8080
+2022/08/05 13:32:30 user address id  2
+2022/08/05 13:32:30 Sucess adding address
+2022/08/05 13:32:57 user address id  2
+2022/08/05 13:32:57 Sucess adding address
+2022/08/05 13:33:25 New Run!
+2022/08/05 13:33:25 Database connection was succesful
+2022/08/05 13:33:25 API is listening in the port:  8080
+2022/08/05 13:33:32 user address id  2
+2022/08/05 13:33:32 Sucess adding address
+2022/08/05 13:34:42 New Run!
+2022/08/05 13:34:42 Database connection was succesful
+2022/08/05 13:34:42 API is listening in the port:  8080
+2022/08/05 13:34:51 user address id  2
+2022/08/05 13:34:51 Failed to add address
+2022/08/05 14:16:36 New Run!
+2022/08/05 14:16:36 Database connection was succesful
+2022/08/05 14:16:36 API is listening in the port:  8080
+2022/08/05 14:17:05 Checking whether user exists.
+2022/08/05 14:17:05 Signed Up Successfully
+2022/08/05 14:17:18 error running the query sql: expected 4 destination arguments in Scan, not 3
+2022/08/05 14:17:19 Failed to add address
+2022/08/05 14:18:43 New Run!
+2022/08/05 14:18:44 Database connection was succesful
+2022/08/05 14:18:44 API is listening in the port:  8080
+2022/08/05 14:18:51 Sucess adding address
+2022/08/05 14:19:51 Sucess adding address
+2022/08/05 14:26:03 error parsing jwt:  token is expired by 15s
+2022/08/05 14:26:03 Token Invalid.
+2022/08/05 14:26:08 Checking whether User exists.
+2022/08/05 14:26:08 User exists.
+2022/08/05 14:26:08 User login sucessful
+2022/08/05 14:26:27 false
+2022/08/05 14:26:27 commit sucess
+2022/08/05 14:26:27 Product added to cart
+2022/08/05 14:26:41 error in rows.next sql: Scan error on column index 2, name "product_id": unsupported Scan, storing driver.Value type int64 into type *[]int
+2022/08/05 14:26:41 Error running query: order was not confirmed
+2022/08/05 14:29:04 New Run!
+2022/08/05 14:29:04 Database connection was succesful
+2022/08/05 14:29:04 API is listening in the port:  8080
+2022/08/05 14:29:16 Select worked
+2022/08/05 14:29:16 Update inventory failed pq: column "invetory_quantity" does not exist
+2022/08/05 14:29:16 Error running query: order was not confirmed
+2022/08/05 14:31:45 New Run!
+2022/08/05 14:31:46 Database connection was succesful
+2022/08/05 14:31:46 API is listening in the port:  8080
+2022/08/05 14:31:59 Select worked
+2022/08/05 14:31:59 inventory updation worked
+2022/08/05 14:31:59 Insertion into the orderConfirm failed pq: null value in column "order_id" of relation "user_order" violates not-null constraint
+2022/08/05 14:31:59 Error running query: order was not confirmed
+2022/08/05 14:37:24 New Run!
+2022/08/05 14:37:24 Database connection was succesful
+2022/08/05 14:37:24 API is listening in the port:  8080
+2022/08/05 14:37:35 Select worked
+2022/08/05 14:37:35 inventory updation worked
+2022/08/05 14:37:35 Insertion into user order worked
+2022/08/05 14:37:35 delete from cart worked
+2022/08/05 14:37:35 Commit sucessful
+2022/08/05 14:37:35 Order confirmed
+2022/08/05 14:45:47 New Run!
+2022/08/05 14:45:47 Database connection was succesful
+2022/08/05 14:45:47 API is listening in the port:  8080
+2022/08/05 14:46:20 false
+2022/08/05 14:46:20 updated the query
+2022/08/05 14:46:20 commit sucess
+2022/08/05 14:46:20 Product added to cart
+2022/08/05 14:46:22 false
+2022/08/05 14:46:22 commit sucess
+2022/08/05 14:46:22 Product added to cart
+2022/08/05 14:46:24 false
+2022/08/05 14:46:24 commit sucess
+2022/08/05 14:46:24 Product added to cart
+2022/08/05 14:46:44 Select from cart worked
+2022/08/05 14:46:44 inventory updation worked
+2022/08/05 14:46:44 Insertion into user order worked
+2022/08/05 14:46:44 delete from cart worked
+2022/08/05 14:46:44 Commit sucessful
+2022/08/05 14:46:44 Order confirmed
+2022/08/05 14:47:00 false
+2022/08/05 14:47:00 updated the query
+2022/08/05 14:47:00 commit sucess
+2022/08/05 14:47:00 Product added to cart
+2022/08/05 14:47:01 false
+2022/08/05 14:47:01 commit sucess
+2022/08/05 14:47:01 Product added to cart
+2022/08/05 14:48:40 New Run!
+2022/08/05 14:48:40 Database connection was succesful
+2022/08/05 14:48:40 API is listening in the port:  8080
+2022/08/05 14:48:48 false
+2022/08/05 14:48:48 updated the query
+2022/08/05 14:48:48 commit sucess
+2022/08/05 14:48:48 Product added to cart
+2022/08/05 14:48:49 false
+2022/08/05 14:48:49 commit sucess
+2022/08/05 14:48:49 Product added to cart
+2022/08/05 14:48:52 Select from cart worked
+2022/08/05 14:48:52 inventory updation worked
+2022/08/05 14:48:52 Insertion into user order worked
+2022/08/05 14:48:52 Commit sucessful
+2022/08/05 14:48:52 Order confirmed
+2022/08/05 14:51:05 false
+2022/08/05 14:51:05 updated the query
+2022/08/05 14:51:05 commit sucess
+2022/08/05 14:51:05 Product added to cart
+2022/08/05 14:51:10 false
+2022/08/05 14:51:10 updated the query
+2022/08/05 14:51:10 commit sucess
+2022/08/05 14:51:10 Product added to cart
+2022/08/05 14:51:34 Select from cart worked
+2022/08/05 14:51:34 inventory updation worked
+2022/08/05 14:51:34 Insertion into user order worked
+2022/08/05 14:51:34 Commit sucessful
+2022/08/05 14:51:34 Order confirmed
+2022/08/05 14:54:13 New Run!
+2022/08/05 14:54:13 Database connection was succesful
+2022/08/05 14:54:13 API is listening in the port:  8080
+2022/08/05 14:54:27 false
+2022/08/05 14:54:27 updated the query
+2022/08/05 14:54:27 commit sucess
+2022/08/05 14:54:27 Product added to cart
+2022/08/05 14:54:43 Select from cart worked
+2022/08/05 14:54:43 inventory updation worked
+2022/08/05 14:54:43 Insertion into the orderConfirm failed pq: column "cart_id" of relation "user_order" does not exist
+2022/08/05 14:54:43 Error running query: order was not confirmed
+2022/08/05 14:55:25 New Run!
+2022/08/05 14:55:25 Database connection was succesful
+2022/08/05 14:55:25 API is listening in the port:  8080
+2022/08/05 14:55:44 Select from cart worked
+2022/08/05 14:55:44 inventory updation worked
+2022/08/05 14:55:44 Insertion into user order worked
+2022/08/05 14:55:44 delete from cart worked
+2022/08/05 14:55:44 Commit sucessful
+2022/08/05 14:55:44 Order confirmed
+2022/08/05 15:10:17 New Run!
+2022/08/05 15:10:17 Database connection was succesful
+2022/08/05 15:10:17 API is listening in the port:  8080
+2022/08/05 15:10:40 false
+2022/08/05 15:10:40 updated the query
+2022/08/05 15:10:40 commit sucess
+2022/08/05 15:10:40 Product added to cart
+2022/08/05 15:10:41 false
+2022/08/05 15:10:41 commit sucess
+2022/08/05 15:10:41 Product added to cart
+2022/08/05 15:10:45 Select from cart worked
+2022/08/05 15:10:45 inventory updation worked
+2022/08/05 15:10:45 Insertion into user order worked
+2022/08/05 15:10:46 delete from cart worked
+2022/08/05 15:10:46 delete from cart worked
+2022/08/05 15:10:46 Commit sucessful
+2022/08/05 15:10:46 Order confirmed
+2022/08/05 15:14:08 New Run!
+2022/08/05 15:14:08 Database connection was succesful
+2022/08/05 15:14:08 API is listening in the port:  8080
+2022/08/05 15:14:17 false
+2022/08/05 15:14:17 updated the query
+2022/08/05 15:14:17 commit sucess
+2022/08/05 15:14:17 Product added to cart
+2022/08/05 15:14:18 false
+2022/08/05 15:14:18 commit sucess
+2022/08/05 15:14:18 Product added to cart
+2022/08/05 15:14:19 false
+2022/08/05 15:14:19 commit sucess
+2022/08/05 15:14:19 Product added to cart
+2022/08/05 15:14:22 total price of the product 0
+2022/08/05 15:14:22 Select from cart worked
+2022/08/05 15:14:22 inventory updation worked
+2022/08/05 15:14:22 Insertion into user order worked
+2022/08/05 15:14:22 inserting total price worked
+2022/08/05 15:14:22 delete from cart worked
+2022/08/05 15:14:22 Commit sucessful
+2022/08/05 15:14:22 Order confirmed
+2022/08/05 15:18:41 New Run!
+2022/08/05 15:18:41 Database connection was succesful
+2022/08/05 15:18:41 API is listening in the port:  8080
+2022/08/05 15:18:49 error parsing jwt:  token is expired by 121h34m58s
+2022/08/05 15:18:49 Token Invalid.
+2022/08/05 15:19:07 false
+2022/08/05 15:19:07 User order placed
+2022/08/05 15:25:24 New Run!
+2022/08/05 15:25:24 Database connection was succesful
+2022/08/05 15:25:24 API is listening in the port:  8080
+2022/08/05 15:25:34 false
+2022/08/05 15:25:34 updated the query
+2022/08/05 15:25:34 commit sucess
+2022/08/05 15:25:34 Product added to cart
+2022/08/05 15:25:38 error in rows.next sql: Scan error on column index 4, name "product_price": converting driver.Value type []uint8 ("140.3") to a int: invalid syntax
+2022/08/05 15:25:38 Error running query: order was not confirmed
+2022/08/05 15:27:17 New Run!
+2022/08/05 15:27:18 Database connection was succesful
+2022/08/05 15:27:18 API is listening in the port:  8080
+2022/08/05 15:27:26 total price of the product 140.3
+2022/08/05 15:27:26 Select from cart worked
+2022/08/05 15:27:26 inventory updation worked
+2022/08/05 15:27:26 Insertion into user order worked
+2022/08/05 15:27:26 inserting total price worked
+2022/08/05 15:27:26 delete from cart worked
+2022/08/05 15:27:26 Commit sucessful
+2022/08/05 15:27:26 Order confirmed
+2022/08/05 15:35:25 New Run!
+2022/08/05 15:35:25 Database connection was succesful
+2022/08/05 15:35:25 API is listening in the port:  8080
+2022/08/05 15:37:00 New Run!
+2022/08/05 15:37:00 Database connection was succesful
+2022/08/05 15:37:00 API is listening in the port:  8080
+2022/08/05 15:37:24 false
+2022/08/05 15:37:24 updated the query
+2022/08/05 15:37:24 commit sucess
+2022/08/05 15:37:24 Product added to cart
+2022/08/05 15:37:27 false
+2022/08/05 15:37:27 commit sucess
+2022/08/05 15:37:27 Product added to cart
+2022/08/05 15:37:34 total price of the product 0
+2022/08/05 15:37:34 Select from cart worked
+2022/08/05 15:37:34 inventory updation worked
+2022/08/05 15:37:34 Insertion into user order worked
+2022/08/05 15:37:34 inserting total price worked
+2022/08/05 15:37:34 delete from cart worked
+2022/08/05 15:37:34 Commit sucessful
+2022/08/05 15:37:34 Order confirmed
+2022/08/05 15:42:30 New Run!
+2022/08/05 15:42:30 Database connection was succesful
+2022/08/05 15:42:30 API is listening in the port:  8080
+2022/08/05 15:42:44 false
+2022/08/05 15:42:44 updated the query
+2022/08/05 15:42:44 commit sucess
+2022/08/05 15:42:44 Product added to cart
+2022/08/05 15:42:46 false
+2022/08/05 15:42:46 commit sucess
+2022/08/05 15:42:46 Product added to cart
+2022/08/05 15:42:53 product price 140.3
+2022/08/05 15:42:53 Select from cart worked
+2022/08/05 15:42:53 inventory updation worked
+2022/08/05 15:42:53 Insertion into user order worked
+2022/08/05 15:42:53 total price of the product 280.6
+2022/08/05 15:42:53 inserting total price worked
+2022/08/05 15:42:53 delete from cart worked
+2022/08/05 15:42:53 Commit sucessful
+2022/08/05 15:42:53 Order confirmed
+2022/08/05 15:48:49 New Run!
+2022/08/05 15:48:49 Database connection was succesful
+2022/08/05 15:48:49 API is listening in the port:  8080
+2022/08/05 15:48:58 false
+2022/08/05 15:48:58 updated the query
+2022/08/05 15:48:58 commit sucess
+2022/08/05 15:48:58 Product added to cart
+2022/08/05 15:48:59 false
+2022/08/05 15:48:59 commit sucess
+2022/08/05 15:48:59 Product added to cart
+2022/08/05 15:49:02 product price 140.3
+2022/08/05 15:49:02 Select from cart worked
+2022/08/05 15:49:02 inventory updation worked
+2022/08/05 15:49:02 Insertion into user order worked
+2022/08/05 15:49:02 total price of the product 280.6
+2022/08/05 15:49:02 delete from cart worked
+2022/08/05 15:49:02 Commit sucessful
+2022/08/05 15:49:02 Order confirmed
+2022/08/05 15:52:40 New Run!
+2022/08/05 15:52:40 Database connection was succesful
+2022/08/05 15:52:40 API is listening in the port:  8080
+2022/08/05 15:52:50 false
+2022/08/05 15:52:50 updated the query
+2022/08/05 15:52:50 commit sucess
+2022/08/05 15:52:50 Product added to cart
+2022/08/05 15:52:51 false
+2022/08/05 15:52:51 commit sucess
+2022/08/05 15:52:51 Product added to cart
+2022/08/05 15:52:53 product price 140.3
+2022/08/05 15:52:53 Select from cart worked
+2022/08/05 15:52:53 inventory updation worked
+2022/08/05 15:52:53 Insertion into the orderConfirm failed pq: INSERT has more target columns than expressions
+2022/08/05 15:52:53 Error running query: order was not confirmed
+2022/08/05 15:53:28 New Run!
+2022/08/05 15:53:29 Database connection was succesful
+2022/08/05 15:53:29 API is listening in the port:  8080
+2022/08/05 15:53:37 false
+2022/08/05 15:53:37 commit sucess
+2022/08/05 15:53:37 Product added to cart
+2022/08/05 15:53:39 false
+2022/08/05 15:53:39 commit sucess
+2022/08/05 15:53:39 Product added to cart
+2022/08/05 15:53:42 product price 140.3
+2022/08/05 15:53:42 Select from cart worked
+2022/08/05 15:53:42 inventory updation worked
+2022/08/05 15:53:42 Insertion into user order worked
+2022/08/05 15:53:42 total price of the product 561.2
+2022/08/05 15:53:42 delete from cart worked
+2022/08/05 15:53:42 Commit sucessful
+2022/08/05 15:53:42 Order confirmed
