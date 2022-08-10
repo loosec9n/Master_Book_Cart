@@ -3229,3 +3229,27 @@ created by net/http.(*Server).Serve
 	WHERE author_name iLike $1order by product_price DESC
 2022/08/10 15:35:39 arg [%Smriti Irani%]
 2022/08/10 15:35:39 search product is visible
+2022/08/10 15:40:06 New Run!
+2022/08/10 15:40:07 Database connection was succesful
+2022/08/10 15:40:07 API is listening in the port:  8080
+2022/08/10 15:40:18 false
+2022/08/10 15:40:18 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE author_name iLike $1ORDER BY product_name DESC , product_price DESC
+2022/08/10 15:40:18 arg [%Smriti Irani%]
+2022/08/10 15:40:18 search product is visible

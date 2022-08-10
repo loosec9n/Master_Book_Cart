@@ -150,6 +150,7 @@ func (r Repository) UserSearchProduct(searchParam models.SearchParm) ([]Prod, er
 	var usps []Prod
 	var arg []interface{}
 	var flag bool
+	var Oflag bool
 	i := 1
 
 	query := `SELECT 
@@ -215,19 +216,31 @@ func (r Repository) UserSearchProduct(searchParam models.SearchParm) ([]Prod, er
 
 	//ordering the output accouding to user preference
 	if searchParam.OrderBY != "" {
+		if !Oflag {
+			query = query + `ORDER BY `
+			Oflag = true
+		} else {
+			query = query + ` , `
+		}
 
 		if searchParam.OrderBY == "asc" {
-			query = query + `ORDER BY product_name`
+			query = query + `product_name`
 		} else {
-			query = query + `ORDER BY product_name DESC`
+			query = query + `product_name DESC`
 		}
 	}
 
 	if searchParam.Oprice != "" {
-		if searchParam.Oprice == "asc" {
-			query = query + `ORDER BY product_price`
+		if !Oflag {
+			query = query + `ORDER BY `
+			Oflag = true
 		} else {
-			query = query + `order by product_price DESC`
+			query = query + ` , `
+		}
+		if searchParam.Oprice == "asc" {
+			query = query + `product_price`
+		} else {
+			query = query + `product_price DESC`
 		}
 	}
 
