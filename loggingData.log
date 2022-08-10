@@ -2020,3 +2020,916 @@ created by net/http.(*Server).Serve
 2022/08/05 15:53:42 delete from cart worked
 2022/08/05 15:53:42 Commit sucessful
 2022/08/05 15:53:42 Order confirmed
+2022/08/10 11:56:52 New Run!
+2022/08/10 11:56:53 Database connection was succesful
+2022/08/10 11:56:53 API is listening in the port:  8080
+2022/08/10 11:57:07 error parsing jwt:  token is expired by 314h21m25s
+2022/08/10 11:57:07 Token Invalid.
+2022/08/10 11:57:12 Checking whether User exists.
+2022/08/10 11:57:12 User exists.
+2022/08/10 11:57:12 User login sucessful
+2022/08/10 11:57:30 false
+2022/08/10 11:57:30 Preparing the query failed
+2022/08/10 11:57:30 error executing query for the user products search
+2022/08/10 11:58:38 New Run!
+2022/08/10 11:58:39 Database connection was succesful
+2022/08/10 11:58:39 API is listening in the port:  8080
+2022/08/10 11:58:50 false
+2022/08/10 11:58:50 Preparing the query failed
+2022/08/10 11:58:50 error executing query for the user products search
+2022/08/10 11:59:24 New Run!
+2022/08/10 11:59:24 Database connection was succesful
+2022/08/10 11:59:24 API is listening in the port:  8080
+2022/08/10 11:59:32 false
+2022/08/10 11:59:32 search product is visible
+2022/08/10 12:00:05 false
+2022/08/10 12:00:05 search product is visible
+2022/08/10 12:02:07 New Run!
+2022/08/10 12:02:08 Database connection was succesful
+2022/08/10 12:02:08 API is listening in the port:  8080
+2022/08/10 12:02:15 false
+2022/08/10 12:02:15 Preparing the query failed
+2022/08/10 12:02:15 error executing query for the user products search
+2022/08/10 12:03:49 New Run!
+2022/08/10 12:03:49 Database connection was succesful
+2022/08/10 12:03:49 API is listening in the port:  8080
+2022/08/10 12:03:55 false
+2022/08/10 12:03:55 Preparing the query failed
+2022/08/10 12:03:55 error executing query for the user products search
+2022/08/10 12:06:10 New Run!
+2022/08/10 12:06:10 Database connection was succesful
+2022/08/10 12:06:10 API is listening in the port:  8080
+2022/08/10 12:06:19 false
+2022/08/10 12:06:19 Preparing the query failed
+2022/08/10 12:06:19 error executing query for the user products search
+2022/08/10 12:06:57 New Run!
+2022/08/10 12:06:57 Database connection was succesful
+2022/08/10 12:06:57 API is listening in the port:  8080
+2022/08/10 12:07:05 false
+2022/08/10 12:07:05 Preparing the query failed
+2022/08/10 12:07:05 error executing query for the user products search
+2022/08/10 12:08:09 New Run!
+2022/08/10 12:08:09 Database connection was succesful
+2022/08/10 12:08:09 API is listening in the port:  8080
+2022/08/10 12:08:16 false
+2022/08/10 12:08:16 Preparing the query failed pq: syntax error at end of input
+2022/08/10 12:08:16 error executing query for the user products search
+2022/08/10 12:08:59 New Run!
+2022/08/10 12:09:00 Database connection was succesful
+2022/08/10 12:09:00 API is listening in the port:  8080
+2022/08/10 12:09:06 false
+2022/08/10 12:09:06 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:09:06 error executing query for the user products search
+2022/08/10 12:09:33 New Run!
+2022/08/10 12:09:33 Database connection was succesful
+2022/08/10 12:09:33 API is listening in the port:  8080
+2022/08/10 12:11:11 false
+2022/08/10 12:11:11 Preparing the query failed pq: syntax error at end of input
+2022/08/10 12:11:11 error executing query for the user products search
+2022/08/10 12:11:59 New Run!
+2022/08/10 12:11:59 Database connection was succesful
+2022/08/10 12:11:59 API is listening in the port:  8080
+2022/08/10 12:12:14 false
+2022/08/10 12:12:14 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:12:14 error executing query for the user products search
+2022/08/10 12:13:36 New Run!
+2022/08/10 12:13:36 Database connection was succesful
+2022/08/10 12:13:36 API is listening in the port:  8080
+2022/08/10 12:13:43 false
+2022/08/10 12:13:43 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:13:43 error executing query for the user products search
+2022/08/10 12:14:33 New Run!
+2022/08/10 12:14:33 Database connection was succesful
+2022/08/10 12:14:33 API is listening in the port:  8080
+2022/08/10 12:14:41 false
+2022/08/10 12:14:41 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:14:41 error executing query for the user products search
+2022/08/10 12:16:02 New Run!
+2022/08/10 12:16:02 Database connection was succesful
+2022/08/10 12:16:02 API is listening in the port:  8080
+2022/08/10 12:16:09 false
+2022/08/10 12:16:09 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:16:09 error executing query for the user products search
+2022/08/10 12:17:04 New Run!
+2022/08/10 12:17:04 Database connection was succesful
+2022/08/10 12:17:04 API is listening in the port:  8080
+2022/08/10 12:17:14 false
+2022/08/10 12:17:14 Preparing the query failed pq: syntax error at end of input
+2022/08/10 12:17:14 error executing query for the user products search
+2022/08/10 12:22:13 New Run!
+2022/08/10 12:22:13 Database connection was succesful
+2022/08/10 12:22:13 API is listening in the port:  8080
+2022/08/10 12:22:21 false
+2022/08/10 12:22:21 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1%
+2022/08/10 12:22:21 Preparing the query failed pq: syntax error at end of input
+2022/08/10 12:22:21 error executing query for the user products search
+2022/08/10 12:23:39 New Run!
+2022/08/10 12:23:39 Database connection was succesful
+2022/08/10 12:23:39 API is listening in the port:  8080
+2022/08/10 12:23:46 false
+2022/08/10 12:23:46 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1%;
+2022/08/10 12:23:46 Preparing the query failed pq: syntax error at or near ";"
+2022/08/10 12:23:46 error executing query for the user products search
+2022/08/10 12:25:19 New Run!
+2022/08/10 12:25:19 Database connection was succesful
+2022/08/10 12:25:19 API is listening in the port:  8080
+2022/08/10 12:25:27 false
+2022/08/10 12:25:27 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1%
+2022/08/10 12:25:27 Preparing the query failed pq: syntax error at end of input
+2022/08/10 12:25:27 error executing query for the user products search
+2022/08/10 12:26:34 New Run!
+2022/08/10 12:26:34 Database connection was succesful
+2022/08/10 12:26:34 API is listening in the port:  8080
+2022/08/10 12:26:42 false
+2022/08/10 12:26:42 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1'%'
+2022/08/10 12:26:42 Preparing the query failed pq: syntax error at or near "'%'"
+2022/08/10 12:26:42 error executing query for the user products search
+2022/08/10 12:29:36 New Run!
+2022/08/10 12:29:36 Database connection was succesful
+2022/08/10 12:29:36 API is listening in the port:  8080
+2022/08/10 12:29:46 false
+2022/08/10 12:29:46 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 12:29:46 search product is visible
+2022/08/10 12:32:18 New Run!
+2022/08/10 12:32:18 Database connection was succesful
+2022/08/10 12:32:18 API is listening in the port:  8080
+2022/08/10 12:32:26 false
+2022/08/10 12:32:26 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $%1%, 
+2022/08/10 12:32:26 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 12:32:26 error executing query for the user products search
+2022/08/10 12:49:12 New Run!
+2022/08/10 12:49:13 Database connection was succesful
+2022/08/10 12:49:13 API is listening in the port:  8080
+2022/08/10 12:49:21 false
+2022/08/10 12:49:21 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE %$1%, 
+2022/08/10 12:49:21 Preparing the query failed pq: syntax error at or near "%"
+2022/08/10 12:49:21 error executing query for the user products search
+2022/08/10 12:50:10 New Run!
+2022/08/10 12:50:10 Database connection was succesful
+2022/08/10 12:50:10 API is listening in the port:  8080
+2022/08/10 12:50:19 false
+2022/08/10 12:50:19 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE '%$1%', 
+2022/08/10 12:50:19 Preparing the query failed pq: syntax error at or near ","
+2022/08/10 12:50:19 error executing query for the user products search
+2022/08/10 12:50:46 New Run!
+2022/08/10 12:50:46 Database connection was succesful
+2022/08/10 12:50:46 API is listening in the port:  8080
+2022/08/10 12:50:55 false
+2022/08/10 12:50:55 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE '%$1%'
+2022/08/10 12:50:55 Search product query failed
+2022/08/10 12:50:55 error executing query for the user products search
+2022/08/10 13:18:17 New Run!
+2022/08/10 13:18:17 Database connection was succesful
+2022/08/10 13:18:17 API is listening in the port:  8080
+2022/08/10 13:18:24 false
+2022/08/10 13:18:24 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE '%$1%'
+2022/08/10 13:18:24 Search product query failed sql: expected 0 arguments, got 1
+2022/08/10 13:18:24 error executing query for the user products search
+2022/08/10 13:19:09 New Run!
+2022/08/10 13:19:09 Database connection was succesful
+2022/08/10 13:19:09 API is listening in the port:  8080
+2022/08/10 13:19:32 New Run!
+2022/08/10 13:19:32 Database connection was succesful
+2022/08/10 13:19:32 API is listening in the port:  8080
+2022/08/10 13:19:45 false
+2022/08/10 13:19:45 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $%$1%
+2022/08/10 13:19:45 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 13:19:45 error executing query for the user products search
+2022/08/10 13:21:21 New Run!
+2022/08/10 13:21:21 Database connection was succesful
+2022/08/10 13:21:21 API is listening in the port:  8080
+2022/08/10 13:21:30 false
+2022/08/10 13:21:30 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE %%$%%1
+2022/08/10 13:21:30 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 13:21:30 error executing query for the user products search
+2022/08/10 13:22:04 New Run!
+2022/08/10 13:22:04 Database connection was succesful
+2022/08/10 13:22:04 API is listening in the port:  8080
+2022/08/10 13:22:13 false
+2022/08/10 13:22:13 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE %%%$%%1
+2022/08/10 13:22:13 Preparing the query failed pq: syntax error at or near "$"
+2022/08/10 13:22:13 error executing query for the user products search
+2022/08/10 13:22:46 New Run!
+2022/08/10 13:22:46 Database connection was succesful
+2022/08/10 13:22:46 API is listening in the port:  8080
+2022/08/10 13:22:55 false
+2022/08/10 13:22:55 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 13:22:55 search product is visible
+2022/08/10 13:23:00 false
+2022/08/10 13:23:00 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 13:23:00 search product is visible
+2022/08/10 13:29:35 New Run!
+2022/08/10 13:29:35 Database connection was succesful
+2022/08/10 13:29:35 API is listening in the port:  8080
+2022/08/10 13:29:47 false
+2022/08/10 13:29:47 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 13:29:47 search product is visible
+2022/08/10 13:31:09 New Run!
+2022/08/10 13:31:09 Database connection was succesful
+2022/08/10 13:31:09 API is listening in the port:  8080
+2022/08/10 13:31:17 false
+2022/08/10 13:31:17 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 13:31:17 arg [book%!(EXTRA string=%)]
+2022/08/10 13:31:17 search product is visible
+2022/08/10 13:34:15 New Run!
+2022/08/10 13:34:15 Database connection was succesful
+2022/08/10 13:34:15 API is listening in the port:  8080
+2022/08/10 13:34:23 false
+2022/08/10 13:34:23 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/10 13:34:23 arg [%book%]
+2022/08/10 13:34:23 search product is visible
+2022/08/10 13:39:07 New Run!
+2022/08/10 13:39:07 Database connection was succesful
+2022/08/10 13:39:07 API is listening in the port:  8080
+2022/08/10 13:39:31 false
+2022/08/10 13:39:31 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1category_name iLike $2
+2022/08/10 13:39:31 arg [%book% %horror%]
+2022/08/10 13:39:31 Preparing the query failed pq: syntax error at or near "category_name"
+2022/08/10 13:39:31 error executing query for the user products search
+2022/08/10 13:40:06 false
+2022/08/10 13:40:06 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE category_name iLike $1
+2022/08/10 13:40:06 arg [%horror%]
+2022/08/10 13:40:06 search product is visible
+2022/08/10 13:40:18 false
+2022/08/10 13:40:18 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE category_name iLike $1
+2022/08/10 13:40:18 arg [%horr%]
+2022/08/10 13:40:18 search product is visible
+2022/08/10 13:40:58 New Run!
+2022/08/10 13:40:58 Database connection was succesful
+2022/08/10 13:40:58 API is listening in the port:  8080
+2022/08/10 13:41:05 false
+2022/08/10 13:41:05 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1, category_name iLike $2
+2022/08/10 13:41:05 arg [%book% %horror%]
+2022/08/10 13:41:05 Preparing the query failed pq: syntax error at or near ","
+2022/08/10 13:41:05 error executing query for the user products search
+2022/08/10 13:41:41 New Run!
+2022/08/10 13:41:41 Database connection was succesful
+2022/08/10 13:41:41 API is listening in the port:  8080
+2022/08/10 13:41:48 false
+2022/08/10 13:41:48 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND category_name iLike $2
+2022/08/10 13:41:48 arg [%book% %horror%]
+2022/08/10 13:41:48 search product is visible
+2022/08/10 13:42:05 false
+2022/08/10 13:42:05 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE category_name iLike $1
+2022/08/10 13:42:05 arg [%horror%]
+2022/08/10 13:42:05 search product is visible
+2022/08/10 13:42:11 false
+2022/08/10 13:42:11 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND 
+2022/08/10 13:42:11 arg [%book%]
+2022/08/10 13:42:11 Preparing the query failed pq: syntax error at end of input
+2022/08/10 13:42:11 error executing query for the user products search
+2022/08/10 14:09:25 New Run!
+2022/08/10 14:09:25 Database connection was succesful
+2022/08/10 14:09:25 API is listening in the port:  8080
+2022/08/10 14:09:34 false
+2022/08/10 14:09:34 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHEREproduct_name iLIKE $1
+2022/08/10 14:09:34 arg [%book%]
+2022/08/10 14:09:34 Preparing the query failed pq: syntax error at or near "WHEREproduct_name"
+2022/08/10 14:09:34 error executing query for the user products search
+2022/08/10 14:10:02 New Run!
+2022/08/10 14:10:02 Database connection was succesful
+2022/08/10 14:10:02 API is listening in the port:  8080
+2022/08/10 14:10:11 false
+2022/08/10 14:10:11 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1
+2022/08/10 14:10:11 arg [%book%]
+2022/08/10 14:10:11 search product is visible
+2022/08/10 14:10:17 false
+2022/08/10 14:10:17 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1AND category_name iLike $2
+2022/08/10 14:10:17 arg [%book% %horror%]
+2022/08/10 14:10:17 search product is visible
+2022/08/10 14:10:34 false
+2022/08/10 14:10:34 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1AND category_name iLike $2AND author_namee iLike $3
+2022/08/10 14:10:34 arg [%book% %horror% %Smriti Irani%]
+2022/08/10 14:10:34 Preparing the query failed pq: column "author_namee" does not exist
+2022/08/10 14:10:34 error executing query for the user products search
+2022/08/10 14:10:53 New Run!
+2022/08/10 14:10:53 Database connection was succesful
+2022/08/10 14:10:53 API is listening in the port:  8080
+2022/08/10 14:11:01 false
+2022/08/10 14:11:01 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1AND category_name iLike $2AND author_name iLike $3
+2022/08/10 14:11:01 arg [%book% %horror% %Smriti Irani%]
+2022/08/10 14:11:01 search product is visible
+2022/08/10 14:14:14 New Run!
+2022/08/10 14:14:14 Database connection was succesful
+2022/08/10 14:14:14 API is listening in the port:  8080
+2022/08/10 14:14:22 false
+2022/08/10 14:14:22 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1 AND author_name iLike $2
+2022/08/10 14:14:22 arg [%book% %Smriti Irani%]
+2022/08/10 14:14:22 search product is visible
+2022/08/10 14:14:32 false
+2022/08/10 14:14:32 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1 AND category_name iLike $2
+2022/08/10 14:14:32 arg [%book% %horror%]
+2022/08/10 14:14:32 search product is visible
+2022/08/10 14:14:40 false
+2022/08/10 14:14:40 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE category_name iLike $1 AND author_name iLike $2
+2022/08/10 14:14:40 arg [%horror% %Smriti Irani%]
+2022/08/10 14:14:40 search product is visible
+2022/08/10 14:21:56 New Run!
+2022/08/10 14:21:56 Database connection was succesful
+2022/08/10 14:21:56 API is listening in the port:  8080
+2022/08/10 14:22:10 false
+2022/08/10 14:22:10 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1
+2022/08/10 14:22:10 arg [%book%]
+2022/08/10 14:22:10 search product is visible
+2022/08/10 14:22:35 New Run!
+2022/08/10 14:22:35 Database connection was succesful
+2022/08/10 14:22:35 API is listening in the port:  8080
+2022/08/10 14:22:42 false
+2022/08/10 14:22:42 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	 WHERE product_name iLIKE $1
+2022/08/10 14:22:42 arg [%book%]
+2022/08/10 14:22:42 search product is visible

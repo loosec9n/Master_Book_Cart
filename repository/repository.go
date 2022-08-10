@@ -21,7 +21,7 @@ type UserRepository interface {
 	AddToCart(models.Cart) (models.Cart, error)
 	ViewCart(models.Cart) ([]models.Cart, float64, error)
 	CheckActiveProd(int) (bool, error)
-	UserSearchProduct(int) (Prod, error)
+	UserSearchProduct(models.SearchParm) ([]Prod, error)
 	FindUserByEmail(models.User) (models.User, error)
 	ForgetPasswordUpdate(models.User, string) (models.ForgotPasswordInput, error)
 	AddAddress(models.Address) (models.Address, error)
