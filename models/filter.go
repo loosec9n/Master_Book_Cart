@@ -11,6 +11,7 @@ type SearchParm struct {
 	Author    string
 	Categorty string
 	OrderBY   string
+	Oprice    string
 }
 
 func (f Filter) Limit() int {

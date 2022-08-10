@@ -191,6 +191,9 @@ func (c Controller) SearchProduct() http.HandlerFunc {
 		param.Product = r.URL.Query().Get("name")
 		param.Categorty = r.URL.Query().Get("category")
 		param.Author = r.URL.Query().Get("author")
+		param.OrderBY = r.URL.Query().Get("order")
+		param.Oprice = r.URL.Query().Get("pOrder")
+		//param.Price, _ = strconv.ParseFloat("price", 64)
 
 		product, err := c.UserRepo.UserSearchProduct(param)
 

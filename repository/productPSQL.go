@@ -169,7 +169,7 @@ func (r Repository) UserSearchProduct(searchParam models.SearchParm) ([]Prod, er
 	product_author
 	ON 
 	product_author.author_id = product.product_author_id 
-	 `
+	`
 	//product_id = $1;`
 	// if searchParam.Product != " " {
 	// products := fmt.Sprintf("%s WHERE product_name iLike '%%%d%%'", query, searchParam.P)
@@ -213,8 +213,27 @@ func (r Repository) UserSearchProduct(searchParam models.SearchParm) ([]Prod, er
 		i++
 	}
 
+	//ordering the output accouding to user preference
+	if searchParam.OrderBY != "" {
+
+		if searchParam.OrderBY == "asc" {
+			query = query + `ORDER BY product_name`
+		} else {
+			query = query + `ORDER BY product_name DESC`
+		}
+	}
+
+	if searchParam.Oprice != "" {
+		if searchParam.Oprice == "asc" {
+			query = query + `ORDER BY product_price`
+		} else {
+			query = query + `order by product_price DESC`
+		}
+	}
+
 	log.Println("query", query)
 	log.Println("arg", arg)
+
 	stmt, err := r.DB.Prepare(query)
 	if err != nil {
 		log.Println("Preparing the query failed", err)
