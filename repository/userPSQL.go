@@ -2,6 +2,7 @@ package repository
 
 import (
 	"Book_Cart_Project/models"
+	"context"
 	"database/sql"
 	"log"
 )
@@ -46,6 +47,13 @@ func (r Repository) UserSignup(user models.User) models.User {
 
 func (r Repository) AddAddress(address models.Address) (models.Address, error) {
 
+	ctx := context.Background()
+	tx, err := r.DB.BeginTx(ctx, nil)
+	if err != nil {
+		log.Println("error begining transaction")
+		return models.Address{}, err
+	}
+
 	query := `INSERT INTO user_address(
 		address_id,
 		house_name,
@@ -60,7 +68,7 @@ func (r Repository) AddAddress(address models.Address) (models.Address, error) {
 		house_name, 
 		city;`
 
-	err := r.DB.QueryRow(query,
+	err = tx.QueryRow(query,
 		address.AddressID,
 		address.HouseName,
 		address.StreetName,
@@ -72,8 +80,31 @@ func (r Repository) AddAddress(address models.Address) (models.Address, error) {
 		&address.HouseName,
 		&address.City,
 	)
+	if err != nil {
+		log.Println("error running the query", err)
+		tx.Rollback()
+		return models.Address{}, err
+	}
 
-	return address, err
+	_, err = tx.Exec(`UPDATE 
+						users 
+					SET 
+						user_address_id = $1 
+					WHERE 
+						user_id = $2;`, address.AddressID, address.UserAddress_ID)
+	if err != nil {
+		log.Println("error running update query", err)
+		tx.Rollback()
+		return models.Address{}, err
+	}
+
+	err = tx.Commit()
+	if err != nil {
+		log.Println("error in commiting add address")
+		return models.Address{}, err
+	}
+
+	return address, nil
 }
 
 // To check whether u.User exists

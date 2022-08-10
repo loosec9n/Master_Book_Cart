@@ -21,6 +21,7 @@ func ConnectDB() *sql.DB {
 
 	//opening and connectiong the databse
 	db, err := sql.Open("postgres", dbURL)
+	//db.LogMode(true)
 	// defer db.Close() // closing the open database connetion after the scope
 
 	//checking for connection

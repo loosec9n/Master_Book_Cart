@@ -11,6 +11,7 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 
 	//routes.Get("/admin/login", Controller.AdminLoginIndex)
 	routes.Post("/admin/login", Controller.AdminLogin())
+	routes.Patch("/admin/delivery/status", Controller.AdminEditOrderStatus())
 
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.AdminVerifyMiddleware)
@@ -25,5 +26,6 @@ func AdminRoute(routes chi.Router, Controller controllers.Controller) {
 		r.Post("/admin/add/author", Controller.AddAuthor())
 		r.Get("/admin/view/author", Controller.ViewAuthor())
 		r.Post("/admin/add/inventory", Controller.AdminAddInventory())
+		r.Get("/admin/report/month", Controller.AdminReport())
 	})
 }

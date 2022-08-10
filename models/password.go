@@ -5,7 +5,7 @@ type ForgotPasswordInput struct {
 }
 
 type ResetPasswordInput struct {
-	Email           string `json:"email"`
-	TokenPassword   string `json:"tokenPassword"`
-	PasswordConfirm string `json:"resetPasswordConfirm"`
+	Email           string `json:"email,omitempty"`
+	TokenPassword   string `json:"tokenPassword,omitempty"`
+	PasswordConfirm string `json:"resetPasswordConfirm,omitempty"`
 }

@@ -178,23 +178,22 @@ func (c Controller) UserHomePage() http.HandlerFunc {
 
 func (c Controller) SearchProduct() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		param, err := strconv.Atoi(r.URL.Query().Get("search"))
-		if err != nil || param < 1 {
-			log.Println("Error converting string to int", err)
-			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting string to int", err))
-			return
-		}
 
-		//checking wheather product is active or not
-		activeProd, err := c.UserRepo.CheckActiveProd(param)
+		var param models.SearchParm
+		//param, err := strconv.Atoi(r.URL.Query().Get("name"))
+		// if err != nil || param < 1 {
+		// 	log.Println("Error converting string to int", err)
+		// 	w.WriteHeader(http.StatusNotImplemented)
+		// 	json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Error converting string to int", err))
+		// 	return
+		// }
 
-		if !activeProd {
-			log.Println("Product is not active")
-			w.WriteHeader(http.StatusNotFound)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "product is not active", err))
-			return
-		}
+		param.Product = r.URL.Query().Get("name")
+		param.Categorty = r.URL.Query().Get("category")
+		param.Author = r.URL.Query().Get("author")
+		param.OrderBY = r.URL.Query().Get("order")
+		param.Oprice = r.URL.Query().Get("pOrder")
+		//param.Price, _ = strconv.ParseFloat("price", 64)
 
 		product, err := c.UserRepo.UserSearchProduct(param)
 
@@ -204,6 +203,15 @@ func (c Controller) SearchProduct() http.HandlerFunc {
 			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error exectuing query for the user products search", err))
 			return
 		}
+		//checking wheather product is active or not
+		// activeProd, err := c.UserRepo.CheckActiveProd()
+
+		// if !activeProd {
+		// 	log.Println("Product is not active")
+		// 	w.WriteHeader(http.StatusNotFound)
+		// 	json.NewEncoder(w).Encode(utils.PrepareResponse(false, "product is not active", err))
+		// 	return
+		// }
 
 		log.Println("search product is visible")
 		w.WriteHeader(http.StatusOK)

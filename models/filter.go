@@ -6,6 +6,14 @@ type Filter struct {
 	Page, PageSize int
 }
 
+type SearchParm struct {
+	Product   string
+	Author    string
+	Categorty string
+	OrderBY   string
+	Oprice    string
+}
+
 func (f Filter) Limit() int {
 	return f.PageSize
 }

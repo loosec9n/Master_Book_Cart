@@ -2,6 +2,8 @@ package repository
 
 import (
 	"Book_Cart_Project/models"
+	"fmt"
+	"log"
 	"time"
 )
 
@@ -55,6 +57,8 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 
 func (r Repository) ViewProduct(filter models.Filter) ([]Prod, models.Metadata, error) {
 	var products []Prod
+	// value := 1
+	// var arg []interface{}
 
 	//Writing and executing query
 	query := `SELECT COUNT(*) OVER(),
@@ -75,6 +79,12 @@ func (r Repository) ViewProduct(filter models.Filter) ([]Prod, models.Metadata, 
 		ON 
 		product_author.author_id = product.product_author_id
 		LIMIT $1 OFFSET $2;`
+
+	// if searchParam.Product != "" {
+	// 	query = query + `WHERE product_name iLIKE $` + fmt.Sprintf(`%d`, value) + `,`
+	// 	arg = append(arg, searchParam.Product)
+	// 	value++
+	// }
 
 	rows, err := r.DB.Query(query, filter.Limit(), filter.Offset())
 
@@ -136,8 +146,12 @@ func (r Repository) BlockProduct(product models.Product) (models.Product, error)
 
 }
 
-func (r Repository) UserSearchProduct(product_id int) (Prod, error) {
-	var usp Prod
+func (r Repository) UserSearchProduct(searchParam models.SearchParm) ([]Prod, error) {
+	var usps []Prod
+	var arg []interface{}
+	var flag bool
+	var Oflag bool
+	i := 1
 
 	query := `SELECT 
 	product.is_active,
@@ -155,22 +169,121 @@ func (r Repository) UserSearchProduct(product_id int) (Prod, error) {
 	INNER JOIN 
 	product_author
 	ON 
-	product_author.author_id = product.product_author_id
-	WHERE 
-	product_id = $1;`
+	product_author.author_id = product.product_author_id 
+	`
+	//product_id = $1;`
+	// if searchParam.Product != " " {
+	// products := fmt.Sprintf("%s WHERE product_name iLike '%%%d%%'", query, searchParam.P)
+	// }
 
-	err := r.DB.QueryRow(query,
-		product_id).Scan(
-		&usp.Is_Active,
-		&usp.Id,
-		&usp.Name,
-		&usp.Description,
-		&usp.Category,
-		&usp.Author,
-		&usp.Price,
-	)
+	// if (searchParam.Product || searchParam.Categorty || searchParam.Author) != ""{
+	// 	query = query +`WHERE`
+	// }
 
-	return usp, err
+	if searchParam.Product != "" {
+		if !flag {
+			query = query + `WHERE `
+			flag = true
+		}
+		query = query + `product_name iLIKE $` + fmt.Sprintf("%d", i) //+ " AND "
+		arg = append(arg, fmt.Sprint("%", searchParam.Product, "%"))
+		i++
+	}
+
+	if searchParam.Categorty != "" {
+		if !flag {
+			query = query + `WHERE `
+			flag = true
+		} else {
+			query = query + ` AND `
+		}
+		query = query + `category_name iLike $` + fmt.Sprintf("%d", i)
+		arg = append(arg, fmt.Sprint("%", searchParam.Categorty, "%"))
+		i++
+	}
+
+	if searchParam.Author != "" {
+		if !flag {
+			query = query + `WHERE `
+			flag = true
+		} else {
+			query = query + ` AND `
+		}
+		query = query + `author_name iLike $` + fmt.Sprintf("%d", i)
+		arg = append(arg, fmt.Sprint("%", searchParam.Author, "%"))
+		i++
+	}
+
+	//ordering the output accouding to user preference
+	if searchParam.OrderBY != "" {
+		if !Oflag {
+			query = query + `ORDER BY `
+			Oflag = true
+		} else {
+			query = query + ` , `
+		}
+
+		if searchParam.OrderBY == "asc" {
+			query = query + `product_name`
+		} else {
+			query = query + `product_name DESC`
+		}
+	}
+
+	if searchParam.Oprice != "" {
+		if !Oflag {
+			query = query + `ORDER BY `
+			Oflag = true
+		} else {
+			query = query + ` , `
+		}
+		if searchParam.Oprice == "asc" {
+			query = query + `product_price`
+		} else {
+			query = query + `product_price DESC`
+		}
+	}
+
+	log.Println("query", query)
+	log.Println("arg", arg)
+
+	stmt, err := r.DB.Prepare(query)
+	if err != nil {
+		log.Println("Preparing the query failed", err)
+		return usps, err
+	}
+
+	row, err := stmt.Query(arg...)
+	if err != nil {
+		log.Println("Search product query failed", err)
+		return usps, err
+	}
+	defer row.Close()
+
+	for row.Next() {
+		var usp Prod
+		err := row.Scan(
+			&usp.Is_Active,
+			&usp.Id,
+			&usp.Name,
+			&usp.Description,
+			&usp.Category,
+			&usp.Author,
+			&usp.Price,
+		)
+		if err != nil {
+			log.Println("error scaning the search product")
+			return usps, err
+		}
+		if usp.Is_Active {
+			usps = append(usps, usp)
+		}
+	}
+	if err = row.Err(); err != nil {
+		return usps, err
+	}
+
+	return usps, err
 }
 
 func (r Repository) CheckActiveProd(product_id int) (bool, error) {
