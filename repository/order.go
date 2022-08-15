@@ -9,6 +9,13 @@ import (
 
 func (r Repository) CreateNewOrder(order models.OrderBody, orderIn models.Order) ([]models.Order, float64, error) {
 	var orderOut []models.Order
+	//var ordered models.Ordered
+
+	ctx := context.Background()
+	tx, err := r.DB.BeginTx(ctx, nil)
+	if err != nil {
+		return orderOut, 0, err
+	}
 
 	query := `SELECT 
 	product.product_name, 
@@ -22,7 +29,7 @@ func (r Repository) CreateNewOrder(order models.OrderBody, orderIn models.Order)
 	INNER JOIN users ON cart.user_id = users.user_id
 	WHERE cart.user_id = $1;`
 
-	rows, err := r.DB.Query(query, order.User_ID)
+	rows, err := tx.Query(query, order.User_ID)
 	if err != nil {
 		return orderOut, 0, err
 	}
@@ -44,6 +51,26 @@ func (r Repository) CreateNewOrder(order models.OrderBody, orderIn models.Order)
 		orderOut = append(orderOut, orderIn)
 	}
 	if err = rows.Err(); err != nil {
+		log.Println("Create new order select query failed", err)
+		tx.Rollback()
+		return orderOut, totalAmount, err
+	}
+
+	query2 := `INSERT INTO
+				ordered(user_id,total_amount)
+				VALUES($1,$2);`
+	_, err = tx.Exec(query2,
+		order.User_ID,
+		totalAmount,
+	)
+	if err != nil {
+		log.Println("Create new order insert query failed", err)
+		tx.Rollback()
+		return orderOut, totalAmount, err
+	}
+	err = tx.Commit()
+	if err != nil {
+		log.Println("commit failed")
 		return orderOut, totalAmount, err
 	}
 
