@@ -31,6 +31,7 @@ type UserRepository interface {
 	CreateNewOrder(models.OrderBody, models.Order) ([]models.Order, float64, error)
 	OrderPayments(models.Payment) error
 	OrderedProduct(models.OrderBody, models.Cart) error
+	PaymentMod(int) (models.PageVariable, error)
 }
 
 type ProductRepository interface {

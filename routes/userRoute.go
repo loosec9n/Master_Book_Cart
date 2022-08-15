@@ -16,8 +16,7 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Get("/", Controller.HomePage)
 	routes.Post("/user/forget/password", Controller.ForgetPassword())
 	routes.Patch("/user/forget/password/reset", Controller.ResetPassword())
-	routes.Post("/user/paymnet/cod", Controller.UserOrderPaymnet())
-	routes.Post("/user/order/confirm", Controller.OrderPlaced())
+	routes.Get("/user/payment/razorpay", Controller.UserRazorIndex)
 
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.UserVerifyMiddleware)
@@ -30,6 +29,8 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 		r.Get("/user/view/wishlist", Controller.UserViewWishlist())
 		r.Delete("/user/remove/wishlist", Controller.UserDeleteWishlist())
 		r.Get("/user/cart/checkout", Controller.CreateOrder())
+		r.Post("/user/paymnet/cod", Controller.UserOrderPaymnet())
+		r.Post("/user/order/confirm", Controller.OrderPlaced())
 
 	})
 

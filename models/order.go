@@ -22,7 +22,7 @@ type OrderBody struct {
 }
 
 type Wishlist struct {
-	Wishlist_ID   int     `js0n:"whishlistId,omitempty"`
+	Wishlist_ID   int     `json:"whishlistId,omitempty"`
 	User_ID       User    `json:"userID,omitempty"`
 	Product_ID    Product `json:"productID,omitempty"`
 	Product_Image string  `json:"productImage,omitempty"`
@@ -67,4 +67,10 @@ type ReportIn struct {
 type ChangeOrder struct {
 	Order_status string `json:"order_status"`
 	Order_id     int    `json:"order_id"`
+}
+type Ordered struct {
+	Order_id     int
+	User_id      int
+	Total_amount float64
+	Payed        bool
 }

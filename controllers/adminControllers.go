@@ -128,11 +128,13 @@ func (c Controller) AdminProductAdd() http.HandlerFunc {
 		//fetching data from fron end into product
 		json.NewDecoder(r.Body).Decode(&product)
 
+		log.Println("prodct:", product.Product_Name, product)
+
 		pro, err := c.ProductRepo.Addproduct(product)
 
 		if err != nil {
 			w.WriteHeader(http.StatusNotImplemented)
-			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add products", err))
+			json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Failed to add products", &product))
 			return
 		}
 		log.Println("Product added by admin")

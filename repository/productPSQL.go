@@ -20,13 +20,14 @@ type Prod struct {
 
 func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 
+	log.Println("product from addproduct", product)
+
 	query := `INSERT INTO product (
 		product_name, 
 		product_description, 
 		product_price,
 		product_category_id,
-		product_author_id,
-		prduct_inentory_id)
+		product_author_id)
 		VALUES($1, $2, $3, $4, $5) 
 		RETURNING 
 		product_id, 
@@ -40,9 +41,8 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 		product.Product_Name,
 		product.Product_Description,
 		product.Product_Price,
-		product.Product_Category.Category_ID,
 		product.Product_Author.Author_ID,
-		product.Product_Inventory.Inventory_ID,
+		product.Product_Category.Category_ID,
 	).Scan(
 		&product.Product_ID,
 		&product.Product_Name,
@@ -51,6 +51,7 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 		&product.Product_Author.Author_ID,
 		&product.Product_Category.Category_ID)
 
+	log.Println("add product error:", err)
 	return product, err
 
 }

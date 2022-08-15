@@ -3253,3 +3253,327 @@ created by net/http.(*Server).Serve
 	WHERE author_name iLike $1ORDER BY product_name DESC , product_price DESC
 2022/08/10 15:40:18 arg [%Smriti Irani%]
 2022/08/10 15:40:18 search product is visible
+2022/08/10 15:51:07 New Run!
+2022/08/10 15:51:07 Database connection was succesful
+2022/08/10 15:51:07 API is listening in the port:  8080
+2022/08/10 15:51:13 Checking whether Admin exists.
+2022/08/10 15:51:13 Successfull Admin Login
+2022/08/10 15:51:32 true
+2022/08/10 15:51:32 report scan failed
+2022/08/10 15:51:32 report not generated
+2022/08/10 16:03:35 New Run!
+2022/08/10 16:03:35 Database connection was succesful
+2022/08/10 16:03:35 API is listening in the port:  8080
+2022/08/10 16:03:45 true
+2022/08/10 16:03:45 report scan failed sql: Scan error on column index 1, name "total_price": converting NULL to float64 is unsupported
+2022/08/10 16:03:45 report not generated
+2022/08/10 16:05:44 true
+2022/08/10 16:05:44 report generated
+2022/08/11 10:24:28 New Run!
+2022/08/11 10:24:29 Database connection was succesful
+2022/08/11 10:24:29 API is listening in the port:  8080
+2022/08/11 10:24:58 error parsing jwt:  token is expired by 115h58m50s
+2022/08/11 10:24:58 Token Invalid.
+2022/08/11 10:25:15 false
+2022/08/11 10:25:15 User order placed
+2022/08/11 10:32:26 New Run!
+2022/08/11 10:32:26 Database connection was succesful
+2022/08/11 10:32:26 API is listening in the port:  8080
+2022/08/11 10:32:38 false
+2022/08/11 10:32:38 Error running query: Order was not created
+2022/08/11 10:33:11 New Run!
+2022/08/11 10:33:11 Database connection was succesful
+2022/08/11 10:33:11 API is listening in the port:  8080
+2022/08/11 10:33:17 false
+2022/08/11 10:33:17 User order placed
+2022/08/11 11:32:33 New Run!
+2022/08/11 11:32:33 Database connection was succesful
+2022/08/11 11:32:33 API is listening in the port:  8080
+2022/08/11 11:54:07 New Run!
+2022/08/11 11:54:07 Database connection was succesful
+2022/08/11 11:54:07 API is listening in the port:  8080
+2022/08/11 12:06:30 New Run!
+2022/08/11 12:06:30 Database connection was succesful
+2022/08/11 12:06:30 API is listening in the port:  8080
+2022/08/11 12:09:20 New Run!
+2022/08/11 12:09:20 Database connection was succesful
+2022/08/11 12:09:20 API is listening in the port:  8080
+2022/08/11 12:10:21 New Run!
+2022/08/11 12:10:21 Database connection was succesful
+2022/08/11 12:10:21 API is listening in the port:  8080
+2022/08/11 12:11:21 New Run!
+2022/08/11 12:11:21 Database connection was succesful
+2022/08/11 12:11:21 API is listening in the port:  8080
+2022/08/11 12:15:38 New Run!
+2022/08/11 12:15:38 Database connection was succesful
+2022/08/11 12:15:38 API is listening in the port:  8080
+2022/08/11 12:16:10 New Run!
+2022/08/11 12:16:10 Database connection was succesful
+2022/08/11 12:16:10 API is listening in the port:  8080
+2022/08/11 12:20:29 New Run!
+2022/08/11 12:20:29 Database connection was succesful
+2022/08/11 12:20:29 API is listening in the port:  8080
+2022/08/11 12:21:50 New Run!
+2022/08/11 12:21:50 Database connection was succesful
+2022/08/11 12:21:50 API is listening in the port:  8080
+2022/08/11 12:24:46 New Run!
+2022/08/11 12:24:46 Database connection was succesful
+2022/08/11 12:24:46 API is listening in the port:  8080
+2022/08/11 12:25:39 New Run!
+2022/08/11 12:25:39 Database connection was succesful
+2022/08/11 12:25:39 API is listening in the port:  8080
+2022/08/11 12:27:35 New Run!
+2022/08/11 12:27:35 Database connection was succesful
+2022/08/11 12:27:35 API is listening in the port:  8080
+2022/08/11 12:29:26 New Run!
+2022/08/11 12:29:26 Database connection was succesful
+2022/08/11 12:29:26 API is listening in the port:  8080
+2022/08/11 15:15:59 New Run!
+2022/08/11 15:15:59 Database connection was succesful
+2022/08/11 15:15:59 API is listening in the port:  8080
+2022/08/11 15:16:12 Checking whether User exists.
+2022/08/11 15:16:12 User exists.
+2022/08/11 15:16:12 User login sucessful
+2022/08/11 15:16:32 false
+2022/08/11 15:16:33 updated the query
+2022/08/11 15:16:33 commit sucess
+2022/08/11 15:16:33 Product added to cart
+2022/08/11 15:17:24 error parsing jwt:  token is expired by 314h52m3s
+2022/08/11 15:17:24 Token Invalid.
+2022/08/11 15:17:34 false
+2022/08/11 15:17:35 Success viewing cart
+2022/08/11 15:17:57 error parsing jwt:  token is expired by 3h20m45s
+2022/08/11 15:17:57 Token Invalid.
+2022/08/11 15:18:06 false
+2022/08/11 15:18:07 User order placed
+2022/08/11 15:46:54 New Run!
+2022/08/11 15:46:55 Database connection was succesful
+2022/08/11 15:46:55 API is listening in the port:  8080
+2022/08/11 15:47:21 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/11 15:50:37 Order creation failed The amount field is required.
+2022/08/11 15:55:11 New Run!
+2022/08/11 15:55:11 Database connection was succesful
+2022/08/11 15:55:11 API is listening in the port:  8080
+2022/08/11 15:55:17 Order creation failed The amount field is required.
+2022/08/11 15:55:25 Order creation failed The amount field is required.
+2022/08/11 15:57:44 New Run!
+2022/08/11 15:57:44 Database connection was succesful
+2022/08/11 15:57:44 API is listening in the port:  8080
+2022/08/11 15:57:56 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/11 15:59:24 New Run!
+2022/08/11 15:59:24 Database connection was succesful
+2022/08/11 15:59:24 API is listening in the port:  8080
+2022/08/11 15:59:34 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/11 16:01:52 New Run!
+2022/08/11 16:01:52 Database connection was succesful
+2022/08/11 16:01:52 API is listening in the port:  8080
+2022/08/11 16:02:01 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/14 15:23:27 New Run!
+2022/08/14 15:23:42 Database connection was succesful
+2022/08/14 15:23:42 API is listening in the port:  8080
+2022/08/14 15:25:16 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:28:35 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/14 15:28:41 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:28:44 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:07 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:10 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:28 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:38 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:39 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:29:45 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:30:52 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:33:48 New Run!
+2022/08/14 15:33:48 Database connection was succesful
+2022/08/14 15:33:48 API is listening in the port:  8080
+2022/08/14 15:33:59 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/14 15:35:55 Error converting string to int strconv.Atoi: parsing "": invalid syntax
+2022/08/14 15:36:21 New Run!
+2022/08/14 15:36:21 Database connection was succesful
+2022/08/14 15:36:21 API is listening in the port:  8080
+2022/08/14 15:36:31 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/15 19:53:33 New Run!
+2022/08/15 19:53:33 Database connection was succesful
+2022/08/15 19:53:33 API is listening in the port:  8080
+2022/08/15 19:54:20 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/15 20:03:24 New Run!
+2022/08/15 20:03:24 Database connection was succesful
+2022/08/15 20:03:24 API is listening in the port:  8080
+2022/08/15 20:03:36 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/15 20:03:36 i'm here
+2022/08/15 20:04:38 PageVariable struct: { Justin1 justin1@test.com 1234567890 140.3}
+2022/08/15 20:04:38 i'm here
+2022/08/15 20:08:58 New Run!
+2022/08/15 20:08:58 Database connection was succesful
+2022/08/15 20:08:58 API is listening in the port:  8080
+2022/08/15 20:09:09 total amount : 140.3
+2022/08/15 20:09:21 total amount : 140.3
+2022/08/15 20:18:05 New Run!
+2022/08/15 20:18:05 Database connection was succesful
+2022/08/15 20:18:05 API is listening in the port:  8080
+2022/08/15 20:18:13 total amount : 140.3
+2022/08/15 20:18:20 total amount : 140.3
+2022/08/15 20:18:53 New Run!
+2022/08/15 20:18:53 Database connection was succesful
+2022/08/15 20:18:53 API is listening in the port:  8080
+2022/08/15 20:19:01 total amount : 140.3
+2022/08/15 20:20:06 New Run!
+2022/08/15 20:20:06 Database connection was succesful
+2022/08/15 20:20:06 API is listening in the port:  8080
+2022/08/15 20:20:15 total amount : 140.3
+2022/08/15 20:25:01 New Run!
+2022/08/15 20:25:01 Database connection was succesful
+2022/08/15 20:25:01 API is listening in the port:  8080
+2022/08/15 20:25:02 total amount : 140.3
+2022/08/15 22:20:47 New Run!
+2022/08/15 22:20:47 Database connection was succesful
+2022/08/15 22:20:47 API is listening in the port:  8080
+2022/08/15 22:20:55 Checking whether user exists.
+2022/08/15 22:20:56 Signed Up Successfully
+2022/08/15 22:21:19 Sucess adding address
+2022/08/15 22:21:36 Checking whether User exists.
+2022/08/15 22:21:36 User exists.
+2022/08/15 22:21:36 User login sucessful
+2022/08/15 22:21:57 false
+2022/08/15 22:21:57 Sucess in Viewing Products
+2022/08/15 22:22:23 false
+2022/08/15 22:22:23 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE author_name iLike $1ORDER BY product_name DESC , product_price DESC
+2022/08/15 22:22:23 arg [%Smriti Irani%]
+2022/08/15 22:22:23 search product is visible
+2022/08/15 22:22:41 error parsing jwt:  token is expired by 393h55m13s
+2022/08/15 22:22:41 Token Invalid.
+2022/08/15 22:22:52 false
+2022/08/15 22:22:52 Sucess adding to wishlist
+2022/08/15 22:22:59 error parsing jwt:  token is expired by 393h55m31s
+2022/08/15 22:22:59 Token Invalid.
+2022/08/15 22:23:04 error parsing jwt:  token is expired by 393h55m36s
+2022/08/15 22:23:04 Token Invalid.
+2022/08/15 22:23:13 false
+2022/08/15 22:23:13 wishlist are visible
+2022/08/15 22:23:39 false
+2022/08/15 22:23:39 adding to wishlist failed
+2022/08/15 22:23:47 false
+2022/08/15 22:23:47 Sucess adding to wishlist
+2022/08/15 22:24:05 false
+2022/08/15 22:24:05 wishlist are visible
+2022/08/15 22:24:11 false
+2022/08/15 22:24:11 wishlist are visible
+2022/08/15 22:24:58 false
+2022/08/15 22:24:58 wishlist are visible
+2022/08/15 22:25:27 false
+2022/08/15 22:25:27 wishlist are visible
+2022/08/15 22:25:46 error parsing jwt:  token is expired by 420h5m52s
+2022/08/15 22:25:46 Token Invalid.
+2022/08/15 22:25:54 false
+2022/08/15 22:25:54 Product deleted form the wishlist
+2022/08/15 22:26:21 false
+2022/08/15 22:26:21 updated the query
+2022/08/15 22:26:21 commit sucess
+2022/08/15 22:26:21 Product added to cart
+2022/08/15 22:26:39 false
+2022/08/15 22:26:39 Success viewing cart
+2022/08/15 22:26:52 false
+2022/08/15 22:26:52 Success viewing cart
+2022/08/15 22:27:13 false
+2022/08/15 22:27:13 User order placed
+2022/08/15 22:27:27 total amount : 140.3
+2022/08/15 22:27:49 total amount : 140.3
+2022/08/15 22:28:45 error parsing jwt:  token is expired by 420h8m51s
+2022/08/15 22:28:45 Token Invalid.
+2022/08/15 22:29:06 false
+2022/08/15 22:29:06 Select from cart worked
+2022/08/15 22:29:06 inventory updation worked
+2022/08/15 22:29:06 Insertion into user order worked
+2022/08/15 22:29:06 delete from cart worked
+2022/08/15 22:29:06 Commit sucessful
+2022/08/15 22:29:06 Order confirmed
+2022/08/15 22:29:19 Checking whether Admin exists.
+2022/08/15 22:29:19 Successfull Admin Login
+2022/08/15 22:29:32 true
+2022/08/15 22:30:20 true
+2022/08/15 22:30:20 Found Category
+2022/08/15 22:30:38 true
+2022/08/15 22:30:38 Was not able to Scan in Author table
+2022/08/15 22:30:38 author not found from the author table
+2022/08/15 22:31:50 true
+2022/08/15 22:32:14 true
+2022/08/15 22:32:43 true
+2022/08/15 22:32:43 Products are visible to the admin
+2022/08/15 22:33:15 error parsing jwt:  token is expired by 102h42m2s
+2022/08/15 22:33:15 Token Invalid.
+2022/08/15 22:33:21 true
+2022/08/15 22:33:21 report generated
+2022/08/15 22:36:39 New Run!
+2022/08/15 22:36:39 Database connection was succesful
+2022/08/15 22:36:39 API is listening in the port:  8080
+2022/08/15 22:36:51 true
+2022/08/15 22:38:10 New Run!
+2022/08/15 22:38:10 Database connection was succesful
+2022/08/15 22:38:10 API is listening in the port:  8080
+2022/08/15 22:38:20 true
+2022/08/15 22:38:20 add product error: pq: got 6 parameters but the statement requires 5
+2022/08/15 22:39:08 New Run!
+2022/08/15 22:39:08 Database connection was succesful
+2022/08/15 22:39:08 API is listening in the port:  8080
+2022/08/15 22:39:16 true
+2022/08/15 22:39:16 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:45:05 New Run!
+2022/08/15 22:45:05 Database connection was succesful
+2022/08/15 22:45:05 API is listening in the port:  8080
+2022/08/15 22:45:13 true
+2022/08/15 22:45:13 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:47:19 true
+2022/08/15 22:47:19 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:47:41 true
+2022/08/15 22:47:41 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:50:32 New Run!
+2022/08/15 22:50:32 Database connection was succesful
+2022/08/15 22:50:32 API is listening in the port:  8080
+2022/08/15 22:50:42 true
+2022/08/15 22:50:42 prodct: {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 22:50:42 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:52:10 New Run!
+2022/08/15 22:52:10 Database connection was succesful
+2022/08/15 22:52:10 API is listening in the port:  8080
+2022/08/15 22:52:17 true
+2022/08/15 22:52:17 prodct: 
+2022/08/15 22:52:17 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:54:43 true
+2022/08/15 22:54:43 prodct: 
+2022/08/15 22:54:43 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 22:55:24 New Run!
+2022/08/15 22:55:24 Database connection was succesful
+2022/08/15 22:55:24 API is listening in the port:  8080
+2022/08/15 22:55:32 true
+2022/08/15 22:55:32 prodct:  {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 22:55:32 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 23:00:39 New Run!
+2022/08/15 23:00:39 Database connection was succesful
+2022/08/15 23:00:39 API is listening in the port:  8080
+2022/08/15 23:00:46 true
+2022/08/15 23:00:46 prodct:  {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 23:00:46 product from addproduct {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 23:00:46 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/15 23:05:55 New Run!
+2022/08/15 23:05:55 Database connection was succesful
+2022/08/15 23:05:55 API is listening in the port:  8080
+2022/08/15 23:06:02 true
+2022/08/15 23:06:02 prodct:  {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 23:06:02 product from addproduct {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
+2022/08/15 23:06:02 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"

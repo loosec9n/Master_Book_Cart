@@ -30,7 +30,7 @@ func (r Repository) AdminReport(mnth models.ReportIn) ([]models.OrderReport, err
 			&reports.Order_count,
 		)
 		if err != nil {
-			log.Println("report scan failed")
+			log.Println("report scan failed", err)
 			return report, err
 		}
 		report = append(report, reports)
