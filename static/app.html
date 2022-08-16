@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razorpay</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body>
     <p>Total amount</p>
@@ -21,9 +24,13 @@ var options = {
     "image": "https://example.com/your_logo",
     "order_id":'{{.OrderID}}', //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)  
+        // alert(response.razorpay_payment_id);
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature)  
+        location.href='/user/payment/success'
+   
+        console.log('success')
+        verifyPayment(response)
     },
     "prefill": {
         "name": '{{.UserName}}',
@@ -50,6 +57,33 @@ rzp1.on('payment.failed', function (response){
 document.getElementById('rzp-button1').onclick = function(e){
     rzp1.open();
     e.preventDefault();
+}
+
+//function for calling order update api
+
+function verifyPayment(res){
+    console.log('function 2')
+    $.ajax({
+
+      url: `/user/payment-success?user_id={{.UserID}}&payment_id=${res.razorpay_payment_id}&order_id=${res.razorpay_order_id}`,
+      method: 'Get',
+      success: (response) => {
+        if (response.status) {
+          console.log('test succeess')
+          location.href = 'template/success'
+        } else if (response.data) {
+
+        } else {
+          console.log('test failed')
+          swal({
+            title: "Sorry, Payment Failed",
+            icon: 'warning',
+            dangerMode: true,
+          })
+          location.replace('/payment-failed')
+        }
+      }
+    })
 }
 </script>
 </body>

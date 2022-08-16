@@ -61,3 +61,26 @@ func (r Repository) PaymentMod(usrId int) (models.PageVariable, error) {
 	}
 	return payOrder, err
 }
+
+func (r Repository) SucessPayment(payment models.RzrPaySucess, usrID int) error {
+
+	query := `INSERT INTO
+				user_payment(
+					razorpay_payment_id,
+					razorpay_order_id,
+					user_id)
+				VALUES($1,$2,$3)`
+
+	_, err := r.DB.Exec(
+		query,
+		payment.PaymentID,
+		payment.OrderID,
+		usrID)
+	if err != nil {
+		log.Println("insert into the order failed from razorpay", err)
+		return err
+	}
+
+	return nil
+
+}

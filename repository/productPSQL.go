@@ -34,22 +34,23 @@ func (r Repository) Addproduct(product models.Product) (models.Product, error) {
 		product_name, 
 		product_description, 
 		product_price,
-		product_author_id,
-		product_category_id;`
+		product_category_id,
+		product_author_id;`
 
 	err := r.DB.QueryRow(query,
 		product.Product_Name,
 		product.Product_Description,
 		product.Product_Price,
-		product.Product_Author.Author_ID,
 		product.Product_Category.Category_ID,
+		product.Product_Author.Author_ID,
 	).Scan(
 		&product.Product_ID,
 		&product.Product_Name,
 		&product.Product_Description,
 		&product.Product_Price,
+		&product.Product_Category.Category_ID,
 		&product.Product_Author.Author_ID,
-		&product.Product_Category.Category_ID)
+	)
 
 	log.Println("add product error:", err)
 	return product, err

@@ -19,6 +19,7 @@ func AdminVerifyMiddleware(next http.Handler) http.Handler {
 			authToken := bearerToken[1]
 
 			ok, err := token.ValidateTokenAdmin(authToken)
+			//log.Println("user token:", usrId)
 
 			if err != nil {
 				log.Println("Token Invalid.")
@@ -33,6 +34,7 @@ func AdminVerifyMiddleware(next http.Handler) http.Handler {
 				json.NewEncoder(w).Encode(utils.PrepareResponse(false, "Invalid Token", nil))
 				return
 			} else if ok {
+				//r.Header.Set("UserId", strconv.Itoa(usrId))
 				next.ServeHTTP(w, r)
 			}
 
