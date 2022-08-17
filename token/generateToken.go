@@ -55,6 +55,7 @@ func GenerateTokenAdmin(first_name string, last_name string, email string, phone
 func ValidateTokenAdmin(signedtoken string) (bool, error) {
 	//validating token
 	var secret_key = os.Getenv("SECRET_ADMIN")
+	//var userID int
 
 	token, err := jwt.ParseWithClaims(
 		signedtoken,
@@ -70,7 +71,7 @@ func ValidateTokenAdmin(signedtoken string) (bool, error) {
 	}
 
 	claims, ok := token.Claims.(*SignedDetails)
-	log.Println(claims.Is_Admin)
+	//log.Println(claims.User_ID)
 
 	if !ok {
 		log.Println("The Token is Invalid")

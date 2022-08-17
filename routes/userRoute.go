@@ -17,6 +17,8 @@ func UserRoute(routes chi.Router, Controller controllers.Controller) {
 	routes.Post("/user/forget/password", Controller.ForgetPassword())
 	routes.Patch("/user/forget/password/reset", Controller.ResetPassword())
 	routes.Get("/user/payment/razorpay", Controller.UserRazorIndex)
+	routes.Get("/user/payment/success", Controller.RazorSuccessIndex)
+	routes.Get("/user/payment-success", Controller.UserRazorPaySucess)
 
 	routes.Group(func(r chi.Router) {
 		r.Use(middleware.UserVerifyMiddleware)

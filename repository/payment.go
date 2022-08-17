@@ -61,3 +61,46 @@ func (r Repository) PaymentMod(usrId int) (models.PageVariable, error) {
 	}
 	return payOrder, err
 }
+
+func (r Repository) SucessPayment(payment models.RzrPaySucess, usrID int) error {
+
+	ctx := context.Background()
+	tx, err := r.DB.BeginTx(ctx, nil)
+	if err != nil {
+		return err
+	}
+
+	query := `INSERT INTO
+				user_payment(
+					razorpay_payment_id,
+					razorpay_order_id,
+					user_id)
+				VALUES($1,$2,$3)`
+
+	_, err = tx.Exec(
+		query,
+		payment.PaymentID,
+		payment.OrderID,
+		usrID)
+	if err != nil {
+		log.Println("insert into the order failed from razorpay", err)
+		tx.Rollback()
+	}
+
+	query2 := `DELETE FROM ordered
+				WHERE user_id = $1`
+
+	_, err = tx.Exec(query2, usrID)
+	if err != nil {
+		log.Println("delete from the ordered failed", err)
+		tx.Rollback()
+	}
+	err = tx.Commit()
+	if err != nil {
+		log.Println("commit failed")
+		return err
+	}
+
+	return nil
+
+}

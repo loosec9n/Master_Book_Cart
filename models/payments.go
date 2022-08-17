@@ -21,9 +21,15 @@ type PayOrders struct {
 }
 
 type PageVariable struct {
+	UserID      int
 	OrderID     string
 	UserName    string
 	Email       string
 	PhoneNumber int
 	TotalAmount float64
+}
+
+type RzrPaySucess struct {
+	OrderID   string
+	PaymentID string
 }

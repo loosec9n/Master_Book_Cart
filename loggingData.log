@@ -3577,3 +3577,412 @@ created by net/http.(*Server).Serve
 2022/08/15 23:06:02 prodct:  {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
 2022/08/15 23:06:02 product from addproduct {0 false   {0 } {0  } 0 0 {0  0} {0 0} }
 2022/08/15 23:06:02 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/16 08:50:28 New Run!
+2022/08/16 08:50:29 Database connection was succesful
+2022/08/16 08:50:29 API is listening in the port:  8080
+2022/08/16 08:51:04 Order creation failed The amount must be an integer.
+2022/08/16 08:51:15 Order creation failed The amount must be an integer.
+2022/08/16 08:53:34 New Run!
+2022/08/16 08:53:34 Database connection was succesful
+2022/08/16 08:53:34 API is listening in the port:  8080
+2022/08/16 08:54:13 New Run!
+2022/08/16 08:54:13 Database connection was succesful
+2022/08/16 08:54:13 API is listening in the port:  8080
+2022/08/16 08:54:54 New Run!
+2022/08/16 08:54:54 Database connection was succesful
+2022/08/16 08:54:54 API is listening in the port:  8080
+2022/08/16 08:57:35 New Run!
+2022/08/16 08:57:35 Database connection was succesful
+2022/08/16 08:57:35 API is listening in the port:  8080
+2022/08/16 09:01:44 New Run!
+2022/08/16 09:01:44 Database connection was succesful
+2022/08/16 09:01:44 API is listening in the port:  8080
+2022/08/16 09:15:16 New Run!
+2022/08/16 09:15:16 Database connection was succesful
+2022/08/16 09:15:16 API is listening in the port:  8080
+2022/08/16 09:30:03 New Run!
+2022/08/16 09:30:03 Database connection was succesful
+2022/08/16 09:30:03 API is listening in the port:  8080
+2022/08/16 11:07:43 New Run!
+2022/08/16 11:07:43 Database connection was succesful
+2022/08/16 11:07:43 API is listening in the port:  8080
+2022/08/16 11:08:32 no token
+2022/08/16 11:09:35 New Run!
+2022/08/16 11:09:35 Database connection was succesful
+2022/08/16 11:09:35 API is listening in the port:  8080
+2022/08/16 11:09:43 false
+2022/08/16 11:09:48 no token
+2022/08/16 11:09:52 no token
+2022/08/16 11:10:02 no token
+2022/08/16 11:10:03 no token
+2022/08/16 11:10:03 no token
+2022/08/16 11:10:03 no token
+2022/08/16 11:10:03 no token
+2022/08/16 11:10:03 no token
+2022/08/16 11:10:28 New Run!
+2022/08/16 11:10:28 Database connection was succesful
+2022/08/16 11:10:28 API is listening in the port:  8080
+2022/08/16 11:10:35 false
+2022/08/16 11:10:47 no token
+2022/08/16 11:12:19 New Run!
+2022/08/16 11:12:19 Database connection was succesful
+2022/08/16 11:12:19 API is listening in the port:  8080
+2022/08/16 11:12:26 false
+2022/08/16 11:12:31 no token
+2022/08/16 11:21:08 New Run!
+2022/08/16 11:21:08 Database connection was succesful
+2022/08/16 11:21:08 API is listening in the port:  8080
+2022/08/16 11:21:18 New Run!
+2022/08/16 11:21:19 Database connection was succesful
+2022/08/16 11:21:19 API is listening in the port:  8080
+2022/08/16 11:30:45 New Run!
+2022/08/16 11:30:45 Database connection was succesful
+2022/08/16 11:30:45 API is listening in the port:  8080
+2022/08/16 11:31:49 insert into the order failed from razorpay pq: relation "user_paymnet" does not exist
+2022/08/16 11:31:49 error executing query for the rzr payment updation pq: relation "user_paymnet" does not exist
+2022/08/16 11:32:25 New Run!
+2022/08/16 11:32:25 Database connection was succesful
+2022/08/16 11:32:25 API is listening in the port:  8080
+2022/08/16 11:33:00 insert into the order failed from razorpay pq: column "razorpay_paymnet_id" of relation "user_payment" does not exist
+2022/08/16 11:33:00 error executing query for the rzr payment updation pq: column "razorpay_paymnet_id" of relation "user_payment" does not exist
+2022/08/16 11:33:30 New Run!
+2022/08/16 11:33:30 Database connection was succesful
+2022/08/16 11:33:30 API is listening in the port:  8080
+2022/08/16 11:34:31 insert into the order failed from razorpay pq: invalid input syntax for type bigint: ""
+2022/08/16 11:34:31 error executing query for the rzr payment updation pq: invalid input syntax for type bigint: ""
+2022/08/16 11:38:45 New Run!
+2022/08/16 11:38:45 Database connection was succesful
+2022/08/16 11:38:45 API is listening in the port:  8080
+2022/08/16 11:39:08 userid 
+2022/08/16 11:39:08 insert into the order failed from razorpay pq: invalid input syntax for type bigint: ""
+2022/08/16 11:39:08 error executing query for the rzr payment updation pq: invalid input syntax for type bigint: ""
+2022/08/16 11:50:34 New Run!
+2022/08/16 11:50:34 Database connection was succesful
+2022/08/16 11:50:34 API is listening in the port:  8080
+2022/08/16 11:50:44 template executing error  template: app.html:63:37: executing "app.html" at <.userID>: can't evaluate field userID in type models.PageVariable
+2022/08/16 11:50:50 template executing error  template: app.html:63:37: executing "app.html" at <.userID>: can't evaluate field userID in type models.PageVariable
+2022/08/16 11:51:33 New Run!
+2022/08/16 11:51:33 Database connection was succesful
+2022/08/16 11:51:33 API is listening in the port:  8080
+2022/08/16 11:51:42 template executing error  template: app.html:63:37: executing "app.html" at <.userID>: can't evaluate field userID in type models.PageVariable
+2022/08/16 12:04:33 New Run!
+2022/08/16 12:04:33 Database connection was succesful
+2022/08/16 12:04:33 API is listening in the port:  8080
+2022/08/16 12:05:58 New Run!
+2022/08/16 12:05:58 Database connection was succesful
+2022/08/16 12:05:58 API is listening in the port:  8080
+2022/08/16 12:06:21 userid 
+2022/08/16 12:06:21 insert into the order failed from razorpay pq: invalid input syntax for type bigint: ""
+2022/08/16 12:06:21 error executing query for the rzr payment updation pq: invalid input syntax for type bigint: ""
+2022/08/16 12:10:03 New Run!
+2022/08/16 12:10:03 Database connection was succesful
+2022/08/16 12:10:03 API is listening in the port:  8080
+2022/08/16 12:10:33 error converting id strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:10:33 userid 0
+2022/08/16 12:10:33 paymnet updated
+2022/08/16 12:13:00 New Run!
+2022/08/16 12:13:00 Database connection was succesful
+2022/08/16 12:13:00 API is listening in the port:  8080
+2022/08/16 12:13:37 error converting id strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:13:37 userid 0
+2022/08/16 12:13:37 details 0 { }
+2022/08/16 12:13:37 paymnet updated
+2022/08/16 12:15:54 New Run!
+2022/08/16 12:15:54 Database connection was succesful
+2022/08/16 12:15:54 API is listening in the port:  8080
+2022/08/16 12:16:20 error converting id strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:16:20 userid 0
+2022/08/16 12:16:20 details 0 { }
+2022/08/16 12:16:20 paymnet updated
+2022/08/16 12:20:55 New Run!
+2022/08/16 12:20:55 Database connection was succesful
+2022/08/16 12:20:55 API is listening in the port:  8080
+2022/08/16 12:21:03 userid in razor index 4
+2022/08/16 12:21:10 userid in razor index 4
+2022/08/16 12:22:13 error converting id strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:22:13 userid 0
+2022/08/16 12:22:13 details 0 { }
+2022/08/16 12:22:13 paymnet updated
+2022/08/16 12:25:38 New Run!
+2022/08/16 12:25:38 Database connection was succesful
+2022/08/16 12:25:38 API is listening in the port:  8080
+2022/08/16 12:25:47 userid in razor index 4
+2022/08/16 12:25:50 userid in razor index 4
+2022/08/16 12:26:01 error converting id pay success strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:26:01 userid 0
+2022/08/16 12:26:01 details 0 { }
+2022/08/16 12:26:01 paymnet updated
+2022/08/16 12:31:49 New Run!
+2022/08/16 12:31:49 Database connection was succesful
+2022/08/16 12:31:49 API is listening in the port:  8080
+2022/08/16 12:31:56 userid in razor index 4
+2022/08/16 12:32:00 userid in razor index 4
+2022/08/16 12:32:18 error converting id pay success strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:32:18 userid 0
+2022/08/16 12:32:18 details 0 { }
+2022/08/16 12:32:18 paymnet updated
+2022/08/16 12:35:10 New Run!
+2022/08/16 12:35:10 Database connection was succesful
+2022/08/16 12:35:10 API is listening in the port:  8080
+2022/08/16 12:35:22 userid in razor index 4
+2022/08/16 12:35:26 userid in razor index 4
+2022/08/16 12:35:35 error converting id pay success strconv.Atoi: parsing "": invalid syntax
+2022/08/16 12:35:35 userid 0
+2022/08/16 12:35:35 details 0 { }
+2022/08/16 12:35:35 paymnet updated
+2022/08/16 13:11:44 New Run!
+2022/08/16 13:11:44 Database connection was succesful
+2022/08/16 13:11:44 API is listening in the port:  8080
+2022/08/16 13:11:54 userid in razor index 4
+2022/08/16 13:11:57 userid in razor index 4
+2022/08/16 13:12:12 error converting id pay success strconv.Atoi: parsing "": invalid syntax
+2022/08/16 13:12:12 userid 0
+2022/08/16 13:12:12 details 0 { }
+2022/08/16 13:12:12 paymnet updated
+2022/08/16 13:15:43 New Run!
+2022/08/16 13:15:43 Database connection was succesful
+2022/08/16 13:15:43 API is listening in the port:  8080
+2022/08/16 13:15:50 userid in razor index 4
+2022/08/16 13:16:01 userid 0
+2022/08/16 13:16:01 details 0 { }
+2022/08/16 13:16:01 paymnet updated
+2022/08/16 13:18:30 New Run!
+2022/08/16 13:18:30 Database connection was succesful
+2022/08/16 13:18:30 API is listening in the port:  8080
+2022/08/16 13:18:39 userid in razor index 4
+2022/08/16 13:18:50 userid 
+2022/08/16 13:18:50 details  { }
+2022/08/16 13:18:50 paymnet updated
+2022/08/16 13:19:55 New Run!
+2022/08/16 13:19:55 Database connection was succesful
+2022/08/16 13:19:55 API is listening in the port:  8080
+2022/08/16 13:20:02 userid in razor index 4
+2022/08/16 13:20:03 home variable {4 order_K6ECoojSqP03WC Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:20:12 userid 
+2022/08/16 13:20:12 details  { }
+2022/08/16 13:20:12 paymnet updated
+2022/08/16 13:22:16 New Run!
+2022/08/16 13:22:16 Database connection was succesful
+2022/08/16 13:22:16 API is listening in the port:  8080
+2022/08/16 13:22:25 userid in razor index 4
+2022/08/16 13:22:26 home variable {4 order_K6EFL4gdRfJnFX Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:22:35 userid 0
+2022/08/16 13:22:35 details 0 { }
+2022/08/16 13:22:35 paymnet updated
+2022/08/16 13:27:03 New Run!
+2022/08/16 13:27:03 Database connection was succesful
+2022/08/16 13:27:03 API is listening in the port:  8080
+2022/08/16 13:27:03 userid in razor index 4
+2022/08/16 13:27:04 home variable {4 order_K6EKEVdwHV02nb Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:27:19 userid 0
+2022/08/16 13:27:19 details 0 { }
+2022/08/16 13:27:19 paymnet updated
+2022/08/16 13:35:53 New Run!
+2022/08/16 13:35:53 Database connection was succesful
+2022/08/16 13:35:53 API is listening in the port:  8080
+2022/08/16 13:36:02 userid in razor index 4
+2022/08/16 13:36:03 home variable {4 order_K6ETiTbDi29ZnP Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:41:20 New Run!
+2022/08/16 13:41:20 Database connection was succesful
+2022/08/16 13:41:20 API is listening in the port:  8080
+2022/08/16 13:41:30 userid in razor index 4
+2022/08/16 13:41:30 home variable {4 order_K6EZUIF10TGAfw Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:45:23 New Run!
+2022/08/16 13:45:23 Database connection was succesful
+2022/08/16 13:45:23 API is listening in the port:  8080
+2022/08/16 13:45:31 userid in razor index 4
+2022/08/16 13:45:32 home variable {4 order_K6Edjr9zUul43H Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:49:14 New Run!
+2022/08/16 13:49:14 Database connection was succesful
+2022/08/16 13:49:14 API is listening in the port:  8080
+2022/08/16 13:49:25 userid in razor index 4
+2022/08/16 13:49:25 home variable {4 order_K6EhqcJ1zhoXxC Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:50:38 New Run!
+2022/08/16 13:50:38 Database connection was succesful
+2022/08/16 13:50:38 API is listening in the port:  8080
+2022/08/16 13:50:46 userid in razor index 4
+2022/08/16 13:50:47 home variable {4 order_K6EjHSjznMp5sd Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:53:09 New Run!
+2022/08/16 13:53:09 Database connection was succesful
+2022/08/16 13:53:09 API is listening in the port:  8080
+2022/08/16 13:53:18 userid in razor index 4
+2022/08/16 13:53:19 home variable {4 order_K6Ely02fRhKsH3 Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:53:3
+
+2022/08/16 13:55:48 New Run!
+2022/08/16 13:55:48 Database connection was succesful
+2022/08/16 13:55:48 API is listening in the port:  8080
+2022/08/16 13:56:03 userid in razor index 4
+2022/08/16 13:56:03 home variable {4 order_K6Eor4YBwEJHO3 Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 13:56:38 userid 4
+2022/08/16 13:56:38 details 4 {order_K6Eor4YBwEJHO3 pay_K6EpOrNnHs6WMR}
+2022/08/16 13:56:38 paymnet updated
+2022/08/16 13:58:19 prodct: Book21 {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 13:58:19 product from addproduct {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 13:58:19 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/16 14:05:35 New Run!
+2022/08/16 14:05:35 Database connection was succesful
+2022/08/16 14:05:35 API is listening in the port:  8080
+2022/08/16 14:05:50 prodct: Book21 {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 14:05:50 product from addproduct {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 14:05:50 add product error: pq: insert or update on table "product" violates foreign key constraint "product_product_category_id_fkey"
+2022/08/16 14:11:51 New Run!
+2022/08/16 14:11:51 Database connection was succesful
+2022/08/16 14:11:51 API is listening in the port:  8080
+2022/08/16 14:12:00 prodct: Book21 {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 14:12:00 product from addproduct {0 false Book21 Twentyfirst Book {202 } {101  } 150 4.6 {0  0} {321 0} }
+2022/08/16 14:12:00 add product error: <nil>
+2022/08/16 14:12:00 Product added by admin
+2022/08/16 14:23:24 New Run!
+2022/08/16 14:23:24 Database connection was succesful
+2022/08/16 14:23:24 API is listening in the port:  8080
+2022/08/16 14:23:34 false
+2022/08/16 14:23:34 Select from cart worked
+2022/08/16 14:23:34 Commit sucessful
+2022/08/16 14:23:34 Order confirmed
+2022/08/16 14:49:10 false
+2022/08/16 14:49:10 Success viewing cart
+2022/08/16 14:49:43 false
+2022/08/16 14:49:43 Success viewing cart
+2022/08/16 14:50:11 false
+2022/08/16 14:50:11 updated the query
+2022/08/16 14:50:11 add cart insert failed
+2022/08/16 14:50:11 Error adding to cart
+2022/08/16 14:50:43 false
+2022/08/16 14:50:43 updated the query
+2022/08/16 14:50:43 commit sucess
+2022/08/16 14:50:43 Product added to cart
+2022/08/16 14:52:11 false
+2022/08/16 14:52:11 Success viewing cart
+2022/08/16 14:52:14 false
+2022/08/16 14:52:14 Success viewing cart
+2022/08/16 15:00:27 New Run!
+2022/08/16 15:00:27 Database connection was succesful
+2022/08/16 15:00:27 API is listening in the port:  8080
+2022/08/16 15:00:37 false
+2022/08/16 15:00:37 commit sucess
+2022/08/16 15:00:37 Product added to cart
+2022/08/16 15:01:03 false
+2022/08/16 15:01:03 Success viewing cart
+2022/08/16 15:01:19 userid in razor index 4
+2022/08/16 15:01:19 home variable {4 order_K6Fvnpi7EAjhn4 Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:01:39 userid in razor index 4
+2022/08/16 15:01:39 home variable {4 order_K6Fw9ZVMYMiFMv Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:03:23 false
+2022/08/16 15:03:23 User order placed
+2022/08/16 15:03:44 userid in razor index 4
+2022/08/16 15:03:44 home variable {4 order_K6FyLvyA3cWPDk Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:10:43 New Run!
+2022/08/16 15:10:43 Database connection was succesful
+2022/08/16 15:10:43 API is listening in the port:  8080
+2022/08/16 15:12:41 New Run!
+2022/08/16 15:12:42 Database connection was succesful
+2022/08/16 15:12:42 API is listening in the port:  8080
+2022/08/16 15:12:53 userid in razor index 4
+2022/08/16 15:12:53 home variable {4 order_K6G81HagEKPl77 Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:13:07 userid 4
+2022/08/16 15:13:07 details 4 {order_K6G81HagEKPl77 pay_K6G8AuAx8bR2Gh}
+2022/08/16 15:13:07 paymnet updated
+2022/08/16 15:13:42 New Run!
+2022/08/16 15:13:43 Database connection was succesful
+2022/08/16 15:13:43 API is listening in the port:  8080
+2022/08/16 15:13:52 userid in razor index 4
+2022/08/16 15:13:53 home variable {4 order_K6G948Sc1z9rzs Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:14:03 userid 4
+2022/08/16 15:14:03 details 4 {order_K6G948Sc1z9rzs pay_K6G9BHB8tod3MY}
+2022/08/16 15:14:03 paymnet updated
+2022/08/16 15:14:48 New Run!
+2022/08/16 15:14:48 Database connection was succesful
+2022/08/16 15:14:48 API is listening in the port:  8080
+2022/08/16 15:14:55 userid in razor index 4
+2022/08/16 15:14:56 home variable {4 order_K6GAB6aN4dYi4F Justin3 justin3@test.com 1234567890 140.3}
+2022/08/16 15:15:06 userid 4
+2022/08/16 15:15:06 details 4 {order_K6GAB6aN4dYi4F pay_K6GAHZmZqmCXkI}
+2022/08/16 15:15:06 paymnet updated
+2022/08/16 15:15:45 false
+2022/08/16 15:15:45 User order placed
+2022/08/16 15:16:03 userid in razor index 4
+2022/08/16 15:16:03 home variable {4 order_K6GBMfTF8jHmVJ Justin3 justin3@test.com 1234567890 280.6}
+2022/08/16 15:16:18 userid 4
+2022/08/16 15:16:18 details 4 {order_K6GBMfTF8jHmVJ pay_K6GBXlXuGQeNqG}
+2022/08/16 15:16:18 paymnet updated
+2022/08/16 16:39:25 New Run!
+2022/08/16 16:39:25 Database connection was succesful
+2022/08/16 16:39:25 API is listening in the port:  8080
+2022/08/16 16:44:00 false
+2022/08/16 16:44:00 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/16 16:44:00 arg [%book1%]
+2022/08/16 16:44:00 search product is visible
+2022/08/16 16:44:08 false
+2022/08/16 16:44:08 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND category_name iLike $2
+2022/08/16 16:44:08 arg [%book1% %horror%]
+2022/08/16 16:44:08 search product is visible
+2022/08/16 16:44:21 false
+2022/08/16 16:44:21 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND author_name iLike $2
+2022/08/16 16:44:21 arg [%book1% %Smriti Irani%]
+2022/08/16 16:44:21 search product is visible
+2022/08/16 16:45:51 false
+2022/08/16 16:45:51 User order placed
+2022/08/16 16:46:03 userid in razor index 4
+2022/08/16 16:46:04 home variable {4 order_K6HiRdpOFgxagZ Justin3 justin3@test.com 1234567890 280.6}
+2022/08/16 16:46:20 userid 4
+2022/08/16 16:46:20 details 4 {order_K6HiRdpOFgxagZ pay_K6Hidm91owW7eP}
+2022/08/16 16:46:20 paymnet updated
+2022/08/16 16:46:32 false
+2022/08/16 16:46:32 Select from cart worked
+2022/08/16 16:46:32 inventory updation worked
+2022/08/16 16:46:32 Insertion into user order worked
+2022/08/16 16:46:32 delete from cart worked
+2022/08/16 16:46:32 Commit sucessful
+2022/08/16 16:46:32 Order confirmed

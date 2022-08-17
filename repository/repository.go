@@ -32,6 +32,7 @@ type UserRepository interface {
 	OrderPayments(models.Payment) error
 	OrderedProduct(models.OrderBody, models.Cart) error
 	PaymentMod(int) (models.PageVariable, error)
+	SucessPayment(models.RzrPaySucess, int) error
 }
 
 type ProductRepository interface {

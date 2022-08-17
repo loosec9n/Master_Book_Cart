@@ -67,10 +67,18 @@ func (c Controller) UserRazorIndex(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	log.Println("userid in razor index", userID)
+
 	client := razorpay.NewClient("rzp_test_UPVZaukIo1yTq7", "FWAxiPyt6guT3ZM3g9zcg5eS")
 
+	//query to get the details form cart
+	rzrPay, err := c.UserRepo.PaymentMod(userID)
+	if err != nil {
+		log.Println("no data from PaymentMod", err)
+	}
+
 	data := map[string]interface{}{
-		"amount":   "1000",
+		"amount":   (rzrPay.TotalAmount * 100),
 		"currency": "INR",
 		"receipt":  randstr.String(5),
 	}
@@ -84,22 +92,20 @@ func (c Controller) UserRazorIndex(w http.ResponseWriter, r *http.Request) {
 	value := body["id"]
 
 	str := value.(string)
-
-	//query to get the details form cart
-	rzrPay, err := c.UserRepo.PaymentMod(userID)
-	if err != nil {
-		log.Println("no data from PaymentMod", err)
-	}
+	//userId := strconv.Itoa(userID)
 
 	//log.Println("PageVariable struct:", rzrPay)
 
 	HomePageVars := models.PageVariable{
+		UserID:      userID,
 		OrderID:     str,
 		UserName:    rzrPay.UserName,
 		Email:       rzrPay.Email,
 		PhoneNumber: rzrPay.PhoneNumber,
 		TotalAmount: rzrPay.TotalAmount,
 	}
+
+	log.Println("home variable", HomePageVars)
 	//log.Println("total amount :", rzrPay.TotalAmount)
 	t, err := template.ParseFiles("static/app.html")
 
@@ -111,12 +117,50 @@ func (c Controller) UserRazorIndex(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println("template executing error ", err)
 	}
+
 }
 
-func (c Controller) UserRazorPayment() http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
+func (c Controller) RazorSuccessIndex(w http.ResponseWriter, r *http.Request) {
+	t, err := template.ParseFiles("static/sucess.html")
 
+	if err != nil {
+		log.Println("template parsing error", err)
+		return
 	}
+
+	err = t.Execute(w, nil)
+	if err != nil {
+		log.Println("template executing error ", err)
+	}
+}
+
+func (c Controller) UserRazorPaySucess(w http.ResponseWriter, r *http.Request) {
+
+	//userID := r.Header.Get("UserId")
+	//log.Println("user ID :", userID)
+	userId, _ := strconv.Atoi(r.URL.Query().Get("user_id"))
+
+	log.Println("userid", userId)
+
+	var param models.RzrPaySucess
+
+	param.OrderID = r.URL.Query().Get("order_id")
+	param.PaymentID = r.URL.Query().Get("payment_id")
+
+	log.Println("details", userId, param)
+
+	err := c.UserRepo.SucessPayment(param, userId)
+	if err != nil {
+		log.Println("error executing query for the rzr payment updation", err)
+		w.WriteHeader(http.StatusNotImplemented)
+		json.NewEncoder(w).Encode(utils.PrepareResponse(false, "error executing query for the rzr payment updation", err))
+		return
+	}
+
+	log.Println("paymnet updated")
+	w.WriteHeader(http.StatusOK)
+	// json.NewEncoder(w).Encode(utils.PrepareResponse(true, "paymnet updated", nil))
+
 }
 
 func (c Controller) OrderPlaced() http.HandlerFunc {
