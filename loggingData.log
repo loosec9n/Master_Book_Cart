@@ -3906,3 +3906,83 @@ created by net/http.(*Server).Serve
 2022/08/16 15:16:18 userid 4
 2022/08/16 15:16:18 details 4 {order_K6GBMfTF8jHmVJ pay_K6GBXlXuGQeNqG}
 2022/08/16 15:16:18 paymnet updated
+2022/08/16 16:39:25 New Run!
+2022/08/16 16:39:25 Database connection was succesful
+2022/08/16 16:39:25 API is listening in the port:  8080
+2022/08/16 16:44:00 false
+2022/08/16 16:44:00 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1
+2022/08/16 16:44:00 arg [%book1%]
+2022/08/16 16:44:00 search product is visible
+2022/08/16 16:44:08 false
+2022/08/16 16:44:08 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND category_name iLike $2
+2022/08/16 16:44:08 arg [%book1% %horror%]
+2022/08/16 16:44:08 search product is visible
+2022/08/16 16:44:21 false
+2022/08/16 16:44:21 query SELECT 
+	product.is_active,
+	product.product_id,
+	product.product_name,
+	product.product_description,
+	product_category.category_name,
+	product_author.author_name,
+	product.product_price
+	FROM product
+	INNER JOIN 
+	product_category 
+	ON 
+	product_category.category_id = product.product_category_id
+	INNER JOIN 
+	product_author
+	ON 
+	product_author.author_id = product.product_author_id 
+	WHERE product_name iLIKE $1 AND author_name iLike $2
+2022/08/16 16:44:21 arg [%book1% %Smriti Irani%]
+2022/08/16 16:44:21 search product is visible
+2022/08/16 16:45:51 false
+2022/08/16 16:45:51 User order placed
+2022/08/16 16:46:03 userid in razor index 4
+2022/08/16 16:46:04 home variable {4 order_K6HiRdpOFgxagZ Justin3 justin3@test.com 1234567890 280.6}
+2022/08/16 16:46:20 userid 4
+2022/08/16 16:46:20 details 4 {order_K6HiRdpOFgxagZ pay_K6Hidm91owW7eP}
+2022/08/16 16:46:20 paymnet updated
+2022/08/16 16:46:32 false
+2022/08/16 16:46:32 Select from cart worked
+2022/08/16 16:46:32 inventory updation worked
+2022/08/16 16:46:32 Insertion into user order worked
+2022/08/16 16:46:32 delete from cart worked
+2022/08/16 16:46:32 Commit sucessful
+2022/08/16 16:46:32 Order confirmed
