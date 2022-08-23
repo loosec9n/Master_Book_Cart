@@ -3986,3 +3986,12 @@ created by net/http.(*Server).Serve
 2022/08/16 16:46:32 delete from cart worked
 2022/08/16 16:46:32 Commit sucessful
 2022/08/16 16:46:32 Order confirmed
+2022/08/23 16:14:57 New Run!
+2022/08/23 16:14:57 Error pinging Database
+2022/08/23 16:14:57 pq: password authentication failed for user "postgres"
+2022/08/23 16:15:16 New Run!
+2022/08/23 16:15:16 Error pinging Database
+2022/08/23 16:15:16 pq: password authentication failed for user "postgres"
+2022/08/23 16:15:42 New Run!
+2022/08/23 16:15:42 Error pinging Database
+2022/08/23 16:15:42 pq: password authentication failed for user "postgres"
