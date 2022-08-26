@@ -3995,3 +3995,7 @@ created by net/http.(*Server).Serve
 2022/08/23 16:15:42 New Run!
 2022/08/23 16:15:42 Error pinging Database
 2022/08/23 16:15:42 pq: password authentication failed for user "postgres"
+2022/08/24 09:07:40 New Run!
+2022/08/24 09:07:40 Error pinging Database
+2022/08/24 09:07:40 pq: password authentication failed for user "postgres"
+ 
