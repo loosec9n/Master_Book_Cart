@@ -3998,4 +3998,10 @@ created by net/http.(*Server).Serve
 2022/08/24 09:07:40 New Run!
 2022/08/24 09:07:40 Error pinging Database
 2022/08/24 09:07:40 pq: password authentication failed for user "postgres"
- 
+ 2022/08/26 11:51:28 New Run!
+2022/08/26 11:51:28 Database connection was succesful
+2022/08/26 11:51:28 API is listening in the port:  8080
+2022/08/26 11:52:44 Checking whether Admin exists.
+2022/08/26 11:52:44 Please enter correct admin details
+2022/08/26 11:53:11 Checking whether Admin exists.
+2022/08/26 11:53:11 Successfull Admin Login
