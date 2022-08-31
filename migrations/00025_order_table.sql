@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS ordered(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS ordered CASCADE;
+-- DROP TABLE IF EXISTS ordered CASCADE;
 -- +goose StatementEnd

@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS product_author(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS product_author CASCADE;
+-- DROP TABLE IF EXISTS product_author CASCADE;
 -- +goose StatementEnd

@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS cart(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS cart CASCADE;
+-- DROP TABLE IF EXISTS cart CASCADE;
 -- +goose StatementEnd

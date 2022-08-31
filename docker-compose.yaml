@@ -1,35 +1,35 @@
-version: "3.8"
+version: '3.8'
 services:
   postgres:
-    image: postgres:alpine
-    restart: always
-    environment:
-      - DATABASE_USERNAME=postgres
-      - DATABASE_PASSWORD=justin123
-      - DATABASE_NAME=bookcart
-      - POSTGRES_HOST_AUTH_METHOD=trust
-    ports:
-      - 5434:5432
-    volumes:
-      - db-data:/var/lib/postgresql/data
-
-  api:
-    build:  
+    build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: db.Dockerfile
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=justin123
+      - POSTGRES_DB=bookcart
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  
+  api:
+    build: 
+      context: .
+      dockerfile: api.Dockerfile
     ports:
       - "8080:8080"
     environment:
-      - dbURL=postgres://postgres:justin123@postgres:5432/bookcart?sslmode=disable
+      - DB_SOURCE=postgresql://postgres:justin123@postgres:5432/bookcart?sslmode=disable
     depends_on:
       - postgres
-    entrypoint: 
+    entrypoint:
       [
         "/app/wait-for.sh",
         "postgres:5432",
         "--",
-        "/app/start.sh"
+        "/app/start.sh"  
       ]
-    command: ["/app/main"]
+    command: ["./app"]
 volumes:
-   db-data: 
+ postgres-data:

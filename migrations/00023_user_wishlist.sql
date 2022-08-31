@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS wishlist (
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS wishlist CASCADE;
+-- DROP TABLE IF EXISTS wishlist CASCADE;
 -- +goose StatementEnd

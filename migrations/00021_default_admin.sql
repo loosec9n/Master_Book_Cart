@@ -8,5 +8,5 @@ VALUES ('Justin', 'John', '5f4dcc3b5aa765d61d8327deb882cf99', 'justin@admin.com'
 
 -- +goose Down
 -- +goose StatementBegin
-DELETE FROM users WHERE email = 'justin@admin.com';
+-- DELETE FROM users WHERE email = 'justin@admin.com';
 -- +goose StatementEnd

@@ -14,5 +14,5 @@ VALUES
 
 -- +goose Down
 -- +goose StatementBegin
-TRUNCATE TABLE product_author CASCADE;
+-- TRUNCATE TABLE product_author CASCADE;
 -- +goose StatementEnd

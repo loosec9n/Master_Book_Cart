@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS product_category(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS product_category CASCADE;
+-- DROP TABLE IF EXISTS product_category CASCADE;
 -- +goose StatementEnd

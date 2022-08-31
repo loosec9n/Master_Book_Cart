@@ -33,5 +33,5 @@ Values
 
 -- +goose Down
 -- +goose StatementBegin
-TRUNCATE TABLE product CASCADE;
+-- TRUNCATE TABLE product CASCADE;
 -- +goose StatementEnd

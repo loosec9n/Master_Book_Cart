@@ -11,7 +11,7 @@ CREATE TABLE IF NOT  EXISTS user_payment(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS user_payments CASCADE;
+-- DROP TABLE IF EXISTS user_payments CASCADE;
 -- +goose StatementEnd 
 
 
