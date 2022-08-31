@@ -30,5 +30,5 @@ VALUES
 
 -- +goose Down
 -- +goose StatementBegin
-TRUNCATE TABLE inventory CASCADE;
+-- TRUNCATE TABLE inventory CASCADE;
 -- +goose StatementEnd

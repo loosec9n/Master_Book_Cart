@@ -17,5 +17,5 @@ CREATE TABLE IF NOT EXISTS user_order (
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS user_order CASCADE;
+-- DROP TABLE IF EXISTS user_order CASCADE;
 -- +goose StatementEnd

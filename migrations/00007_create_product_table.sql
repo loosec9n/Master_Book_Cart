@@ -20,5 +20,5 @@ CREATE TABLE IF NOT EXISTS product(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE product CASCADE;
+-- DROP TABLE product CASCADE;
 -- +goose StatementEnd

@@ -2,5 +2,6 @@
 
 set -e
 
-echo "start the app"
+echo "starting the app"
 exec "$@"
+echo "moving to the app -"

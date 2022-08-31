@@ -20,5 +20,5 @@ VALUES
 
 -- +goose Down
 -- +goose StatementBegin
-TRUNCATE TABLE product_category CASCADE;
+-- TRUNCATE TABLE product_category CASCADE;
 -- +goose StatementEnd

@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS inventory(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS inventory;
+-- DROP TABLE IF EXISTS inventory;
 -- +goose StatementEnd

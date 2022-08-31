@@ -2,7 +2,6 @@ package database
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 	"os"
 
@@ -11,13 +10,15 @@ import (
 
 func ConnectDB() *sql.DB {
 
-	userName := os.Getenv("DATABASE_USERNAME")
-	password := os.Getenv("DATABASE_PASSWORD")
-	databaseHost := os.Getenv("DATABASE_HOST")
-	databaseName := os.Getenv("DATABASE_NAME")
+	// userName := os.Getenv("DATABASE_USERNAME")
+	// password := os.Getenv("DATABASE_PASSWORD")
+	// databaseHost := os.Getenv("DATABASE_HOST")
+	// databaseName := os.Getenv("DATABASE_NAME")
 
 	//connecting with postgres sql
-	dbURL := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", databaseHost, userName, databaseName, password)
+	// dbURL := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s", databaseHost, userName, databaseName, password)
+
+	dbURL := os.Getenv("DB_SOURCE")
 
 	//opening and connectiong the databse
 	db, err := sql.Open("postgres", dbURL)

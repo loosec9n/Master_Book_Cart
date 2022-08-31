@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS discount(
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE IF EXISTS discount;
+-- DROP TABLE IF EXISTS discount;
 -- +goose StatementEnd
